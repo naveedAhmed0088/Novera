@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Novera.Source.Pages.Crm.Calendar.CreateEvent.CreateEventPage"
+            Title="CreateEventPage"
+            BackgroundImageSource="top_cloud_straight"
+            xmlns:customControls="clr-namespace:Novera.Source.CustomView"
+            Shell.FlyoutBehavior="Disabled">
+    <Grid RowDefinitions="*, Auto">
+        
+        <ScrollView Orientation="Vertical" Grid.Row="0">
+            <VerticalStackLayout Margin="10, 0, 10, 10">
+                <Entry Margin="20, 0, 0, 0" Placeholder="Add Title" PlaceholderColor="{StaticResource EntryText}" TextColor="White" Style="{StaticResource Font22Label}"></Entry>
+                <!-- Bottom line -->
+                <BoxView Margin="20, 0, 0, 20" Color="{StaticResource EntryText}"
+                    HeightRequest="1"
+                    HorizontalOptions="FillAndExpand" />
+
+                <Grid ColumnDefinitions="Auto,*" RowDefinitions="Auto,Auto" ColumnSpacing="10" Margin="10, 10, 0, 0">
+                    <StackLayout WidthRequest="34" HeightRequest="34" Grid.RowSpan="2">
+                        <Frame BackgroundColor="Orange" WidthRequest="34" HeightRequest="34" CornerRadius="17" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                            <Label Text="a" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                        </Frame>
+                    </StackLayout>
+                    <Label Text="Event" Style="{StaticResource Font18Label}" TextColor="White" Grid.Column="1"  VerticalOptions="Center" />
+                    <Label Text="raziual.cse@gmail.com" Style="{StaticResource Font16Label}" TextColor="White" Grid.Row="1" Grid.Column="1" VerticalOptions="Center" />
+                </Grid>
+                    
+                <Grid ColumnDefinitions="Auto,*,Auto" RowDefinitions="*,*" ColumnSpacing="5"  Margin="10" RowSpacing="10">
+                    <Image Source="task_time" Aspect="AspectFill" WidthRequest="25" HeightRequest="25"></Image>
+                    <Label Text="All-day" Style="{StaticResource Font16Label}" TextColor="White" Grid.Column="1" Margin="10,0,0,0" VerticalOptions="Center" ></Label>
+                    <customControls:CustomRadioButton Grid.Column="2" />
+                    <Label Text="Sun,10 Dec,2023" Style="{StaticResource Font16Label}" TextColor="White" Grid.Column="1"  Margin="10,0,0,0" Grid.Row="1" ></Label>
+                    <Label Text="5:00 pm" Style="{StaticResource Font16Label}" TextColor="White" Grid.Column="2"  Grid.Row="1"></Label>
+                </Grid>
+
+                <Grid ColumnDefinitions="Auto,*" Margin="10,15" ColumnSpacing="5">
+                    <Image Source="event_global_time" Aspect="AspectFill" WidthRequest="25" HeightRequest="25"></Image>
+                    <Label Text="India Standard Time" TextColor="White" Style="{StaticResource Font16Label}" Grid.Column="1"  Margin="10,0,0,0" VerticalOptions="Center"></Label>
+                </Grid>
+
+                <Grid ColumnDefinitions="Auto,*" Margin="10,15" ColumnSpacing="5">
+                    <Image Source="task_does_not_repeat" Aspect="AspectFill" WidthRequest="25" HeightRequest="25"></Image>
+                    <Label Text="Does not repeat" TextColor="White" Style="{StaticResource Font16Label}" Grid.Column="1"  Margin="10,0,0,0" VerticalOptions="Center"></Label>
+                </Grid>
+
+                <BoxView Color="{StaticResource EntryText}"
+                    HeightRequest="1"             
+                    Margin="10,0,0,20"
+                    HorizontalOptions="FillAndExpand" />
+
+                <Grid ColumnDefinitions="Auto,Auto" RowDefinitions="Auto,Auto" Margin="10,15" ColumnSpacing="5" RowSpacing="10">
+                    <Image Source="event_add_people" Aspect="AspectFill" WidthRequest="25" HeightRequest="25"></Image>
+                    <Label Text="Add people" TextColor="White" Style="{StaticResource Font16Label}" Grid.Column="1" Margin="10,0,0,0" VerticalOptions="Center"></Label>
+                    <Button Text="View schedules" Grid.Column="1" Grid.Row="1" Margin="10,0,0,0" Style="{StaticResource BlueButtonwithWhiteBorder}" ></Button>
+                </Grid>
+
+                <BoxView Color="{StaticResource EntryText}"
+                    HeightRequest="1"
+                    Margin="10,0,0,20"
+                    HorizontalOptions="FillAndExpand" />
+
+                <Grid ColumnDefinitions="Auto,*" Margin="10,0,0,5" ColumnSpacing="5">
+                    <Image Source="event_notification" Aspect="AspectFill" WidthRequest="25" HeightRequest="25"></Image>
+                    <Label Text="Add notification" TextColor="White" Style="{StaticResource Font16Label}" Grid.Column="1" Margin="10,0,0,0" VerticalOptions="Center"></Label>
+                </Grid>
+
+                <BoxView Color="{StaticResource EntryText}"
+                    HeightRequest="1"
+                    Margin="10,10,0,20"
+                    HorizontalOptions="FillAndExpand" />
+
+                <Grid ColumnDefinitions="Auto,*" Margin="10,0,0,5" ColumnSpacing="5">
+                    <Image Source="event_add_description" Aspect="AspectFill" WidthRequest="25" HeightRequest="25"></Image>
+                    <Entry Placeholder="Add description" TextColor="White" Style="{StaticResource Font16Label}" Grid.Column="1" Margin="10,0,0,0" VerticalOptions="Center"></Entry>
+                </Grid>
+
+                <BoxView Color="{StaticResource EntryText}"
+                    HeightRequest="1"
+                    Margin="10,0,0,20"
+                    HorizontalOptions="FillAndExpand" />
+                
+                <Grid ColumnDefinitions="Auto,*" Margin="10,0,0,5" ColumnSpacing="5">
+                    <Image Source="event_add_attachment" Aspect="AspectFill" WidthRequest="25" HeightRequest="25"></Image>
+                    <Label Text="Add attachment" TextColor="White" Style="{StaticResource Font16Label}" Grid.Column="1" Margin="10,0,0,0" VerticalOptions="Center"></Label>
+                </Grid>
+            </VerticalStackLayout>
+        </ScrollView>             
+            
+        <Button Text="Save"
+                Style="{StaticResource MainButtonTransparentStyle}"
+                Clicked = "SaveBtnClicked"
+                Margin="10, 0, 10, 10"
+                Grid.Row="1"/>
+    </Grid>
+</ContentPage>

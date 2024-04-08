@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Novera.Source.Pages.Crm.SupportTicket.TicketList.SupportTicketListPage"
+            Title="Support Tickets"
+            xmlns:local="clr-namespace:Novera.Source.ViewModel.SupportTicket"
+            xmlns:models="clr-namespace:Novera.Source.Model.SupportTicket"
+            BackgroundColor="Transparent"
+            BackgroundImageSource="top_cloud_straight">
+    <ContentPage.BindingContext>
+        <local:SupportTicketViewModel></local:SupportTicketViewModel>
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="Auto,Auto,*">
+        <!-- Search Bar -->
+        <Frame Grid.Row="0" BackgroundColor="{StaticResource Transparent}" 
+            Padding="10,0,10,0"
+            Margin ="20,10,20,10"
+            BorderColor="{StaticResource LoginText}" CornerRadius="5"  >
+            <Grid ColumnDefinitions="*, Auto">
+                <Entry  Placeholder="Search" 
+                    PlaceholderColor="{StaticResource LoginText}"
+                    TextColor="{StaticResource EntryTextColorWhite}" Style="{StaticResource Font20Label}" />
+                 <Image Grid.Column ="1" Source="notes_search"/>
+            </Grid>
+        </Frame>
+
+        <Frame Grid.Row="1" BackgroundColor="{StaticResource EditorBackgroundBlue}" 
+            BorderColor="{StaticResource EditorBackgroundBlue}"
+            Padding="10,0,10,20"
+            Margin ="20,10,20,10"
+            CornerRadius="0">
+            <CollectionView VerticalOptions="FillAndExpand" 
+                        IsGrouped="True" 
+                        ItemsSource="{Binding SupportTicketList}"
+                        SelectionMode= "Single" SelectionChanged="OnCollectionViewSelectionChanged">
+            <CollectionView.GroupHeaderTemplate>
+                <DataTemplate x:DataType="models:SupportTicketGroupModel">
+                    <HorizontalStackLayout Margin="10,15,10,0">
+                        <Image  Source="ticket_bullet"/>
+                        <Label Text="{Binding GroupTitle}" FontFamily="CenturyGothicBold" Margin="10,0,0,0" TextColor="{StaticResource LoginText}" Style="{StaticResource Font16Label}" />
+                    </HorizontalStackLayout>
+                </DataTemplate>
+            </CollectionView.GroupHeaderTemplate>
+            <CollectionView.ItemTemplate >
+                <DataTemplate x:DataType="models:SupportTicketModel">
+                    <VerticalStackLayout>
+                        <Grid ColumnDefinitions="Auto,Auto,*" Margin="30,10,10,10">
+                            <Label HorizontalOptions="Start" Grid.Column="0" Text="{Binding FullTitle}"  TextColor="{StaticResource EntryTextColorWhite}" Style="{StaticResource Font16Label}" />
+                            <Label HorizontalOptions="Start" Grid.Column="1" Margin="10,0,0,0" Text="{Binding NoOfTicket}"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font16Label}" />
+                            <Image Grid.Column="2" Source="ticket_left_arrow" HorizontalOptions="End"/>
+                        </Grid>
+                        <BoxView Color="{StaticResource EntryTextColorWhite}" Margin="10,0,10,0" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+                        
+                    </VerticalStackLayout>
+                    
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+            <!--<CollectionView.GroupFooterTemplate>
+                <DataTemplate x:DataType="models:EmployeeGroup">
+                    <Label Text="{Binding FooterTitle}" FontSize="22" BackgroundColor="LightBlue"/>
+                </DataTemplate>
+            </CollectionView.GroupFooterTemplate>-->
+        </CollectionView>
+        </Frame>
+        <ImageButton Grid.Row="2" WidthRequest="75" HeightRequest="75"  Source="notes_add_icon" HorizontalOptions="End" VerticalOptions="EndAndExpand" Margin="0,0,10,50" Clicked="CreateTicketClicked"/>
+    </Grid>
+
+</ContentPage>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novera.Source.Pages.Crm.Document.DocumentDetailPage"
+             Title="Document Detail"
+             BackgroundColor="{StaticResource Transparent}"
+             xmlns:local="clr-namespace:Novera.Source.ViewModel.Document"
+             BackgroundImageSource="top_cloud_straight"
+			 Shell.FlyoutBehavior="Disabled">
+    <Grid>
+        <VerticalStackLayout >
+			<!-- Search Bar -->
+            <Frame Margin ="20,10,20,10" BackgroundColor="Transparent"
+			       BorderColor="{StaticResource LoginText}"
+			       CornerRadius="10"
+			       Padding="5">
+                <Grid ColumnDefinitions="0.8*,0.2*">
+                    <Entry Placeholder="Search"
+					       PlaceholderColor="{StaticResource LoginText}"
+					       TextColor="White"
+					       FontSize="15"/>
+                    <Image Source="icon_search"
+					       HeightRequest="25"
+					       WidthRequest="25"
+					       Aspect="AspectFill"
+					       Grid.Column="1"
+					       HorizontalOptions="End"/>
+                </Grid>
+            </Frame>
+            <Frame BorderColor="{StaticResource LabelColor}"
+			       CornerRadius="10"
+			       Padding="20"
+			       BackgroundColor="{StaticResource EditorBackgroundBlue}"
+			       Margin ="20,10,20,10">
+                <Grid RowDefinitions="*,*"
+				      ColumnDefinitions="Auto,*,Auto">
+                    <Image Source="{Binding document.Icon}"
+					       WidthRequest="60"
+					       HeightRequest="60"
+					       Grid.RowSpan="2"/>
+                    <Label Text="{Binding document.Name}"
+					       Margin="10,0"
+					       Style="{StaticResource Font18Label}"
+					       TextColor="{StaticResource LoginText}"
+					       VerticalOptions="Center"
+					       Grid.Row="0"
+					       Grid.Column="1"/>
+                    <Label Margin="10,0"
+					       Style="{StaticResource Font14Label}"
+					       TextColor="{StaticResource EntryText}"
+					       VerticalOptions="Center"
+					       Grid.Row="1"
+					       Grid.Column="1">
+                        <MultiBinding StringFormat="{}{0} - {1}">
+                            <Binding Path="document.Size"/>
+                            <Binding Path="document.LastUpdateTime"/>
+                        </MultiBinding>
+                    </Label>
+                    <Image Source="icon_three_dot"
+					       WidthRequest="20"
+					       HeightRequest="15"
+					       Grid.RowSpan="2"
+					       Grid.Column="2"/>
+                </Grid>
+            </Frame>
+        </VerticalStackLayout>
+        <ImageButton WidthRequest="75"
+		             HeightRequest="75"
+		             Source="notes_add_icon"
+		             HorizontalOptions="End"
+		             VerticalOptions="EndAndExpand"
+		             Margin="0,0,10,50"
+		             Clicked="AddDocumentClicked"/>
+    </Grid>
+</ContentPage>

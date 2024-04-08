@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novera.Source.Pages.Common.LoginOptionDialog.LoginOptionDialogPage"
+             Title="LoginOptionDialogPage"
+             BackgroundColor="{StaticResource DialogBackgroundColor}">
+             
+    <StackLayout VerticalOptions="Center" HorizontalOptions="FillAndExpand" Padding="10"
+        RadioButtonGroup.GroupName="{Binding GroupName}"
+        RadioButtonGroup.SelectedValue="{Binding Selection}">
+
+        <Frame  BackgroundColor="{StaticResource Primary}" CornerRadius="2">
+
+            <VerticalStackLayout VerticalOptions="FillAndExpand">
+
+                <Label Text="Choose Login Option"
+                    Style="{StaticResource Font22Label}"
+                    TextColor="{StaticResource LoginText}"
+                    Margin="0,10,0,10" />
+
+                 <!-- Radio button with text on the left and radio on the right -->
+                <Grid>
+                    <!-- First column for text, auto-sized -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <!-- Second column for radio button, auto-sized -->
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Text on the left -->
+                    <Label Text="Client Login" TextColor="{StaticResource EntryText}" Style="{StaticResource Font20Label}" VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                    <!-- Radio button on the right -->
+                    <RadioButton Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" />
+                </Grid>
+                <Grid>
+                    <!-- First column for text, auto-sized -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <!-- Second column for radio button, auto-sized -->
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Text on the left -->
+                    <Label Text="Associates Login" TextColor="{StaticResource EntryText}" Style="{StaticResource Font20Label}" VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                    <!-- Radio button on the right -->
+                    <RadioButton Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" />
+                </Grid>
+
+                <Grid>
+                    <!-- First column for text, auto-sized -->
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*" />
+                        <!-- Second column for radio button, auto-sized -->
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+
+                    <!-- Text on the left -->
+                    <Label Text="Elucidate5 Archives" TextColor="{StaticResource EntryText}" Style="{StaticResource Font20Label}" VerticalOptions="Center" HorizontalOptions="Start"/>
+
+                    <!-- Radio button on the right -->
+                    <RadioButton Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" />
+                </Grid>
+
+                <Button Text="Ok"
+                    Margin="30,30,30,20"
+                    Clicked="OnSubmitClicked"
+                    Style="{StaticResource MainButtonTransparentStyle}"
+                    Grid.Column="1"/>
+
+               
+
+            </VerticalStackLayout>
+
+        </Frame>
+
+    </StackLayout>
+
+
+
+</ContentPage>

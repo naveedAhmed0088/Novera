@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novera.Source.Pages.Crm.Email.Compose.ComposeEmailPage"
+             Title="Compose"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             BackgroundImageSource="top_cloud_straight"
+             Shell.FlyoutBehavior="Disabled">
+          
+            
+            <Grid RowDefinitions= "Auto,Auto,Auto,*,Auto">
+                <Grid Grid.Row="0" Padding="16" VerticalOptions="Start">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+            
+                    <Label Text="From:" VerticalOptions="Center" 
+                        TextColor="{StaticResource LabelColor}"
+                        Style="{StaticResource Font16Label}" />
+                    <Entry x:Name="FromEntry" Grid.Column="1" 
+                        TextColor="{StaticResource EntryTextColorWhite}"
+                        Style="{StaticResource Font18Label}"
+                        Placeholder="Your email" 
+                        VerticalOptions="Center" />
+            
+                    <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End" />
+                </Grid>
+                <Grid Grid.Row="1" Padding="16" VerticalOptions="Start">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+            
+                    <Label Text="To:" VerticalOptions="Center" 
+                        TextColor="{StaticResource LabelColor}"
+                        Style="{StaticResource Font16Label}" />
+                    
+                    <telerik:RadComboBox x:Name="comboBox"
+                        AutomationId="comboBox"
+                        ItemsSource="{Binding Items}"
+                        Grid.Column="1"
+                        IsEditable="True"
+                        SearchTextPath="Name"
+                        DisplayMemberPath="Name"
+                        VerticalOptions ="Center"
+                        SelectionMode="Multiple"
+                        TextColor="{StaticResource EntryTextColorWhite}"
+                        BorderThickness="0"
+                        Margin="0, 0, 0, 0" >
+
+                        <telerik:RadComboBox.TokenTemplate>
+                            <DataTemplate>
+                                <telerik:RadBorder BackgroundColor="{StaticResource EntryTextColorWhite}"
+                                                CornerRadius="10"
+                                                Margin="2">
+                                    <HorizontalStackLayout Margin="3">
+                                        <Label Text="{Binding Name}"
+                                            TextColor="Black"
+                                            VerticalTextAlignment="Center"
+                                            Margin="2" />  
+                                        <Image Source="drawer_close">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="RemoveToEmailTapped"/>
+                                            </Image.GestureRecognizers>
+                                        </Image>                                       
+                                    </HorizontalStackLayout>
+                                </telerik:RadBorder>
+                            </DataTemplate>
+                        </telerik:RadComboBox.TokenTemplate>
+                    <telerik:RadComboBox.ShowMoreTemplate>
+                        <DataTemplate>
+                            <Label Text="{Binding Path=., StringFormat='+{0} more items'}"
+                                VerticalTextAlignment="Center"/>
+                            
+                        </DataTemplate>
+                    </telerik:RadComboBox.ShowMoreTemplate>
+                    </telerik:RadComboBox>
+                    <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End" />
+                </Grid>
+                <Grid Grid.Row="2" Padding="16" VerticalOptions="Start">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+            
+                    <Label Text="Subject:" VerticalOptions="Center" 
+                        TextColor="{StaticResource LabelColor}"
+                        Style="{StaticResource Font16Label}" />
+                    <Entry x:Name="SubjectEntry" Grid.Column="1" 
+                        TextColor="{StaticResource EntryTextColorWhite}"
+                        Style="{StaticResource Font18Label}"
+                        Placeholder="Enter Subject" 
+                        VerticalOptions="Center" />
+            
+                    <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End" />
+                </Grid>
+                <Grid Grid.Row="3" Padding="16" VerticalOptions="FillAndExpand">
+                    <Frame BackgroundColor="{StaticResource EditorBackgroundBlue}" BorderColor="{StaticResource LoginText}" CornerRadius="5"  Margin="0,0,0,5">
+                        <Editor TextColor="White" FontSize="20" AutoSize="Disabled"></Editor>
+                    </Frame>
+                </Grid>
+                <Grid Grid.Row="4"  ColumnDefinitions="*,*" BackgroundColor="{StaticResource SideDrawerColor}" Padding="10" VerticalOptions="End">
+                    <Button Text="Add file"
+                            Style="{StaticResource ButtonwithWhiteBorder}"
+                            BackgroundColor="Transparent"
+                            Grid.Column="0"
+                            Margin="5" />
+                    <Button Text="Send"
+                            Style="{StaticResource ButtonwithWhiteBorder}"
+                            Grid.Column="1"
+                            BackgroundColor="Transparent"
+                            Clicked="DetailBtnClicked"
+                            Margin="5" />
+                </Grid>
+                
+        </Grid>
+</ContentPage>

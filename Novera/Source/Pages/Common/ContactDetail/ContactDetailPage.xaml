@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Novera.Source.Pages.Common.ContactDetail.ContactDetailPage"
+            Title="ContactDetailPage"
+            BackgroundImageSource="cloud_straight"
+            Shell.NavBarIsVisible ="false"
+            Shell.FlyoutBehavior="Disabled">
+
+    <Grid RowDefinitions="Auto, *">
+        <Grid ColumnDefinitions="Auto, *" Margin ="10,10,10,10">
+            <Image Grid.Column="0" HorizontalOptions ="Start" Source="arrow_left_back" >             
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="BackBtnClicked" />                
+                </Image.GestureRecognizers>
+            </Image>
+            <Image Grid.Column="1" HorizontalOptions ="End" Source="contact_logo" />             
+        </Grid>
+
+        <VerticalStackLayout Margin="10,0,10,0" Grid.Row="1">
+            <Label Text="Contact"  Margin="10,10,0,0" Style="{StaticResource Font22Label}"
+                            HorizontalOptions ="Start" TextColor="{StaticResource LoginText}"/>         
+            <Label Text="Elucidate Business s.r.o"  Margin="10,0,10,15" Style="{StaticResource Font18Label}"
+                            HorizontalOptions ="Start" TextColor="{StaticResource EntryBackgroundWhite}"/>         
+            <Grid ColumnDefinitions="Auto,*" Margin="10,10,10,10">
+                <Image Grid.Column="0" HorizontalOptions ="Start" Source="contact_user" />   
+                <Label Text="Deepak Gupta" Grid.Column="1" Margin="20,0,0,0"
+                    Style="{StaticResource Font16Label}"
+                    HorizontalOptions ="Start" 
+                    TextColor="{StaticResource EntryTextColorWhite}"/>         
+            </Grid>
+            <BoxView Color="{StaticResource LabelColor}" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+            <Grid ColumnDefinitions="Auto,*" Margin="10,10,10,15">
+                <Image Grid.Column="0" HorizontalOptions ="Start" Source="contact_address" />   
+                <Label Text="Mestska cast stare mesto/nbratislava 81108/nSlovakia" Grid.Column="1" Margin="20,0,0,0"
+                    Style="{StaticResource Font16Label}"
+                    HorizontalOptions ="Start" 
+                    TextColor="{StaticResource EntryTextColorWhite}"/>         
+            </Grid>
+            <BoxView Color="{StaticResource LabelColor}" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+
+            <Grid ColumnDefinitions="Auto,*" Margin="10,10,10,15">
+                <Image Grid.Column="0" HorizontalOptions ="Start" Source="contact_phone" />   
+                <Label Text="+421 206 206 03" Grid.Column="1" Margin="20,0,0,0"
+                    Style="{StaticResource Font16Label}"
+                    HorizontalOptions ="Start" 
+                    TextColor="{StaticResource EntryTextColorWhite}"/>         
+            </Grid>
+            <BoxView Color="{StaticResource LabelColor}" HeightRequest="1" HorizontalOptions="FillAndExpand" />
+                    
+        </VerticalStackLayout>
+    </Grid>
+
+</ContentPage>

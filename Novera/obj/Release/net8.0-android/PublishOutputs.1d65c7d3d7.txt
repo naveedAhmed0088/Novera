@@ -1,0 +1,3 @@
+/Users/muhammadzain/Documents/ITO/Novera/Novera/bin/Release/net8.0-android/publish/com.companyname.novera-Signed.apk
+/Users/muhammadzain/Documents/ITO/Novera/Novera/bin/Release/net8.0-android/publish/com.companyname.novera.apk
+/Users/muhammadzain/Documents/ITO/Novera/Novera/bin/Release/net8.0-android/publish/_Microsoft.Android.Resource.Designer.dll

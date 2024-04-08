@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novera.Source.Pages.Crm.Settings.Team.TeamSettingPage"
+             Title="Team"
+      xmlns:local="clr-namespace:Novera.Source.ViewModel.Settings"
+xmlns:models="clr-namespace:Novera.Source.Model.Settings"
+BackgroundColor="Transparent"
+BackgroundImageSource="top_cloud_straight">
+
+    <ContentPage.BindingContext>
+        <local:SettingsViewModel></local:SettingsViewModel>
+    </ContentPage.BindingContext>
+    <Grid RowDefinitions="Auto,*">
+
+        <!-- Search Bar -->
+        <Frame Grid.Row="0" BackgroundColor="{StaticResource Transparent}" 
+         Padding="10,0,10,0"
+         Margin ="20,10,20,10"
+         BorderColor="{StaticResource LoginText}" CornerRadius="5"  >
+            <Grid ColumnDefinitions="*, Auto">
+                <Entry  Placeholder="Search" 
+                 PlaceholderColor="{StaticResource LoginText}"
+                 TextColor="{StaticResource EntryTextColorWhite}" Style="{StaticResource Font20Label}" />
+                <Image Grid.Column ="1" Source="notes_search"/>
+            </Grid>
+        </Frame>
+
+        <VerticalStackLayout Grid.Row="1">
+            <Frame CornerRadius="100" BorderColor="{StaticResource LoginText}" WidthRequest="80" 
+                   HeightRequest="80" BackgroundColor="{StaticResource EditorBackgroundBlue}"
+                   HorizontalOptions="Center" VerticalOptions="Center">
+                <Image Source="settings_user" Aspect="AspectFill" />
+            </Frame>
+            <Label Text="Jeneby Mathews"  HorizontalOptions="Center" TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}" Margin="0,10,0,0"/>
+            <Label Text="Director"  HorizontalOptions="Center" TextColor="{StaticResource White}" Style="{StaticResource Font10Label}" />
+
+
+            <CollectionView ItemsSource="{Binding SettingsTeamList}" 
+    SelectionMode="Single" Margin="10,0">
+                <CollectionView.ItemsLayout>
+                    <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <!-- Your item template -->
+                        <Frame BorderColor="{StaticResource LabelColor}" Margin="5,10,0,0"  CornerRadius="10" Padding="5" BackgroundColor="{StaticResource Primary}">
+                            <VerticalStackLayout>
+                            <Grid  ColumnDefinitions="Auto,0.8*,0.2*" Padding="10" >
+                                    <Frame CornerRadius="100" BorderColor="{StaticResource LoginText}" WidthRequest="60" 
+                                             HeightRequest="60" BackgroundColor="{StaticResource EditorBackgroundBlue}"
+                                             HorizontalOptions="Center" VerticalOptions="Center">
+                                        <Image Source="settings_user" Aspect="AspectFill" />
+                                    </Frame>
+                                    <VerticalStackLayout VerticalOptions="Center" Grid.Column="1" Margin="10,0">
+                                        <Label Text="{Binding Name}"   TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}" />
+                                        <Label Text="{Binding JobTitle}"  TextColor="{StaticResource White}" Style="{StaticResource Font10Label}" />
+                                    </VerticalStackLayout>
+                                    <VerticalStackLayout VerticalOptions="Center" Grid.Column="2">
+                                        <Label Text="User Id"  HorizontalOptions="Center" TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                                        <Label Text="{Binding UserId}"  HorizontalOptions="Center" TextColor="{StaticResource LoginText}" Style="{StaticResource Font10Label}" />
+                                    </VerticalStackLayout>
+                             </Grid>
+                                <Grid  ColumnDefinitions="0.5*,0.5*,Auto" Padding="10" >
+                                    <VerticalStackLayout VerticalOptions="Center">
+                                        <Label Text="Access Role"  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                                        <Label Text="{Binding AccessRole}"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font10Label}" />
+                                    </VerticalStackLayout>
+                                    <VerticalStackLayout VerticalOptions="Center" Grid.Column="1">
+                                        <Label Text="GDPR Role"   TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                                        <Label Text="{Binding GDPRRole}"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font10Label}" />
+                                    </VerticalStackLayout>
+                                    <Frame CornerRadius="100" BorderColor="{StaticResource LoginText}" WidthRequest="30" 
+                                            HeightRequest="30" BackgroundColor="{StaticResource EditorBackgroundBlue}"
+                                            HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="2" Padding="5,5">
+                                        <Image Source="settings_view" Aspect="AspectFit" />
+                                    </Frame>
+                                </Grid>
+                            </VerticalStackLayout>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+
+        </VerticalStackLayout>
+
+       
+    </Grid>
+</ContentPage>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            x:Class="Novera.Source.Pages.Crm.Calendar.People.AddPeopleListPage"
+            Title="AddPeopleListPage"
+            xmlns:local="clr-namespace:Novera.Source.ViewModel.Calendar"
+            BackgroundImageSource="top_cloud_straight">
+    <ContentPage.BindingContext>
+        <local:AddPeopleViewModel />
+    </ContentPage.BindingContext>
+
+    <Grid RowDefinitions="*">
+    
+        <Grid Grid.Row= "0">
+            <CollectionView ItemsSource="{Binding PeopleList}" SelectionMode="Single">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10" />
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <!-- Your item template -->
+                                <Grid ColumnDefinitions="Auto, *" >
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding WeekName}" TextColor="{StaticResource EntryBackgroundWhite}" Style="{StaticResource Font14Label}" MaxLines="1" ></Label>
+                                        <Label Text="{Binding DateVal}" TextColor="{StaticResource EntryBackgroundWhite}" Style="{StaticResource Font18Label}" MaxLines="1" ></Label>
+                                    </VerticalStackLayout>
+
+                                    <Frame BorderColor="{StaticResource LabelColor}" Margin="20, 0, 0 ,0" Grid.Column="1" CornerRadius="10" Padding="5" BackgroundColor="{StaticResource Primary}">
+                                        <HorizontalStackLayout>
+                                            <Image Source ="calendar_done" />
+                                            <VerticalStackLayout Margin="10,0,0,0">
+                                                <Label Text="{Binding Title}" TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}" MaxLines="1" LineBreakMode="TailTruncation"></Label>
+                                                <Label Text="{Binding Time}" TextColor="{StaticResource EntryBackgroundWhite}" Style="{StaticResource Font12Label}" MaxLines="1" LineBreakMode="TailTruncation"></Label>
+                                            </VerticalStackLayout>
+                                        </HorizontalStackLayout>
+                                    </Frame>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
+        </Grid>
+    </Grid>
+
+
+</ContentPage>

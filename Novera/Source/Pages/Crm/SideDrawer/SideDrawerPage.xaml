@@ -1,0 +1,366 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             x:Class="Novera.Source.Pages.Crm.SideDrawer.SideDrawerPage"
+             Title="SideDrawerPage"
+             BackgroundImageSource="cloud_straight">
+             <telerik:RadContentView>
+                <telerik:RadContentView.Content>
+    <telerik:RadSideDrawer x:Name="drawer" 
+                       DrawerLength="300">
+        <telerik:RadSideDrawer.MainContent>
+            <Grid VerticalOptions="Start" >
+                <!-- Three columns for Image, Label1, and Label2 -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="Auto" />
+                </Grid.ColumnDefinitions>
+    
+                <!-- Image aligned left -->
+                <Image Source="drawer_hamburger" VerticalOptions="Center" HorizontalOptions="Start" >
+                    <Image.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OpenDrawer"/>
+                    </Image.GestureRecognizers>
+                </Image>
+    
+                <!-- Label1 centered -->
+                <Label Text="Dashboard" 
+                    Style="{StaticResource Headline}"
+                    TextColor="{StaticResource LoginText}"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center"
+                    Grid.Column="1" />
+    
+                <!-- Label2 aligned right -->
+                <Label Text="A"
+                    VerticalOptions="Center"
+                    HorizontalOptions="End" 
+                    Grid.Column="2" />
+            </Grid>
+        </telerik:RadSideDrawer.MainContent>
+        <telerik:RadSideDrawer.DrawerContent >
+            <ScrollView>
+            <Grid BackgroundColor="{StaticResource SideDrawerColor}">
+            
+                <VerticalStackLayout Spacing= "10" Margin="0, 0, 0, 20">
+                    <Image Source="drawer_close" 
+                        HorizontalOptions="End" 
+                        VerticalOptions="Center" 
+                        Margin="20,10,20,0" 
+                        Grid.Column="1" />
+
+                    <Image Source="register_novera_logo" 
+                        HorizontalOptions="Start" 
+                        VerticalOptions="Center" 
+                        Margin="20,0,0,0" 
+                        Grid.Column="1" />
+
+                    <Label Text="Europe Corp s.r.o"
+                        HorizontalOptions="Start" 
+                        Style="{StaticResource Font20Label}"
+                        TextColor="{StaticResource White}"
+                        Margin="20,0,0,0" />
+
+                    <Label Text="Home"
+                        HorizontalOptions="Start" 
+                        Style="{StaticResource Font16Label}"
+                        TextColor="{StaticResource Secondary}"
+                        Margin="20,10,0,0" />
+                    <Frame  BackgroundColor="{StaticResource Primary}" Margin="20,0,20,0" >
+                        <StackLayout Orientation="Horizontal" >
+                            <!-- Image on the left -->
+                            <Image Source="drawer_dashboard" 
+                                VerticalOptions="Center" 
+                                HorizontalOptions="Start" />
+                        
+                            <!-- Button with text -->
+                            <Label
+                                Margin="20,0,0,0"
+                                Text="Dashboard" VerticalOptions="Center" 
+                                Style="{StaticResource Font20Label}"
+                                TextColor="{StaticResource White}" >
+                            
+                            </Label>
+                        </StackLayout>
+                    </Frame>
+
+                    <!-- Navigation-->
+                    <Label Text="Navigation"
+                        HorizontalOptions="Start" 
+                        Style="{StaticResource Font16Label}"
+                        TextColor="{StaticResource Secondary}"
+                        Margin="20,10,0,0" />
+                
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_group_icon" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                        
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Switch Business" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                            
+                        </Label>
+                    </StackLayout>                      
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_group_icon" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                        
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Switch Modules" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                            
+                        </Label>
+                    </StackLayout>    
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_group_icon" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                        
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Switch Apps" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                            
+                        </Label>
+                    </StackLayout>    
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_group_icon" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                        
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Cloud File Dropbox" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                            
+                        </Label>
+                    </StackLayout>    
+
+                    <!-- Collaboration-->
+                    <Label Text="Collaboration"
+                        HorizontalOptions="Start" 
+                        Style="{StaticResource Font16Label}"
+                        TextColor="{StaticResource Secondary}"
+                        Margin="20,10,0,0" />
+
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                            <!-- Image on the left -->
+                        <Image Source="drawer_email" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                            
+                            <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Emails" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                                
+                        </Label>
+                        <!-- Tap gesture recognizer for the entire StackLayout -->
+                        <StackLayout.GestureRecognizers>
+
+                            <TapGestureRecognizer Tapped="OnEmailClicked" />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>                        
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_calendar" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                            
+                            <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Calendar" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                                
+                        </Label>
+                         <!-- Tap gesture recognizer for the entire StackLayout -->
+                        <StackLayout.GestureRecognizers>
+
+                            <TapGestureRecognizer Tapped="OnCalendarClicked" />
+                        </StackLayout.GestureRecognizers>
+                    </StackLayout>        
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_notes" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                            
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Saved Notes" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                                
+                        </Label>
+                                    <!-- Tap gesture recognizer for the entire StackLayout -->
+                                    <StackLayout.GestureRecognizers>
+
+                                        <TapGestureRecognizer Tapped="OnNoteClicked" />
+                                    </StackLayout.GestureRecognizers>
+                                </StackLayout>    
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_support" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                            
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Support Tickets" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                                
+                        </Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_document" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                            
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Document Management" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                                
+                        </Label>
+                    </StackLayout>      
+                    <!-- Other-->
+                    <Label Text="Other"
+                        HorizontalOptions="Start" 
+                        Style="{StaticResource Font16Label}"
+                        TextColor="{StaticResource Secondary}"
+                        Margin="20,10,0,0" />
+
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_transactions" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                        
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="My Transaction" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                            
+                        </Label>
+                    </StackLayout>                       
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_accounts" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                        
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="My Accounts" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                            
+                        </Label>
+                    </StackLayout>    
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_apps" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                        
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="My Apps" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                            
+                        </Label>
+                    </StackLayout>    
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_help" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                        
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Help Center" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                            
+                        </Label>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal" Margin="20,10,0,0" >
+                        <!-- Image on the left -->
+                        <Image Source="drawer_settings" 
+                            VerticalOptions="Center" 
+                            HorizontalOptions="Start" />
+                        
+                        <!-- Button with text -->
+                        <Label
+                            Margin="20,0,0,0"
+                            Text="Settings" VerticalOptions="Center" 
+                            Style="{StaticResource Font20Label}"
+                            TextColor="{StaticResource White}" >
+                            
+                        </Label>
+                    </StackLayout>  
+                    
+                    <!--Logout -->
+                    <Frame  BackgroundColor="{StaticResource Transparent}" Margin="20,0,20,0" >
+                        <StackLayout Orientation="Horizontal" >
+                            <!-- Image on the left -->
+                            <Image Source="drawer_logout" 
+                                VerticalOptions="Center" 
+                                HorizontalOptions="Start" />
+                        
+                            <!-- Button with text -->
+                            <Label
+                                Margin="20,0,0,0"
+                                Text="Logout" VerticalOptions="Center" 
+                                Style="{StaticResource Font20Label}"
+                                TextColor="{StaticResource White}" >
+                            
+                            </Label>
+                        </StackLayout>
+                        <!-- Tap gesture recognizer for the entire Frame -->
+                        <Frame.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="OnLogoutClicked" />
+                        </Frame.GestureRecognizers>
+                    </Frame>
+                </VerticalStackLayout>
+            </Grid>
+        </ScrollView>
+    </telerik:RadSideDrawer.DrawerContent>
+    </telerik:RadSideDrawer>
+    </telerik:RadContentView.Content>
+</telerik:RadContentView>
+</ContentPage>

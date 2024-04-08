@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novera.Source.Pages.Crm.Calendar.ScheduleCalendar.ScheduleCalendarPage"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             xmlns:local="clr-namespace:Novera.Source.Pages.Crm.Calendar.CustomSelector"
+             xmlns:schedule="clr-namespace:Novera.Source.ViewModel.Calendar"
+             BackgroundImageSource="top_cloud_straight"
+             Title="Calendar">
+    <ContentPage.BindingContext>
+        <schedule:ScheduleCalendarViewModel />
+    </ContentPage.BindingContext>
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="SelectedBackgroundColor">#D69E5A</Color>
+            <Color x:Key="NormalBackgroundColor">#1F396B</Color>
+            <Color x:Key="SelectedTextColor">#FFFFFF</Color>
+            <Color x:Key="NormalTextColor">#94A3B8</Color>
+        </ResourceDictionary>
+        <Style TargetType="telerik:SchedulerCurrentTimeIndicator">
+            <Setter Property="Color" Value="{StaticResource LoginText}" />
+            <Setter Property="LineThickness" Value="3" />
+        </Style>
+
+        <Style TargetType="Label" x:Key="TimeRulerLabelStyle">
+            <Setter Property="FontFamily" Value="CenturyGothic" />
+            <Setter Property="FontAttributes" Value="Bold" />
+            <Setter Property="FontSize" Value="12" />
+            <Setter Property="TextColor" Value="{StaticResource EntryTextColorWhite}" />
+        </Style>
+        <Style TargetType="telerik:SchedulerBoxView" x:Key="MajorTickLineStyle">
+            <Setter Property="BackgroundColor" Value="{StaticResource LabelColor}" />
+        </Style>
+        <Style TargetType="telerik:SchedulerBoxView" x:Key="MinorTickLineStyle">
+            <Setter Property="BackgroundColor" Value="{StaticResource LabelColor}" />
+        </Style>
+        <Style TargetType="telerik:SchedulerBoxView" x:Key="VerticalLineStyle">
+            <Setter Property="BackgroundColor" Value="{StaticResource LabelColor}" />
+        </Style>
+        <Style TargetType="telerik:SchedulerBoxView" x:Key="HorizontalLineStyle">
+            <Setter Property="BackgroundColor" Value="{StaticResource LabelColor}" />
+        </Style>
+        <Style TargetType="telerik:SchedulerBoxView" x:Key="MonthVerticalLineStyle">
+            <Setter Property="BackgroundColor" Value="{StaticResource LabelColor}" />
+        </Style>
+        <Style TargetType="telerik:SchedulerBoxView" x:Key="MonthHorizontalLineStyle">
+            <Setter Property="BackgroundColor" Value="{StaticResource LabelColor}" />
+        </Style>
+        <local:CustomDayStyleSelector x:Key="CustomDayStyleSelector">
+            <local:CustomDayStyleSelector.CustomNormalStyle>
+                <Style TargetType="Label">
+                    <Setter Property="TextColor" Value="{StaticResource EntryTextColorWhite}" />
+                    <Setter Property="HorizontalTextAlignment" Value="Center" />
+                    <Setter Property="VerticalTextAlignment" Value="Center" />
+                </Style>
+            </local:CustomDayStyleSelector.CustomNormalStyle>
+            <local:CustomDayStyleSelector.CustomTodayStyle>
+                <Style TargetType="Label">
+                    <Setter Property="TextColor" Value="{StaticResource LoginText}" />
+                    <Setter Property="FontAttributes" Value="Bold" />
+                    <Setter Property="HorizontalTextAlignment" Value="Center" />
+                    <Setter Property="VerticalTextAlignment" Value="Center" />
+                </Style>
+            </local:CustomDayStyleSelector.CustomTodayStyle>
+            <local:CustomDayStyleSelector.WeekendLabelStyle>
+                <Style TargetType="Label">
+                    <Setter Property="TextColor" Value="{StaticResource EntryTextColorWhite}" />
+                    <Setter Property="HorizontalTextAlignment" Value="Center" />
+                    <Setter Property="VerticalTextAlignment" Value="Center" />
+                </Style>
+            </local:CustomDayStyleSelector.WeekendLabelStyle>
+            <local:CustomDayStyleSelector.MonthLabelStyle>
+                <Style TargetType="Label">
+                    <Setter Property="TextColor" Value="{StaticResource EntryTextColorWhite}" />
+                    <Setter Property="HorizontalTextAlignment" Value="Center" />
+                    <Setter Property="VerticalTextAlignment" Value="Center" />
+                </Style>
+            </local:CustomDayStyleSelector.MonthLabelStyle>
+        </local:CustomDayStyleSelector>
+    </ContentPage.Resources>
+    <Grid>
+        <Grid RowDefinitions = "Auto, *">
+            <Grid Grid.Row= "0" Margin ="10, 10, 10, 10" ColumnDefinitions ="*,*,*,*" ColumnSpacing="10">
+            
+                <!-- Button 1 -->
+                <Button x:Name="BtnSchedule" Grid.Column="0" Text="Schedule"
+                    Clicked="Schedule_Clicked" Padding="0, 0, 0, 0"
+                    Style="{StaticResource CalendarButton}"
+                    />
+
+                <!-- Button 2 -->
+                <Button x:Name="BtnDay" Grid.Column="1"  Text="Day" 
+                    Style = "{StaticResource CalendarButton}" Padding="0, 0, 0, 0"
+                    Clicked="Day_Clicked" />
+
+                <!-- Button 3 -->
+                <Button x:Name="BtnWeek" Grid.Column="2" Text="Week" 
+                    Style = "{StaticResource CalendarButton}" Padding="0, 0, 0, 0"
+                    Clicked="Week_Clicked" />
+
+                <!-- Button 4 -->
+                <Button x:Name="BtnMonth" Grid.Column="3" Text="Month" 
+                    Style = "{StaticResource CalendarButton}" Padding="0, 0, 0, 0"
+                    Clicked="Month_Clicked" />
+            </Grid>
+            <Grid Grid.Row= "1">
+                <Grid x:Name="schedulerLayout" Margin="20,10,20,10">
+
+                    <CollectionView ItemsSource="{Binding ScheduleEvents}" SelectionMode="Single">
+                        <CollectionView.ItemsLayout>
+                            <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10" />
+                        </CollectionView.ItemsLayout>
+
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                <!-- Your item template -->
+                                <Grid ColumnDefinitions="Auto, *" >
+                                    <VerticalStackLayout>
+                                        <Label Text="{Binding WeekName}" TextColor="{StaticResource EntryBackgroundWhite}" Style="{StaticResource Font14Label}" MaxLines="1" ></Label>
+                                        <Label Text="{Binding DateVal}" TextColor="{StaticResource EntryBackgroundWhite}" Style="{StaticResource Font18Label}" MaxLines="1" ></Label>
+                                    </VerticalStackLayout>
+
+                                    <Frame BorderColor="{StaticResource LabelColor}" Margin="20, 0, 0 ,0" Grid.Column="1" CornerRadius="10" Padding="5" BackgroundColor="{StaticResource Primary}">
+                                        <HorizontalStackLayout>
+                                            <Image Source ="calendar_done" />
+                                            <VerticalStackLayout Margin="10,0,0,0">
+                                                <Label Text="{Binding Title}" TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}" MaxLines="1" LineBreakMode="TailTruncation"></Label>
+                                                <Label Text="{Binding Time}" TextColor="{StaticResource EntryBackgroundWhite}" Style="{StaticResource Font12Label}" MaxLines="1" LineBreakMode="TailTruncation"></Label>
+                                            </VerticalStackLayout>
+                                        </HorizontalStackLayout>
+                                    </Frame>
+                                </Grid>
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
+
+                </Grid>
+
+                <Grid x:Name="dayLayout">
+                    <telerik:RadScheduler x:Name="schedulerDay" Margin="10, 10, 10, 10" 
+                  HeaderBorderStyle="{StaticResource HeaderBorderStyle}"
+                      HeaderLabelStyle="{StaticResource HeaderLabelStyle}"
+                      IncreaseVisibleRangeButtonStyle="{StaticResource IncreaseVisibleRangeButtonStyle}"
+                      DecreaseVisibleRangeButtonStyle="{StaticResource DecreaseVisibleRangeButtonStyle}"
+                      TodayButtonStyle="{StaticResource TodayButtonStyle}"
+                      HeaderIndicatorLabelStyle="{StaticResource HeaderIndicatorLabelStyle}"
+                      ViewDefinitionHeaderItemStyle="{StaticResource ViewDefinitionHeaderItemStyle}"
+                      ActiveViewDefinitionHeaderItemStyle="{StaticResource ActiveViewDefinitionHeaderItemStyle}"
+                      ActiveViewDefinitionIndex="1">
+                        <telerik:RadScheduler.ViewDefinitions>
+                            <telerik:DayViewDefinition DayStyleSelector="{StaticResource CustomDayStyleSelector}"
+                                      MajorTickLineStyle="{StaticResource MajorTickLineStyle}"
+                                      MinorTickLineStyle="{StaticResource MinorTickLineStyle}"
+                                      VerticalLineStyle="{StaticResource VerticalLineStyle}"
+                                      HorizontalLineStyle="{StaticResource HorizontalLineStyle}"
+                                      TimeRulerLabelStyle="{StaticResource TimeRulerLabelStyle}"/>
+                        </telerik:RadScheduler.ViewDefinitions>
+                    </telerik:RadScheduler>
+                </Grid>
+                <Grid x:Name="weekLayout">
+                    <telerik:RadScheduler x:Name="schedulerWeek" Margin="10, 10, 10, 10" 
+                      HeaderBorderStyle="{StaticResource HeaderBorderStyle}"
+                      HeaderLabelStyle="{StaticResource HeaderLabelStyle}"
+                      IncreaseVisibleRangeButtonStyle="{StaticResource IncreaseVisibleRangeButtonStyle}"
+                      DecreaseVisibleRangeButtonStyle="{StaticResource DecreaseVisibleRangeButtonStyle}"
+                      TodayButtonStyle="{StaticResource TodayButtonStyle}"
+                      HeaderIndicatorLabelStyle="{StaticResource HeaderIndicatorLabelStyle}"
+                      ViewDefinitionHeaderItemStyle="{StaticResource ViewDefinitionHeaderItemStyle}"
+                      ActiveViewDefinitionHeaderItemStyle="{StaticResource ActiveViewDefinitionHeaderItemStyle}"
+                      ActiveViewDefinitionIndex="1">
+                        <telerik:RadScheduler.ViewDefinitions>
+                            <telerik:WeekViewDefinition DayStyleSelector="{StaticResource CustomDayStyleSelector}"
+                                      MajorTickLineStyle="{StaticResource MajorTickLineStyle}"
+                                      MinorTickLineStyle="{StaticResource MinorTickLineStyle}"
+                                      VerticalLineStyle="{StaticResource VerticalLineStyle}"
+                                      HorizontalLineStyle="{StaticResource HorizontalLineStyle}"
+                                      TimeRulerLabelStyle="{StaticResource TimeRulerLabelStyle}"/>
+                        </telerik:RadScheduler.ViewDefinitions>
+                    </telerik:RadScheduler>
+                </Grid>
+                <Grid x:Name="monthLayout">
+                    <telerik:RadScheduler x:Name="schedulerMonth" Margin="10, 10, 10, 10"
+                  HeaderBorderStyle="{StaticResource HeaderBorderStyle}"
+                      HeaderLabelStyle="{StaticResource HeaderLabelStyle}"
+                      IncreaseVisibleRangeButtonStyle="{StaticResource IncreaseVisibleRangeButtonStyle}"
+                      DecreaseVisibleRangeButtonStyle="{StaticResource DecreaseVisibleRangeButtonStyle}"
+                      TodayButtonStyle="{StaticResource TodayButtonStyle}"
+                      HeaderIndicatorLabelStyle="{StaticResource HeaderIndicatorLabelStyle}"
+                      ViewDefinitionHeaderItemStyle="{StaticResource ViewDefinitionHeaderItemStyle}"
+                      ActiveViewDefinitionHeaderItemStyle="{StaticResource ActiveViewDefinitionHeaderItemStyle}"
+                      ActiveViewDefinitionIndex="1">
+                        <telerik:RadScheduler.ViewDefinitions>
+                            <telerik:MonthViewDefinition DayStyleSelector="{StaticResource CustomDayStyleSelector}"
+                                      VerticalLineStyle="{StaticResource MonthVerticalLineStyle}"
+                                      HorizontalLineStyle="{StaticResource MonthHorizontalLineStyle}"/>
+                        </telerik:RadScheduler.ViewDefinitions>
+                    </telerik:RadScheduler>
+                </Grid>
+            </Grid>
+        </Grid>
+
+
+        <VerticalStackLayout HorizontalOptions="End"
+                             VerticalOptions="End"
+                             Margin="0,0,-250,150"
+                             x:Name="FabBtnContainer">
+            <ImageButton WidthRequest="125" HeightRequest="75"  
+                Source="calendar_add_event" Clicked="OnAddEventClicked"
+                Margin="0,0,15,0"/>
+            <ImageButton WidthRequest="125" HeightRequest="75"  
+                Source="calendar_add_task" Clicked="OnAddTaskClicked"
+                Margin="0,0,15,0"/>
+        </VerticalStackLayout>
+        <ImageButton WidthRequest="75" HeightRequest="75"  
+            Source="notes_add_icon" HorizontalOptions="End" 
+            VerticalOptions="EndAndExpand" Clicked="AddClicked"
+            Margin="0,0,30,50" />
+    </Grid>
+  
+</ContentPage>

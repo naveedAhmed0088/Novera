@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             x:Class="Novera.Source.Pages.Crm.Email.EmailPage"
+             xmlns:views="clr-namespace:Novera.Source.Pages.Crm.Email"
+             xmlns:inbox="clr-namespace:Novera.Source.Pages.Crm.Email.Inbox"
+             xmlns:sent="clr-namespace:Novera.Source.Pages.Crm.Email.Sent"
+             xmlns:trash="clr-namespace:Novera.Source.Pages.Crm.Email.Trash"
+             xmlns:draft="clr-namespace:Novera.Source.Pages.Crm.Email.Drafts"
+             Title="Inbox"
+             BackgroundImageSource="top_cloud_straight">
+
+   
+        <telerik:RadTabView x:Name="tabView" AutomationId="tabView" HeaderPosition="Bottom"
+            SelectionChanged="OnTabSelectionChanged">
+             <telerik:RadTabView.HeaderStyle>
+                <Style TargetType="telerik:TabViewHeader">
+                    <Setter Property="BackgroundColor" Value="{StaticResource TabBackgroundColor}" />
+                    <Setter Property="BorderColor" Value="{StaticResource TabBackgroundColor}" />
+                </Style>
+            </telerik:RadTabView.HeaderStyle>
+            <telerik:RadTabView.HeaderItemStyle>
+
+                <Style TargetType="telerik:TabViewHeaderItem">
+                    <Setter Property="TextColor" Value="{StaticResource LabelColor}" />
+                    <Setter Property="VisualStateManager.VisualStateGroups">
+                        <VisualStateGroupList>
+                            <VisualStateGroup Name="CommonStates">
+                                <VisualState Name="Normal" />
+                                <VisualState Name="Disabled">
+                                    <VisualState.Setters>
+                                        <Setter Property="TextColor" Value="{StaticResource LabelColor}" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                                <VisualState Name="Selected">
+                                    <VisualState.Setters>
+                                        <Setter Property="TextColor" Value="{StaticResource LoginText}" />
+                                        <Setter Property="BorderColor" Value="{StaticResource LoginText}" />
+                                    </VisualState.Setters>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateGroupList>
+                    </Setter>
+                </Style>
+            </telerik:RadTabView.HeaderItemStyle>
+
+            <telerik:TabViewItem HeaderText="Inbox" ImageSource="tab_unselected_inbox_icon">
+                <inbox:InboxPage/>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Sent" ImageSource="tab_unselected_sent_icon">
+                <sent:SentMailView/>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Drafts" ImageSource="tab_unselected_draft_icon">
+                 <draft:DraftPage/>
+            </telerik:TabViewItem>
+            <telerik:TabViewItem HeaderText="Trash" ImageSource="tab_unselected_delete_icon">
+                <trash:TrashMailView/>
+            </telerik:TabViewItem>
+        </telerik:RadTabView>
+        
+  
+
+</ContentPage>

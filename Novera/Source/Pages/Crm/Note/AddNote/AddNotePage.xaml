@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novera.Source.Pages.Crm.Note.AddNote.AddNotePage"
+             Title="AddNotePage"
+             BackgroundColor="Transparent"
+             BackgroundImageSource="top_cloud_straight"
+             Shell.FlyoutBehavior="Disabled">
+    
+    <Grid RowDefinitions="*,Auto" >
+       
+        <Grid Margin="10" RowDefinitions="Auto,Auto,*" Grid.Row="0">
+                <Label Text="Visibility" 
+                    TextColor="{StaticResource LoginText}" 
+                    Style="{StaticResource Font20Label}"
+                    Grid.Row="0"/>
+                    
+                <StackLayout Grid.Row="1">
+                        <RadioButton Content="Everyone" />
+                        <RadioButton Content="Me Only" />
+                        <RadioButton Content="My Group Only" />
+                                
+                </StackLayout>
+                
+
+                
+                <Frame BackgroundColor="{StaticResource Primary}" BorderColor="{StaticResource LoginText}" CornerRadius="5"  Grid.Row="2" Margin="0,0,0,5">
+                    <Editor TextColor="White" FontSize="20" AutoSize="Disabled"></Editor>
+                </Frame>
+                
+
+            </Grid>
+
+
+
+        <Grid ColumnDefinitions="*,*" BackgroundColor="{StaticResource SideDrawerColor}" 
+            Grid.Row="1" Padding="10" VerticalOptions="End">
+            <Button Text="Add file"
+                            Style="{StaticResource ButtonwithWhiteBorder}"
+                    BackgroundColor="Transparent"
+                            Grid.Column="0"
+                            Margin="5" />
+            <Button Text="Save"
+                            Style="{StaticResource ButtonwithWhiteBorder}"
+                            Grid.Column="1"
+                    BackgroundColor="Transparent"
+                            Margin="5" />
+        </Grid>
+    </Grid>
+    
+</ContentPage>

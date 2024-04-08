@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novera.Source.Pages.Crm.Note.NoteListPage"
+              Title="Notes"
+              xmlns:local="clr-namespace:Novera.Source.ViewModel.Note"
+              BackgroundColor="Transparent"
+              BackgroundImageSource="top_cloud_straight"           
+              xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui">
+
+    <ContentPage.BindingContext>
+        <local:NoteViewModel></local:NoteViewModel>
+    </ContentPage.BindingContext>
+    <Grid>
+    <Grid RowDefinitions="Auto,*">
+        
+        <Frame Margin="10, 0, 10, 0" Grid.Row="0" 
+            BackgroundColor="Transparent" 
+            BorderColor="{StaticResource LoginText}" 
+            CornerRadius="5" Padding="2">
+            <Grid ColumnDefinitions="0.8*,0.2*">
+                <Entry Placeholder="Find Folder" PlaceholderColor="{StaticResource LoginText}" TextColor="White"  FontSize="15"></Entry>
+                <Image Source="close_line" HeightRequest="25" WidthRequest="25" Aspect="AspectFill"  Grid.Column="1"></Image>
+            </Grid>
+        </Frame>
+               
+        <ScrollView Grid.Row="1">
+            <VerticalStackLayout Margin="15,0,15,15">
+                
+                <Grid Margin="0,5">
+                    <Label Text="Note Summary" Style="{StaticResource Font16Label}" TextColor="White" HorizontalOptions="Start"/>
+                    <Label Text="50 Items" Style="{StaticResource Font14Label}" TextColor="{StaticResource LoginText}" HorizontalOptions="End"></Label>
+                </Grid>
+                <CollectionView ItemsSource="{Binding Notes}" 
+                    SelectionMode="Single">
+                    <CollectionView.ItemsLayout>
+                        <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10" />
+                    </CollectionView.ItemsLayout>
+                    <CollectionView.ItemTemplate>
+                        <DataTemplate>
+                            <!-- Your item template -->
+                            <Frame BorderColor="{StaticResource LabelColor}" Margin="5,10,0,0"  CornerRadius="10" Padding="5" BackgroundColor="{StaticResource Primary}">
+                                <Grid  ColumnDefinitions="0.5*,0.5*" Padding="10" >
+                                    <VerticalStackLayout Grid.Column="0" VerticalOptions="Center">
+                                        <Label Text="{Binding Title}" TextColor="White" Style="{StaticResource Font16Label}" MaxLines="1" LineBreakMode="TailTruncation"></Label>
+                                        <Label Text="{Binding Folder}" TextColor="{StaticResource LoginText}" Style="{StaticResource Font16Label}"  MaxLines="1" LineBreakMode="TailTruncation"></Label>
+                                    </VerticalStackLayout>
+                                    <Grid Grid.Column="1" VerticalOptions="Center" ColumnDefinitions="0.8*, 0.2*, 0.2*">
+                                        <Label Text="{Binding Name}" TextColor="White" Style="{StaticResource Font16Label}" Grid.Column="0"  MaxLines="1" LineBreakMode="TailTruncation" HorizontalOptions="Start"></Label>
+                                        <Image Source="notes_view" HeightRequest="25" WidthRequest="25" Aspect="AspectFill"  Grid.Column="1" HorizontalOptions="Center">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="ViewNoteTapped" />
+                                            </Image.GestureRecognizers>
+                                        </Image>
+                                        <Image Source="notes_delete" HeightRequest="25" WidthRequest="25" Aspect="AspectFill"  Grid.Column="2" HorizontalOptions="Center"></Image>
+                                    </Grid>
+                                </Grid>
+                            </Frame>
+                        </DataTemplate>
+                    </CollectionView.ItemTemplate>
+                </CollectionView>
+                
+            </VerticalStackLayout>
+        </ScrollView>
+         </Grid>
+       <ImageButton WidthRequest="75" HeightRequest="75"  Source="notes_add_icon" HorizontalOptions="End" VerticalOptions="EndAndExpand" Margin="0,0,10,50" Clicked="AddNoteClicked"/>
+    </Grid>
+</ContentPage>

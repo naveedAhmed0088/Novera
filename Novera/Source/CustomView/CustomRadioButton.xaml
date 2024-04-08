@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novera.Source.CustomView.CustomRadioButton"
+               x:Name="this"
+                xmlns:convert ="clr-namespace:Novera.Source.Converter">
+    <ContentView.Resources>
+        <convert:BoolToStringConverter x:Key="boolConverter"></convert:BoolToStringConverter>
+    </ContentView.Resources>
+    <Image Aspect="AspectFill" 
+           Source="{Binding Source={x:Reference this}, Path= IsChecked, Converter={StaticResource boolConverter}}">
+        <Image.GestureRecognizers >
+            <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped" Command="{Binding Source={x:Reference this},Path=Command}" />
+        </Image.GestureRecognizers>
+    </Image>
+</ContentView>

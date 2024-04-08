@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Novera.Source.Pages.Crm.Email.Trash.TrashMailView" 
+             xmlns:viewmodel="clr-namespace:Novera.Source.ViewModel.Emails"
+             xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
+             BackgroundColor="{StaticResource Primary}">
+<ContentView.BindingContext>
+            <viewmodel:TrashViewModel />
+    </ContentView.BindingContext>
+    <Grid>
+        
+        <Grid RowDefinitions = "Auto, *">
+            <Frame Margin="15, 0, 15, 0" Grid.Row="0" 
+                BackgroundColor="Transparent" 
+                BorderColor="{StaticResource LoginText}" 
+                CornerRadius="5" Padding="2">
+                <Grid ColumnDefinitions="*,Auto">
+                    <Entry Placeholder="Search in mail" PlaceholderColor="{StaticResource LoginText}"
+                           Style="{StaticResource Font14LabelAppleGothic}" TextColor="{StaticResource EntryTextColorWhite}" />
+                    <Image Grid.Column="1" Source="email_search" HeightRequest="25" WidthRequest="25" Aspect="AspectFill" Margin="10,0,10,0"/>
+                </Grid>
+            </Frame>
+            <ScrollView Grid.Row="1">
+                <VerticalStackLayout Margin="10,15,10,15">
+                   
+                    <CollectionView ItemsSource="{Binding TrashMailList}" BackgroundColor="Transparent" VerticalScrollBarVisibility="Always">
+                        <CollectionView.ItemsLayout>
+                                    <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10" />
+                        </CollectionView.ItemsLayout>
+                        <CollectionView.ItemTemplate>
+                            <DataTemplate>
+                                
+                                    <Frame BorderColor="{StaticResource Transparent}" Margin="5, 0, 5 ,0" CornerRadius="10" Padding="5" BackgroundColor="{StaticResource EditorBackgroundBlue}">
+                                        <Grid ColumnDefinitions="Auto,*, Auto" >
+                                            <Frame BackgroundColor="Orange" Margin="5, 0, 0 ,0" Grid.Column= "0" WidthRequest="34" HeightRequest="34" CornerRadius="17" Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                                                <Label Text="{Binding FirstLetter}" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                                            </Frame>
+                                        
+                                            <StackLayout Margin="5, 0, 0 ,0" Grid.Column= "1" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="2">
+                                                <Label Text="{Binding To}" TextColor="#D69E5A" HorizontalOptions="Start" />
+                                                <Label Text="{Binding Subject}" LineBreakMode="NoWrap" TextColor="White" HorizontalOptions="Start"/>
+                                            </StackLayout>
+
+                                            <StackLayout Margin="10, 0, 10 ,10" Grid.Column= "2" Orientation="Vertical" Spacing="2" >
+                                                <Label Text="{Binding Date}" TextColor="White" HorizontalOptions="End"/>
+                                                <ImageButton Source="email_star" WidthRequest="16" HeightRequest="16" HorizontalOptions="End"/>
+                                            </StackLayout>
+                                    
+                                        </Grid>
+                                    </Frame>
+                                
+                            </DataTemplate>
+                        </CollectionView.ItemTemplate>
+                    </CollectionView>
+
+                    
+                </VerticalStackLayout>
+            </ScrollView>
+        </Grid>
+        <ImageButton WidthRequest="75" HeightRequest="75"  Source="notes_add_icon" HorizontalOptions="End" VerticalOptions="EndAndExpand" Margin="0,0,10,50" Clicked="AddClicked"/>
+
+    </Grid>        
+</ContentView>
