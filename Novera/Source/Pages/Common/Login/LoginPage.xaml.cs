@@ -44,7 +44,7 @@ public partial class LoginPage : ContentPage
         {
             // Display an error message or handle the empty email case accordingly
             // For example:
-            DisplayAlert("Error", "Please enter your email.", "OK0");
+            DisplayAlert("Error", "Please enter your email.", "OK");
         }
         else if (string.IsNullOrWhiteSpace(pwd))
         {
@@ -104,7 +104,7 @@ public partial class LoginPage : ContentPage
             {
                 // Handle exception
                 Console.WriteLine($"Exception: {ex.Message}");
-                DisplayAlert("Error", ex.Message, "OKaaaa");
+                DisplayAlert("Error", ex.Message, "OK");
 
             }
             finally

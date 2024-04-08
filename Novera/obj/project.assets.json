@@ -37790,11 +37790,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/muhammadzain/Documents/GithubProjects/NoveraProject/Novera/Novera.csproj",
+      "projectUniqueName": "/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/Novera.csproj",
       "projectName": "Novera",
-      "projectPath": "/Users/muhammadzain/Documents/GithubProjects/NoveraProject/Novera/Novera.csproj",
+      "projectPath": "/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/Novera.csproj",
       "packagesPath": "/Users/muhammadzain/.nuget/packages/",
-      "outputPath": "/Users/muhammadzain/Documents/GithubProjects/NoveraProject/Novera/obj/",
+      "outputPath": "/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/",
       "projectStyle": "PackageReference",
       "crossTargeting": true,
       "configFilePaths": [
