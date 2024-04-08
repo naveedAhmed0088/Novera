@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BvwTiZbcgxNr4Na6iL43Z1fMU43BNYXT3shpia9binPM0fVHw0TeUkUtUqrqycZ+WhhV7w3ykxY/zcT5yNpByg==",
+  "dgSpecHash": "IZmoq0lheU3UCRBY/7MLJ34Vsa5b5Ec3fvqSTjyn6Gmr/K+ks6d+Gw0M8HqKfsR/yHQbJW9Tpmrn/cybbiSzkQ==",
   "success": true,
-  "projectFilePath": "/Users/muhammadzain/Documents/ITO/Novera/Novera/Novera.csproj",
+  "projectFilePath": "/Users/muhammadzain/Documents/GithubProjects/NoveraProject/Novera/Novera.csproj",
   "expectedPackageFiles": [
     "/Users/muhammadzain/.nuget/packages/communitytoolkit.maui/7.0.1/communitytoolkit.maui.7.0.1.nupkg.sha512",
     "/Users/muhammadzain/.nuget/packages/communitytoolkit.maui.core/7.0.1/communitytoolkit.maui.core.7.0.1.nupkg.sha512",

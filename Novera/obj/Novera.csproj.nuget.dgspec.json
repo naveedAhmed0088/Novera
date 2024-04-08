@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/muhammadzain/Documents/ITO/Novera/Novera/Novera.csproj": {}
+    "/Users/muhammadzain/Documents/GithubProjects/NoveraProject/Novera/Novera.csproj": {}
   },
   "projects": {
-    "/Users/muhammadzain/Documents/ITO/Novera/Novera/Novera.csproj": {
+    "/Users/muhammadzain/Documents/GithubProjects/NoveraProject/Novera/Novera.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/muhammadzain/Documents/ITO/Novera/Novera/Novera.csproj",
+        "projectUniqueName": "/Users/muhammadzain/Documents/GithubProjects/NoveraProject/Novera/Novera.csproj",
         "projectName": "Novera",
-        "projectPath": "/Users/muhammadzain/Documents/ITO/Novera/Novera/Novera.csproj",
+        "projectPath": "/Users/muhammadzain/Documents/GithubProjects/NoveraProject/Novera/Novera.csproj",
         "packagesPath": "/Users/muhammadzain/.nuget/packages/",
-        "outputPath": "/Users/muhammadzain/Documents/ITO/Novera/Novera/obj/",
+        "outputPath": "/Users/muhammadzain/Documents/GithubProjects/NoveraProject/Novera/obj/",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "configFilePaths": [
