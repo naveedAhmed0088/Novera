@@ -2873,7 +2873,6 @@
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/assets/zh-Hant/Microsoft.Maui.Controls.resources.dll
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/assets/zh-HK/Microsoft.Maui.Controls.resources.dll
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/assets/_Microsoft.Android.Resource.Designer.dll
-/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/typemaps.arm64-v8a.ll
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/AndroidManifest.xml
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/AndroidManifest.xml
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/src/mono/MonoRuntimeProvider.java
@@ -2883,7 +2882,6 @@
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/static.flag
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/__environment__.txt
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/buildid.txt
-/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/environment.arm64-v8a.ll
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/src/androidx/activity/ktx/R.java
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/src/androidx/activity/R.java
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/src/androidx/annotation/experimental/R.java
@@ -3558,13 +3556,6 @@
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/src/mono/MonoPackageManager_Resources.java
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/bin/packaged_resources
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/src/com/companyname/novera/R.java
-/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/compressed_assemblies.arm64-v8a.ll
-/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/typemaps.arm64-v8a.o
-/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/environment.arm64-v8a.o
-/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/compressed_assemblies.arm64-v8a.o
-/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/marshal_methods.arm64-v8a.o
-/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/jni_remap.arm64-v8a.o
-/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/app_shared_libraries/arm64-v8a/libxamarin-app.so
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/bin/classes.dex
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/bin/classes2.dex
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/stamp/_CleanIntermediateIfNeeded.stamp
@@ -3575,3 +3566,12 @@
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/stamp/_GenerateJavaStubs.stamp
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/stamp/_GeneratePackageManagerJava.stamp
 /Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/stamp/_ResolveLibraryProjectImports.stamp
+/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/typemaps.armeabi-v7a.ll
+/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/environment.armeabi-v7a.ll
+/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/compressed_assemblies.armeabi-v7a.ll
+/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/typemaps.armeabi-v7a.o
+/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/environment.armeabi-v7a.o
+/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/compressed_assemblies.armeabi-v7a.o
+/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/marshal_methods.armeabi-v7a.o
+/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/android/jni_remap.armeabi-v7a.o
+/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-android/app_shared_libraries/armeabi-v7a/libxamarin-app.so

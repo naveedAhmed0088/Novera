@@ -17,7 +17,7 @@ namespace Novera.Source.Pages.Common.Login;
 
 public partial class LoginPage : ContentPage
 {
-    private const string ApiUrl = "http://10.0.2.2:5263/api/Account/Login";
+    private const string ApiUrl = "http://itodev.somee.com/api/account/Login";
     private HttpClient _client;
     public LoginPage()
     {

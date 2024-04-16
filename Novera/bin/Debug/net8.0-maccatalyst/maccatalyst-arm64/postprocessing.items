@@ -7,9 +7,9 @@
       <dSYMSourcePathExists>false</dSYMSourcePathExists>
       <NoSymbolStrip>true</NoSymbolStrip>
       <dSYMInfoPlistRelativePath>Novera.app.dSYM\Contents\Info.plist</dSYMInfoPlistRelativePath>
-      <SymbolFile>/Users/muhammadzain/Documents/ITO/Novera/Novera/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/mtouch-symbols.list</SymbolFile>
+      <SymbolFile>/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/mtouch-symbols.list</SymbolFile>
       <DSymName>Novera.app.dSYM</DSymName>
-      <SourceProjectPath>/Users/muhammadzain/Documents/ITO/Novera/Novera</SourceProjectPath>
+      <SourceProjectPath>/Users/muhammadzain/Documents/GithubProjects/Novera/Novera</SourceProjectPath>
     </_PostProcessingItem>
   </ItemGroup>
 </Project>

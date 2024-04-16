@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <_BindingLibraryLinkWith Include="/Users/muhammadzain/Documents/ITO/Novera/Novera/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/linker-cache/TelerikUI.a">
+    <_BindingLibraryLinkWith Include="/Users/muhammadzain/Documents/GithubProjects/Novera/Novera/obj/Debug/net8.0-maccatalyst/maccatalyst-arm64/linker-cache/TelerikUI.a">
       <ForceLoad>true</ForceLoad>
       <Assembly>Telerik.MacCatalyst</Assembly>
     </_BindingLibraryLinkWith>
