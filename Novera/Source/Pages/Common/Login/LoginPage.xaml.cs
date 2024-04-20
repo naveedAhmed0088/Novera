@@ -12,17 +12,21 @@ using Novera.Source.Pages.Crm.Settings.Detail;
 using Novera.Source.Model;
 using System.Text.Json;
 using System.Text;
+using System.Net.Http.Headers;
+using Org.Json;
 
 namespace Novera.Source.Pages.Common.Login;
 
 public partial class LoginPage : ContentPage
 {
-    private const string ApiUrl = "http://itodev.somee.com/api/account/Login";
+    private const string ApiUrl = "http://46.29.2.121/api/Account/Login";
     private HttpClient _client;
     public LoginPage()
     {
         InitializeComponent();
         _client = new HttpClient();
+        
+
 
     }
 
@@ -67,13 +71,48 @@ public partial class LoginPage : ContentPage
 
                 if (response.IsSuccessStatusCode)
                 {
-                    var responseContent = await response.Content.ReadAsStringAsync();
-                    // Handle successful response, e.g., parsing JSON, updating UI
+                    string responseContent = await response.Content.ReadAsStringAsync();
+
+                    // Parse the JSON response
+                    var responseObject = JsonSerializer.Deserialize<JsonElement>(responseContent);
                     Console.WriteLine(responseContent);
-                    Shell.Current.GoToAsync($"//{nameof(EmailPage)}");
+
+                       
+                        // Extract the session token and userId
+                        if (responseObject.TryGetProperty("sessionToken", out var sessionTokenElement) &&
+                            responseObject.TryGetProperty("userDetails", out var userDetailsElement) &&
+                            userDetailsElement.TryGetProperty("userId", out var userIdElement))
+                        {
+                            string sessionToken = sessionTokenElement.GetString();
+                            int userId = userIdElement.GetInt32();
+                        await SecureStorage.Default.SetAsync("oauth_token", sessionToken);
+                        await SecureStorage.Default.SetAsync("userid", userId.ToString());
 
 
-                }
+                        Console.WriteLine(responseContent);
+                        Shell.Current.GoToAsync($"//{nameof(EmailPage)}");
+                       
+                        }
+                        else
+                        {
+                            // Session token or userId not found in the response
+
+                        }
+
+
+                        
+
+
+                        // Check if userDetails exists in responseObject
+                        
+
+
+                        // Display the session token
+
+
+
+                    }
+                
                 else
                 {
                     // Handle unsuccessful response
@@ -142,4 +181,7 @@ public partial class LoginPage : ContentPage
     }
 
 
-}
+   
+
+    }
+

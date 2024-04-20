@@ -7,7 +7,7 @@ namespace Novera.Source.Pages.Common.Register;
 
 public partial class RegisterPage : ContentPage
 {
-    private const string ApiUrl = "http://itodev.somee.com/api/account/register";
+    private const string ApiUrl = "http://46.29.2.121/api/Account/register";
     private HttpClient _client;
 
 
