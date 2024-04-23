@@ -4,31 +4,39 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text.Json;
 using System.Threading.Tasks;
+using System.Windows.Input;
 using Novera.Source.Model.Emails;
+using Novera.Source.Pages.Common.Login;
+using Novera.Source.Response.CRMPages;
 
 namespace Novera.Source.ViewModel.Emails
 {
     public class InboxViewModel
     {
         private readonly HttpClient _httpClient;
+        public ObservableCollection<Datum> InboxEmails { get; }
 
         public InboxViewModel()
         {
             // This default constructor is added to satisfy XAML requirements
             // You can leave it empty or initialize properties if needed
-            InboxEmails = new ObservableCollection<Person>();
+            InboxEmails = new ObservableCollection<Datum> ();
             LoadInboxEmailsAsync();
+        }
+
+
+        public async Task RefreshData()
+        {
+            // Clear existing emails and reload
+            InboxEmails.Clear();
+            await LoadInboxEmailsAsync();
         }
 
 
 
 
-        
 
 
-
-
-        public ObservableCollection<Person> InboxEmails { get; }
 
 
 
@@ -52,21 +60,20 @@ namespace Novera.Source.ViewModel.Emails
 
                 var responseBody = await response.Content.ReadAsStringAsync();
 
-                var emailList = JsonSerializer.Deserialize<Root>(responseBody);
+                var emailList = JsonSerializer.Deserialize<InboxPageResponse>(responseBody);
 
-                foreach (var email in emailList.data)
-                {
-                   
-                    InboxEmails.Add(new Person
+                InboxEmails.Clear();
+
+                // Add each email from the response to InboxEmails collection
+                
+                    foreach (var email in emailList.data)
                     {
-                        Name = email.sender,
-                        Information = email.subject,
-                        Color = Color.FromArgb("#FFAE02"),
-                        Date = email.received.ToString("dd MMMM"),
-                        IsContrastStarIcon = false,
-                        // You might need to set other properties here based on your requirements
-                    });
-                }
+                        InboxEmails.Add(email);
+                    }
+
+
+                
+
             }
             catch (HttpRequestException ex)
             {
@@ -85,44 +92,7 @@ namespace Novera.Source.ViewModel.Emails
 
 
     // Define a class to represent the email data structure
-    public class Datum
-    {
-        public int mailId { get; set; }
-        public object compCode { get; set; }
-        public object accountCode { get; set; }
-        public object projectId { get; set; }
-        public object businessAnalysisItemId { get; set; }
-        public string sender { get; set; }
-        public object senderCrypt { get; set; }
-        public object senderName { get; set; }
-        public string sendTo { get; set; }
-        public object sendToCrypt { get; set; }
-        public string cc { get; set; }
-        public object ccCrypt { get; set; }
-        public string bcc { get; set; }
-        public object bccCrypt { get; set; }
-        public object replyTo { get; set; }
-        public string subject { get; set; }
-        public DateTime received { get; set; }
-        public object eMailTypeId { get; set; }
-        public string bodyText { get; set; }
-        public string bodyHtml { get; set; }
-        public object unread { get; set; }
-        public string important { get; set; }
-        public object uid { get; set; }
-        public int userId { get; set; }
-        public object accountId { get; set; }
-        public object isPublic { get; set; }
-        public int folderId { get; set; }
-        public object deleteAfterRead { get; set; }
-    }
-
-    public class Root
-    {
-        public bool success { get; set; }
-        public string message { get; set; }
-        public List<Datum> data { get; set; }
-    }
+   
 }
 
 
