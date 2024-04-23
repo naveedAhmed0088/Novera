@@ -12,246 +12,246 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = Novera
-build_property.ProjectDir = /Users/muhammadzain/Documents/ITO/Novera/Novera/
+build_property.ProjectDir = D:\Github\Novera\Novera\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/App.xaml]
+[D:/Github/Novera/Novera/App.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.App.xaml
 build_metadata.AdditionalFiles.TargetPath = App.xaml
 build_metadata.AdditionalFiles.RelativePath = App.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/AppShell.xaml]
+[D:/Github/Novera/Novera/AppShell.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.AppShell.xaml
 build_metadata.AdditionalFiles.TargetPath = AppShell.xaml
 build_metadata.AdditionalFiles.RelativePath = AppShell.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/MainPage.xaml]
+[D:/Github/Novera/Novera/MainPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.MainPage.xaml
 build_metadata.AdditionalFiles.TargetPath = MainPage.xaml
 build_metadata.AdditionalFiles.RelativePath = MainPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Resources/Styles/Colors.xaml]
+[D:/Github/Novera/Novera/Resources/Styles/Colors.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Resources.Styles.Colors.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Colors.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Colors.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Colors.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Colors.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Resources/Styles/Styles.xaml]
+[D:/Github/Novera/Novera/Resources/Styles/Styles.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Resources.Styles.Styles.xaml
-build_metadata.AdditionalFiles.TargetPath = Resources/Styles/Styles.xaml
-build_metadata.AdditionalFiles.RelativePath = Resources/Styles/Styles.xaml
+build_metadata.AdditionalFiles.TargetPath = Resources\Styles\Styles.xaml
+build_metadata.AdditionalFiles.RelativePath = Resources\Styles\Styles.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/CustomView/CustomRadioButton.xaml]
+[D:/Github/Novera/Novera/Source/CustomView/CustomRadioButton.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.CustomView.CustomRadioButton.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/CustomView/CustomRadioButton.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/CustomView/CustomRadioButton.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\CustomView\CustomRadioButton.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\CustomView\CustomRadioButton.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Common/ContactDetail/ContactDetailPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Common/ContactDetail/ContactDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Common.ContactDetail.ContactDetailPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Common/ContactDetail/ContactDetailPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Common/ContactDetail/ContactDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Common\ContactDetail\ContactDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Common\ContactDetail\ContactDetailPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Common/ForgotPassword/ForgotPasswordPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Common/ForgotPassword/ForgotPasswordPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Common.ForgotPassword.ForgotPasswordPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Common/ForgotPassword/ForgotPasswordPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Common/ForgotPassword/ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Common\ForgotPassword\ForgotPasswordPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Common\ForgotPassword\ForgotPasswordPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Common/LanguageSelection/LanguageSelectionPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Common/LanguageSelection/LanguageSelectionPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Common.LanguageSelection.LanguageSelectionPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Common/LanguageSelection/LanguageSelectionPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Common/LanguageSelection/LanguageSelectionPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Common\LanguageSelection\LanguageSelectionPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Common\LanguageSelection\LanguageSelectionPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Common/Login/LoginPage.xaml]
-build_metadata.AdditionalFiles.GenKind = Xaml
-build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Common.Login.LoginPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Common/Login/LoginPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Common/Login/LoginPage.xaml
-
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Common/LoginOptionDialog/LoginOptionDialogPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Common/LoginOptionDialog/LoginOptionDialogPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Common.LoginOptionDialog.LoginOptionDialogPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Common/LoginOptionDialog/LoginOptionDialogPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Common/LoginOptionDialog/LoginOptionDialogPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Common\LoginOptionDialog\LoginOptionDialogPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Common\LoginOptionDialog\LoginOptionDialogPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Common/Register/RegisterPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Common/Login/LoginPage.xaml]
+build_metadata.AdditionalFiles.GenKind = Xaml
+build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Common.Login.LoginPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Common\Login\LoginPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Common\Login\LoginPage.xaml
+
+[D:/Github/Novera/Novera/Source/Pages/Common/Register/RegisterPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Common.Register.RegisterPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Common/Register/RegisterPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Common/Register/RegisterPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Common\Register\RegisterPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Common\Register\RegisterPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Calendar/CreateEvent/CreateEventPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Calendar/CreateEvent/CreateEventPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Calendar.CreateEvent.CreateEventPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Calendar/CreateEvent/CreateEventPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Calendar/CreateEvent/CreateEventPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Calendar\CreateEvent\CreateEventPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Calendar\CreateEvent\CreateEventPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Calendar/CreateTask/CreateTaskPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Calendar/CreateTask/CreateTaskPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Calendar.CreateTask.CreateTaskPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Calendar/CreateTask/CreateTaskPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Calendar/CreateTask/CreateTaskPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Calendar\CreateTask\CreateTaskPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Calendar\CreateTask\CreateTaskPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Calendar/Events/EventDetailPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Calendar/Events/EventDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Calendar.Events.EventDetailPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Calendar/Events/EventDetailPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Calendar/Events/EventDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Calendar\Events\EventDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Calendar\Events\EventDetailPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Calendar/People/AddPeopleListPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Calendar/People/AddPeopleListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Calendar.People.AddPeopleListPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Calendar/People/AddPeopleListPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Calendar/People/AddPeopleListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Calendar\People\AddPeopleListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Calendar\People\AddPeopleListPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Calendar/ScheduleCalendar/ScheduleCalendarPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Calendar/ScheduleCalendar/ScheduleCalendarPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Calendar.ScheduleCalendar.ScheduleCalendarPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Calendar/ScheduleCalendar/ScheduleCalendarPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Calendar/ScheduleCalendar/ScheduleCalendarPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Calendar\ScheduleCalendar\ScheduleCalendarPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Calendar\ScheduleCalendar\ScheduleCalendarPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Calendar/Tasks/TaskDetailPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Calendar/Tasks/TaskDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Calendar.Tasks.TaskDetailPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Calendar/Tasks/TaskDetailPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Calendar/Tasks/TaskDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Calendar\Tasks\TaskDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Calendar\Tasks\TaskDetailPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Dashboard/DashboardPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Dashboard/DashboardPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Dashboard.DashboardPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Dashboard/DashboardPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Dashboard/DashboardPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Dashboard\DashboardPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Dashboard\DashboardPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Document/DocumentDetailPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Document/DocumentDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Document.DocumentDetailPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Document/DocumentDetailPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Document/DocumentDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Document\DocumentDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Document\DocumentDetailPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Document/DocumentPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Document/DocumentPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Document.DocumentPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Document/DocumentPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Document/DocumentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Document\DocumentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Document\DocumentPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Document/UploadDocumentPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Document/UploadDocumentPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Document.UploadDocumentPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Document/UploadDocumentPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Document/UploadDocumentPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Document\UploadDocumentPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Document\UploadDocumentPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Email/Compose/ComposeEmailPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Email/Compose/ComposeEmailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Email.Compose.ComposeEmailPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Email/Compose/ComposeEmailPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Email/Compose/ComposeEmailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Email\Compose\ComposeEmailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Email\Compose\ComposeEmailPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Email/Drafts/DraftPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Email/Drafts/DraftPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Email.Drafts.DraftPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Email/Drafts/DraftPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Email/Drafts/DraftPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Email\Drafts\DraftPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Email\Drafts\DraftPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Email/EmailDetail/EmailDetailPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Email/EmailDetail/EmailDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Email.EmailDetail.EmailDetailPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Email/EmailDetail/EmailDetailPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Email/EmailDetail/EmailDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Email\EmailDetail\EmailDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Email\EmailDetail\EmailDetailPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Email/EmailPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Email/EmailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Email.EmailPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Email/EmailPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Email/EmailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Email\EmailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Email\EmailPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Email/Inbox/InboxPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Email/Inbox/InboxPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Email.Inbox.InboxPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Email/Inbox/InboxPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Email/Inbox/InboxPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Email\Inbox\InboxPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Email\Inbox\InboxPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Email/Sent/SentMailView.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Email/Sent/SentMailView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Email.Sent.SentMailView.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Email/Sent/SentMailView.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Email/Sent/SentMailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Email\Sent\SentMailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Email\Sent\SentMailView.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Email/Trash/TrashMailView.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Email/Trash/TrashMailView.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Email.Trash.TrashMailView.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Email/Trash/TrashMailView.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Email/Trash/TrashMailView.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Email\Trash\TrashMailView.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Email\Trash\TrashMailView.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Invoice/InvoiceListPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Invoice/InvoiceListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Invoice.InvoiceListPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Invoice/InvoiceListPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Invoice/InvoiceListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Invoice\InvoiceListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Invoice\InvoiceListPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Note/AddNote/AddNotePage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Note/AddNote/AddNotePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Note.AddNote.AddNotePage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Note/AddNote/AddNotePage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Note/AddNote/AddNotePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Note\AddNote\AddNotePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Note\AddNote\AddNotePage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Note/NoteListPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Note/NoteListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Note.NoteListPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Note/NoteListPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Note/NoteListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Note\NoteListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Note\NoteListPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Note/ViewNote/ViewNotePage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Note/ViewNote/ViewNotePage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Note.ViewNote.ViewNotePage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Note/ViewNote/ViewNotePage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Note/ViewNote/ViewNotePage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Note\ViewNote\ViewNotePage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Note\ViewNote\ViewNotePage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Settings/Detail/SettingsDetailPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Settings/Detail/SettingsDetailPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Settings.Detail.SettingsDetailPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Settings/Detail/SettingsDetailPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Settings/Detail/SettingsDetailPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Settings\Detail\SettingsDetailPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Settings\Detail\SettingsDetailPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Settings/SettingsListPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Settings/SettingsListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Settings.SettingsListPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Settings/SettingsListPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Settings/SettingsListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Settings\SettingsListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Settings\SettingsListPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/Settings/Team/TeamSettingPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/Settings/Team/TeamSettingPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.Settings.Team.TeamSettingPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/Settings/Team/TeamSettingPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/Settings/Team/TeamSettingPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\Settings\Team\TeamSettingPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\Settings\Team\TeamSettingPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/SideDrawer/SideDrawerPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/SideDrawer/SideDrawerPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.SideDrawer.SideDrawerPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/SideDrawer/SideDrawerPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/SideDrawer/SideDrawerPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\SideDrawer\SideDrawerPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\SideDrawer\SideDrawerPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/SupportTicket/History/TicketHistoryListPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/SupportTicket/History/TicketHistoryListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.SupportTicket.History.TicketHistoryListPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/SupportTicket/History/TicketHistoryListPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/SupportTicket/History/TicketHistoryListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\SupportTicket\History\TicketHistoryListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\SupportTicket\History\TicketHistoryListPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/SupportTicket/NewTicket/CreateSupportTicketPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/SupportTicket/NewTicket/CreateSupportTicketPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.SupportTicket.NewTicket.CreateSupportTicketPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/SupportTicket/NewTicket/CreateSupportTicketPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/SupportTicket/NewTicket/CreateSupportTicketPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\SupportTicket\NewTicket\CreateSupportTicketPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\SupportTicket\NewTicket\CreateSupportTicketPage.xaml
 
-[/Users/muhammadzain/Documents/ITO/Novera/Novera/Source/Pages/Crm/SupportTicket/TicketList/SupportTicketListPage.xaml]
+[D:/Github/Novera/Novera/Source/Pages/Crm/SupportTicket/TicketList/SupportTicketListPage.xaml]
 build_metadata.AdditionalFiles.GenKind = Xaml
 build_metadata.AdditionalFiles.ManifestResourceName = Novera.Source.Pages.Crm.SupportTicket.TicketList.SupportTicketListPage.xaml
-build_metadata.AdditionalFiles.TargetPath = Source/Pages/Crm/SupportTicket/TicketList/SupportTicketListPage.xaml
-build_metadata.AdditionalFiles.RelativePath = Source/Pages/Crm/SupportTicket/TicketList/SupportTicketListPage.xaml
+build_metadata.AdditionalFiles.TargetPath = Source\Pages\Crm\SupportTicket\TicketList\SupportTicketListPage.xaml
+build_metadata.AdditionalFiles.RelativePath = Source\Pages\Crm\SupportTicket\TicketList\SupportTicketListPage.xaml
