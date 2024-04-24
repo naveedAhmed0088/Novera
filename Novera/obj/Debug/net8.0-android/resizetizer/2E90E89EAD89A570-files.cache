@@ -57,6 +57,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\event_global_time.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\event_notification.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\event_repeat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\event_time.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\favourite.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\flag_australia.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\flag_bangladesh.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\flag_canada.png
@@ -162,6 +163,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\event_global_time.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\event_notification.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\event_repeat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\event_time.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\favourite.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\flag_australia.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\flag_bangladesh.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\flag_canada.png
@@ -267,6 +269,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\event_global_time.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\event_notification.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\event_repeat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\event_time.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\favourite.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\flag_australia.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\flag_bangladesh.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\flag_canada.png
@@ -372,6 +375,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\event_global_time.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\event_notification.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\event_repeat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\event_time.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\favourite.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\flag_australia.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\flag_bangladesh.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\flag_canada.png
@@ -477,6 +481,7 @@ obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\event_global_time.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\event_notification.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\event_repeat.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\event_time.png
+obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\favourite.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\flag_australia.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\flag_bangladesh.png
 obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\flag_canada.png

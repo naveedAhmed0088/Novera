@@ -80,6 +80,7 @@
 
 	<ItemGroup>
 	  <None Remove="Platforms\Android\Resources\xml\" />
+	  <None Remove="Resources\Images\favourite.svg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Platforms\Android\Resources\xml\" />

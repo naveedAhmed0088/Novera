@@ -11,6 +11,7 @@
     <Grid>
         
         <Grid RowDefinitions = "Auto, *">
+
             <Frame Margin="15, 0, 15, 0" Grid.Row="0" 
                 BackgroundColor="Transparent" 
                 BorderColor="{StaticResource LoginText}" 
@@ -20,21 +21,31 @@
                            Style="{StaticResource Font14LabelAppleGothic}" TextColor="{StaticResource EntryTextColorWhite}" />
                     <Image Grid.Column="1" Source="email_search" HeightRequest="25" WidthRequest="25" Aspect="AspectFill" Margin="10,0,10,0"/>
                 </Grid>
+                
+                
             </Frame>
+
+            
             <ScrollView Grid.Row="1">
                 <VerticalStackLayout Margin="10,15,10,15">
-                    
-                        <CollectionView ItemsSource="{Binding InboxEmails}" BackgroundColor="Transparent" VerticalScrollBarVisibility="Always">
+                    <ActivityIndicator x:Name="loader"
+IsRunning="False" IsVisible="False" Color="white"
+                   VerticalOptions="Center" HorizontalOptions="Center"
+                   />
+
+                    <CollectionView ItemsSource="{Binding InboxEmails}" BackgroundColor="Transparent" VerticalScrollBarVisibility="Always">
                             <CollectionView.ItemsLayout>
                                 <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10" />
                             </CollectionView.ItemsLayout>
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
+                                    
 
+                                    
                                     <Frame BorderColor="{StaticResource Transparent}" Margin="5, 0, 5 ,0" CornerRadius="10" Padding="5" BackgroundColor="{StaticResource EditorBackgroundBlue}">
                                         <Grid ColumnDefinitions="Auto,*, Auto" >
                                             <Frame BackgroundColor="Orange" Margin="5, 0, 0 ,0" Grid.Column= "0" WidthRequest="34" HeightRequest="34" CornerRadius="17" Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                                                <Label Text="{Binding FirstLetter}" TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                                            <Label Text="{Binding sender, StringFormat='{}{0:0}'}"  TextColor="White" HorizontalOptions="CenterAndExpand"/>
                                             </Frame>
 
                                             <StackLayout Margin="5, 0, 0 ,0" Grid.Column= "1" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="2">
@@ -50,10 +61,10 @@
                                                          >
                                                     <ImageButton.Triggers>
                                                         <DataTrigger TargetType="ImageButton" Binding="{Binding important}" Value="Y">
-                                                            <Setter Property="Source" Value="email_star" />
+                                                            <Setter Property="Source" Value="favourite" />
                                                         </DataTrigger>
                                                         <DataTrigger TargetType="ImageButton" Binding="{Binding important}" Value="N">
-                                                            <Setter Property="Source" Value="email_mail_white" />
+                                                            <Setter Property="Source" Value="email_star" />
                                                         </DataTrigger>
                                                     </ImageButton.Triggers>
                                                 </ImageButton>

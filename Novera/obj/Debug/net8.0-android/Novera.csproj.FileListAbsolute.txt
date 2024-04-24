@@ -5364,3 +5364,8 @@ D:\Github\Novera\Novera\obj\Debug\net8.0-android\stamp\_ConvertResourcesCases.st
 D:\Github\Novera\Novera\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 D:\Github\Novera\Novera\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\Github\Novera\Novera\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\Github\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\favourite.png
+D:\Github\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\favourite.png
+D:\Github\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\favourite.png
+D:\Github\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\favourite.png
+D:\Github\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\favourite.png

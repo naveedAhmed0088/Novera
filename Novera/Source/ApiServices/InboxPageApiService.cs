@@ -89,5 +89,42 @@ namespace Novera.Source.ApiServices
                 };
             }
         }
+
+
+
+
+        public async Task<object?> showEmails(string apiUrl, string token)
+        {
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Get, apiUrl);
+
+                request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token);
+
+
+
+                var response = await _client.SendAsync(request);
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                // Check if the response indicates success
+
+                var successRespnse = JsonSerializer.Deserialize<InboxPageResponse>(responseBody);
+                return successRespnse;
+
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions here
+                Console.WriteLine($"Error: {ex.Message}");
+
+                return new InboxPageMarkResponse
+                {
+                    success = false,
+                    message = ex.Message,
+                    data = null,
+                };
+            }
+        }
+
     }
 }
