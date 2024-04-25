@@ -59,7 +59,7 @@ namespace Novera.Source.ViewModel.Emails
                 // Retrieve OAuth token from SecureStorage
 
 
-                string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}";
+                string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}&Draft=true";
 
 
                 var response = await apiService.showEmails(url, oauthToken);

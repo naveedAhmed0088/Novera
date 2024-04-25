@@ -53,7 +53,7 @@ public class SentMailViewModel
 
             
 
-            string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}";
+            string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}&Sent=true";
 
 
             var response = await apiService.showEmails(url, oauthToken);
