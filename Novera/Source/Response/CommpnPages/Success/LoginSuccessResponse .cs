@@ -1,16 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace Novera.Source.Response.CommpnPages.Success
 {
+    
+    public class Data
+    {
+        public ExpiryWarning expiryWarning { get; set; }
+        public UserDetails userDetails { get; set; }
+        public string sessionToken { get; set; }
+    }
+
+    public class ExpiryWarning
+    {
+        public bool warning { get; set; }
+        public string message { get; set; }
+    }
+
     public class LoginSuccessResponse
     {
         public bool success { get; set; }
-        public UserDetails userDetails { get; set; }
-        public string sessionToken { get; set; }
+        public string message { get; set; }
+        public Data data { get; set; }
     }
 
     public class UserDetails
@@ -28,14 +37,15 @@ namespace Novera.Source.Response.CommpnPages.Success
         public int timeZoneUtc { get; set; }
         public int userStartProduct { get; set; }
         public int gdprroleId { get; set; }
-        public object createdDate { get; set; }
+        public DateTime createdDate { get; set; }
         public object createdBy { get; set; }
         public object modifiedDate { get; set; }
         public object modifiedBy { get; set; }
         public string userPasswordText { get; set; }
-        public string myTaxCountryCode { get; set; }
+        public object myTaxCountryCode { get; set; }
         public object docDetails { get; set; }
         public object docMimeType { get; set; }
         public object smsmobile { get; set; }
     }
+
 }

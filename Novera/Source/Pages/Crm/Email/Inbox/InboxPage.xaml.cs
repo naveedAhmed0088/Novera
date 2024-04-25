@@ -20,6 +20,7 @@ public partial class InboxPage : ContentView
 
         apiService = new inboxPageApiService();
         InitializeComponent();
+        Resources.Add("FirstCharacterConverter", new FirstCharacterConverter());
         _viewModel = new InboxViewModel();
         BindingContext = _viewModel;
 
@@ -152,10 +153,10 @@ public partial class InboxPage : ContentView
         }
     }
 
-
-
-    
-
-
+    private void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
+    {
+        var previous = e.PreviousSelection;
+        var current = e.CurrentSelection;
+    }
 }
 

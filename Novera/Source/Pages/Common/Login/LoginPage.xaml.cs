@@ -72,8 +72,8 @@ public partial class LoginPage : ContentPage
                 if (response is LoginSuccessResponse successResponse)
                 {
                     //save data in async
-                    await SecureStorage.Default.SetAsync("oauth_token", successResponse.sessionToken);
-                    await SecureStorage.Default.SetAsync("userid", successResponse.userDetails.userId.ToString());
+                    await SecureStorage.Default.SetAsync("oauth_token", successResponse.data.sessionToken);
+                    await SecureStorage.Default.SetAsync("userid", successResponse.data.userDetails.userId.ToString());
 
                     await Shell.Current.GoToAsync($"//{nameof(EmailPage)}");
 
@@ -82,7 +82,7 @@ public partial class LoginPage : ContentPage
                 }
                 else if (response is LoginFailureResponse failureResponse)
                 {
-                    await DisplayAlert("Error", failureResponse.error.message.ToString(), "ok");
+                    await DisplayAlert("Error", failureResponse.message.ToString(), "ok");
 
                 }
 

@@ -8,7 +8,7 @@ using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
 using static System.Runtime.InteropServices.JavaScript.JSType;
-using Error = Novera.Source.Response.CommpnPages.Failure.Error;
+
 
 namespace Novera.Source.Services
 {
@@ -37,8 +37,8 @@ namespace Novera.Source.Services
                 // Check if the response indicates success
                 if (response.IsSuccessStatusCode)
                 {
-                    var successRespnse= JsonSerializer.Deserialize<LoginSuccessResponse>(responseBody);
-                    return successRespnse;
+                                        var successRespnse= JsonSerializer.Deserialize<LoginSuccessResponse>(responseBody);
+                                        return successRespnse;
 
                 }
                 else
@@ -59,7 +59,7 @@ namespace Novera.Source.Services
                 return new LoginFailureResponse
                 {
                     success = false,
-                    error = new Error { code = 0, message = ex.Message }
+                    message=ex.Message
                 };
             }
         }
