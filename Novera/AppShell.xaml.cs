@@ -23,6 +23,7 @@ using Novera.Source.Pages.Crm.SupportTicket.History;
 using Novera.Source.Pages.Crm.SupportTicket.NewTicket;
 using Novera.Source.Pages.Crm.SupportTicket.TicketList;
 using Novera.Source.Pages.Crm.Settings.Detail;
+using Novera.Resources;
 
 
 namespace Novera;
@@ -32,7 +33,7 @@ public partial class AppShell : Shell
     public AppShell()
     {
         InitializeComponent();
-
+       
 
         Routing.RegisterRoute(nameof(LoginPage), typeof(LoginPage));
         Routing.RegisterRoute(nameof(RegisterPage), typeof(RegisterPage));

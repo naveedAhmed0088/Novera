@@ -4,6 +4,8 @@
             x:Class="Novera.Source.Pages.Common.LanguageSelection.LanguageSelectionPage"
             Title="LanguageSelectionPage"
             xmlns:local="clr-namespace:Novera.Source.ViewModel.Language"
+              xmlns:extension="clr-namespace:Novera.Source.Utility"
+              xmlns:strings="clr-namespace:Novera.Resources.Strings"
             BackgroundImageSource="cloud_straight"
             Shell.FlyoutBehavior="Disabled"
             Shell.NavBarIsVisible="False">
@@ -20,7 +22,7 @@
             <Image Grid.Column="1" HorizontalOptions ="End" Source="contact_logo" />             
         </Grid>
         <VerticalStackLayout Margin="10,0,10,0" Grid.Row="1">
-            <Label Text="Language"  Margin="10,10,0,0" Style="{StaticResource Font20Label}"
+            <Label Text="{x:Static strings:language.e1302031}"  Margin="10,10,0,0" Style="{StaticResource Font20Label}"
                             HorizontalOptions ="Start" TextColor="{StaticResource LoginText}"/>         
             <Label Text="Choose the language"  Margin="10,0,10,15" Style="{StaticResource Font16Label}"
                             HorizontalOptions ="Start" TextColor="{StaticResource EntryBackgroundWhite}"/>         
@@ -30,7 +32,7 @@
                 Margin ="10,10,10,10"
                 BorderColor="{StaticResource LoginText}" CornerRadius="10"  >
                 <Grid ColumnDefinitions="*, Auto">
-                    <Entry  Placeholder="Search" 
+                    <Entry  Placeholder="{x:Static strings:language.e3101012}" 
                         PlaceholderColor="{StaticResource LoginText}"
                         TextColor="{StaticResource EntryTextColorWhite}" Style="{StaticResource Font20Label}" />
                     <Image Grid.Column ="1" Source="notes_search"/>
@@ -44,7 +46,7 @@
             </CollectionView.ItemsLayout>
                     <CollectionView.ItemTemplate>
                         <DataTemplate>
-                            <Frame BorderColor="{StaticResource LoginText}"   
+                            <Frame BorderColor="{StaticResource LoginText}"    
                                 CornerRadius="5" Padding="10,10,10,10" Margin="10,20,10,0"
                                 BackgroundColor="{StaticResource Transparent}">                                       
                                 <VerticalStackLayout>
@@ -65,7 +67,7 @@
                     </CollectionView.ItemTemplate>
         </CollectionView>
         </VerticalStackLayout>
-        <Button Text="Next"
+        <Button Text="{x:Static strings:language.e6101014}"
 		        Margin="10,10"
 		        Style="{StaticResource MainButtonTransparentStyle}"
                 Clicked="OnNextClicked"

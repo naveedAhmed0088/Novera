@@ -8,6 +8,8 @@
              xmlns:sent="clr-namespace:Novera.Source.Pages.Crm.Email.Sent"
              xmlns:trash="clr-namespace:Novera.Source.Pages.Crm.Email.Trash"
              xmlns:draft="clr-namespace:Novera.Source.Pages.Crm.Email.Drafts"
+             xmlns:extension="clr-namespace:Novera.Source.Utility"
+             xmlns:strings="clr-namespace:Novera.Resources.Strings"
              Title="Inbox"
              BackgroundImageSource="top_cloud_straight">
 
@@ -45,16 +47,16 @@
                 </Style>
             </telerik:RadTabView.HeaderItemStyle>
 
-            <telerik:TabViewItem HeaderText="Inbox" ImageSource="tab_unselected_inbox_icon">
+        <telerik:TabViewItem HeaderText="{x:Static strings:language.e3106007}" ImageSource="tab_unselected_inbox_icon">
                 <inbox:InboxPage/>
             </telerik:TabViewItem>
-            <telerik:TabViewItem HeaderText="Sent" ImageSource="tab_unselected_sent_icon">
+        <telerik:TabViewItem HeaderText="{x:Static strings:language.e3106013}" ImageSource="tab_unselected_sent_icon">
                 <sent:SentMailView/>
             </telerik:TabViewItem>
-            <telerik:TabViewItem HeaderText="Drafts" ImageSource="tab_unselected_draft_icon">
+        <telerik:TabViewItem HeaderText="{x:Static strings:language.e3106002}" ImageSource="tab_unselected_draft_icon">
                  <draft:DraftPage/>
             </telerik:TabViewItem>
-            <telerik:TabViewItem HeaderText="Trash" ImageSource="tab_unselected_delete_icon">
+        <telerik:TabViewItem HeaderText="{x:Static strings:language.e3106016}" ImageSource="tab_unselected_delete_icon">
                 <trash:TrashMailView/>
             </telerik:TabViewItem>
         </telerik:RadTabView>

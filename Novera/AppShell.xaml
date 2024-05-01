@@ -10,6 +10,8 @@
     xmlns:support="clr-namespace:Novera.Source.Pages.Crm.SupportTicket.TicketList"
     xmlns:document="clr-namespace:Novera.Source.Pages.Crm.Document"
     xmlns:settings="clr-namespace:Novera.Source.Pages.Crm.Settings"
+    xmlns:extension="clr-namespace:Novera.Source.Utility"
+    xmlns:strings="clr-namespace:Novera.Resources.Strings"
     xmlns:invoice="clr-namespace:Novera.Source.Pages.Crm.Invoice"
     BackgroundColor ="{StaticResource Primary}"
     Shell.TabBarIsVisible="False"
@@ -79,27 +81,27 @@
      
     
         <ShellContent 
-            Title="Emails"
+            Title="{x:Static strings:language.e2402005}"
             Icon="drawer_email"
             ContentTemplate="{DataTemplate email:EmailPage}" />
 
         <ShellContent 
-            Title="Calendar"
+            Title="{x:Static strings:language.e1302007}"
             Icon="drawer_calendar"
             ContentTemplate="{DataTemplate calendar:ScheduleCalendarPage}" />
 
         <ShellContent 
-            Title="Saved Notes"
+            Title="{x:Static strings:language.e4301277}"
             Icon="drawer_notes"
             ContentTemplate="{DataTemplate notes:NoteListPage}" />
             
         <ShellContent
-            Title="Support Tickets"
+            Title="{x:Static strings:language.e5805024}"
             Icon="drawer_support"
             ContentTemplate="{DataTemplate support:SupportTicketListPage}" />
 
         <ShellContent 
-            Title="Document Management"
+            Title="{x:Static strings:language.e2104014}"
             Icon="drawer_document"
             ContentTemplate="{DataTemplate document:DocumentPage}" />
         
@@ -108,12 +110,12 @@
     <FlyoutItem FlyoutDisplayOptions = "AsMultipleItems">
        
         <ShellContent 
-            Title="Settings"
+            Title="{x:Static strings:language.e4301235}"
             Icon="drawer_settings"
             ContentTemplate="{DataTemplate settings:SettingsListPage}" />
 
         <ShellContent 
-            Title="Invoice"
+            Title="{x:Static strings:language.e1302030}"
             Icon="drawer_transactions"
             ContentTemplate="{DataTemplate invoice:InvoiceListPage}" />
             
@@ -157,7 +159,7 @@
                         
                 <!-- Button with text -->
                 <Label Margin="20,0,0,0"
-                    Text="Logout" VerticalOptions="Center" 
+                    Text="{x:Static strings:language.e1302033}" VerticalOptions="Center" 
                     Style="{StaticResource Font20Label}"
                     TextColor="{StaticResource White}" />
             </StackLayout>

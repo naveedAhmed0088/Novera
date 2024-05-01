@@ -3,6 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
              x:Class="Novera.Source.Pages.Crm.SideDrawer.SideDrawerPage"
+             xmlns:extension="clr-namespace:Novera.Source.Utility"
+            xmlns:strings="clr-namespace:Novera.Resources.Strings"
              Title="SideDrawerPage"
              BackgroundImageSource="cloud_straight">
              <telerik:RadContentView>
@@ -170,7 +172,7 @@
                             <!-- Button with text -->
                         <Label
                             Margin="20,0,0,0"
-                            Text="Emails" VerticalOptions="Center" 
+                            Text="{x:Static strings:language.e2402005}" VerticalOptions="Center" 
                             Style="{StaticResource Font20Label}"
                             TextColor="{StaticResource White}" >
                                 
@@ -190,7 +192,7 @@
                             <!-- Button with text -->
                         <Label
                             Margin="20,0,0,0"
-                            Text="Calendar" VerticalOptions="Center" 
+                            Text="{x:Static strings:language.e1302007}" VerticalOptions="Center" 
                             Style="{StaticResource Font20Label}"
                             TextColor="{StaticResource White}" >
                                 
@@ -210,7 +212,7 @@
                         <!-- Button with text -->
                         <Label
                             Margin="20,0,0,0"
-                            Text="Saved Notes" VerticalOptions="Center" 
+                            Text="{x:Static strings:language.e4301277}" VerticalOptions="Center" 
                             Style="{StaticResource Font20Label}"
                             TextColor="{StaticResource White}" >
                                 

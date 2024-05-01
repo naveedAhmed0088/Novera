@@ -18,6 +18,10 @@ using Novera.Source.Utility;
 using Novera.Source.Response.CommpnPages.Success;
 using Novera.Source.Response.CommpnPages.Failure;
 using static System.Runtime.InteropServices.JavaScript.JSType;
+using Novera.Resources.Strings;
+using System.Globalization;
+using Novera.Resources;
+
 
 namespace Novera.Source.Pages.Common.Login;
 
@@ -26,15 +30,35 @@ public partial class LoginPage : ContentPage
     LoginApiService apiService;
     public LoginPage()
     {
+
+        //Translator translator = Translator.Instance;
+
+        // Change the language to French (France)
+        //translator.CultureInfo = new CultureInfo("hi-in");
+
         InitializeComponent();
+       
+     
+
         apiService = new LoginApiService();
+       
 
 
     }
+    //private void Button_Clicked1(object sender, EventArgs e)
+    //{
+    //    language.Culture = new System.Globalization.CultureInfo("en-US");
+    //    (App.Current as App).MainPage = new AppShell();
+    //}
+    //private void Button_Clicked(object sender, EventArgs e)
+    //{
+    //    language.Culture = new System.Globalization.CultureInfo("de-DE");
+    //    (App.Current as App).MainPage = new AppShell();
+    //}
 
     private void OnLanguageClicked(object sender, EventArgs e)
     {
-        Shell.Current.GoToAsync(nameof(SettingsDetailPage));
+        Shell.Current.GoToAsync(nameof(LanguageSelectionPage));
     }
     private async void OnLoginClicked(object sender, EventArgs e)
     {
@@ -126,11 +150,10 @@ public partial class LoginPage : ContentPage
 
     private void OnForgotPasswordTapped(object sender, EventArgs e)
     {
+       
         Shell.Current.GoToAsync(nameof(ForgotPasswordPage));
     }
 
-
-
-
+   
 }
 

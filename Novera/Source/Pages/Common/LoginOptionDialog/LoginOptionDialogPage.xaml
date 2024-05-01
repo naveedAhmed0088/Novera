@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Novera.Source.Pages.Common.LoginOptionDialog.LoginOptionDialogPage"
+              xmlns:extension="clr-namespace:Novera.Source.Utility"
+              xmlns:strings="clr-namespace:Novera.Resources.Strings"
              Title="LoginOptionDialogPage"
              BackgroundColor="{StaticResource DialogBackgroundColor}">
              
@@ -28,7 +30,7 @@
                     </Grid.ColumnDefinitions>
 
                     <!-- Text on the left -->
-                    <Label Text="Client Login" TextColor="{StaticResource EntryText}" Style="{StaticResource Font20Label}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Label Text="{x:Static strings:language.e4301238}" TextColor="{StaticResource EntryText}" Style="{StaticResource Font20Label}" VerticalOptions="Center" HorizontalOptions="Start"/>
 
                     <!-- Radio button on the right -->
                     <RadioButton Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" />
@@ -42,7 +44,7 @@
                     </Grid.ColumnDefinitions>
 
                     <!-- Text on the left -->
-                    <Label Text="Associates Login" TextColor="{StaticResource EntryText}" Style="{StaticResource Font20Label}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Label Text="{x:Static strings:language.e4301239}" TextColor="{StaticResource EntryText}" Style="{StaticResource Font20Label}" VerticalOptions="Center" HorizontalOptions="Start"/>
 
                     <!-- Radio button on the right -->
                     <RadioButton Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" />
@@ -57,13 +59,13 @@
                     </Grid.ColumnDefinitions>
 
                     <!-- Text on the left -->
-                    <Label Text="Elucidate5 Archives" TextColor="{StaticResource EntryText}" Style="{StaticResource Font20Label}" VerticalOptions="Center" HorizontalOptions="Start"/>
+                    <Label Text="{x:Static strings:language.e1103077}" TextColor="{StaticResource EntryText}" Style="{StaticResource Font20Label}" VerticalOptions="Center" HorizontalOptions="Start"/>
 
                     <!-- Radio button on the right -->
                     <RadioButton Grid.Column="1" VerticalOptions="Center" HorizontalOptions="End" />
                 </Grid>
 
-                <Button Text="Ok"
+                <Button Text="{x:Static strings:language.e1303002}"
                     Margin="30,30,30,20"
                     Clicked="OnSubmitClicked"
                     Style="{StaticResource MainButtonTransparentStyle}"

@@ -1,13 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                xmlns:extension="clr-namespace:Novera.Source.Utility"
+                xmlns:strings="clr-namespace:Novera.Resources.Strings"
+                xmlns:ress="clr-namespace:Novera.Resources"
              x:Class="Novera.Source.Pages.Common.Login.LoginPage"
              Title="LoginPage"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:mct="clr-namespace:CommunityToolkit.Maui.Behaviors;assembly=CommunityToolkit.Maui"
              BackgroundImageSource="triangle_straight"
              Shell.FlyoutBehavior="Disabled"
-             Shell.NavBarIsVisible ="false">
+             Shell.NavBarIsVisible ="false"
+             
+             >
     
     <ScrollView>
         <VerticalStackLayout>
@@ -23,17 +28,24 @@
                 <!-- Center image in the right column -->
                 <Image Source="register_novera_logo" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" />
             </Grid>
-        
-            <Label Text="Login"
+
+            <!--<Label Text="{extension:Translate Key=e5807007}"
                    Style="{StaticResource Headline}"
                    HorizontalOptions="Center"
                    TextColor="{StaticResource LoginText}"
-                   Margin="0,140,0,0" />
+                   Margin="0,140,0,0" />-->
+
+            <Label Text="{x:Static strings:language.e5807007}"
+       Style="{StaticResource Headline}"
+       HorizontalOptions="Center"
+       TextColor="{StaticResource LoginText}"
+       Margin="0,140,0,0" />
              <ActivityIndicator x:Name="loader"
             IsRunning="False" IsVisible="False" Color="white"
                                VerticalOptions="Center" HorizontalOptions="Center"
                                />
-    
+            <!--<Button Text="arabic" Clicked="Button_Clicked"></Button>
+            <Button Text="english" Clicked="Button_Clicked1"></Button>-->
 
             <!-- Email -->
             <Grid Margin="20,40,20,0" ColumnDefinitions="*,Auto">
@@ -41,7 +53,7 @@
                 <Entry 
                     Grid.Column="0"
                     x:Name="emailEntry"
-                    Placeholder="Email"
+                    Placeholder="{x:Static strings:language.e3105006}"
                     FontSize="15"
                     Keyboard="Email"
                     HorizontalOptions="FillAndExpand" />
@@ -67,7 +79,7 @@
                 <!-- Entry box -->
                 <Entry Grid.Column="0"
                        x:Name="pwdEntry"
-                    Placeholder="Password"
+                    Placeholder="{x:Static strings:language.e5202020}"
                     FontSize="15"
                     HorizontalOptions="FillAndExpand" />
 
@@ -84,8 +96,8 @@
                 HeightRequest="1"
                 Margin="20,0,20,0"
                 HorizontalOptions="FillAndExpand" />
-            
-            <Label Text="Forget Password?"
+
+            <Label Text="{x:Static strings:language.e5202020}"
                    TextColor="White"
                    HorizontalOptions="EndAndExpand"
                    Margin="10"
@@ -94,14 +106,14 @@
                     <TapGestureRecognizer Tapped="OnForgotPasswordTapped" />
                 </Label.GestureRecognizers>
             </Label>
-            <Button Text="Login"
+            <Button Text="{x:Static strings:language.e1103079}"
                 Margin="20,30,20,20"
                 Clicked="OnLoginClicked"
                 Style="{StaticResource MainButtonTransparentStyle}"
                 Grid.Column="1"/>
             <Grid ColumnDefinitions="*,*"
                  Margin="20,0,20,0">
-                <Button Text="Language"
+                <Button Text="{x:Static strings:language.e1302031}"
                         Style="{StaticResource ButtonwithWhiteBorder}"
                         Grid.Column="0"
                         Clicked="OnLanguageClicked"
