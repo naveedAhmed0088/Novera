@@ -55,7 +55,8 @@ public class TrashViewModel
             // Retrieve OAuth token from SecureStorage
 
 
-            string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}&Trash=true";
+            int emailtype = (int)EmailType.Trash;
+            string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}&EmailType={emailtype}";
 
 
             var response = await apiService.showEmails(url, oauthToken);

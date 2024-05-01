@@ -108,6 +108,51 @@ namespace Novera.Source.ApiServices
             }
         }
 
+
+        public async Task<object?> getAsync(string apiUrl, string requestData, Page page,string token)
+        {
+            try
+            {
+                var request = new HttpRequestMessage(HttpMethod.Get, apiUrl);
+                request.Headers.Add("Authorization", $"Bearer {token}");
+
+
+                var response = await _client.SendAsync(request);
+
+
+                var responseBody = await response.Content.ReadAsStringAsync();
+
+                // Check if the response indicates success
+                if (response.IsSuccessStatusCode)
+                {
+                    var successRespnse = JsonSerializer.Deserialize<TResponse>(responseBody);
+                    return successRespnse;
+
+                }
+                else
+                {
+
+                    // Deserialize the error response
+                    var errorResponse = JsonSerializer.Deserialize<TResponse>(responseBody);
+
+
+                    return errorResponse;
+                }
+            }
+            catch (Exception ex)
+            {
+                // Handle exceptions here
+                Console.WriteLine($"Error: {ex.Message}");
+
+                return new RegisterResponse
+                {
+                    success = false,
+                    message = ex.Message,
+                    data = null,
+                };
+            }
+        }
+
         private void DisplayAlert(Page page, string title, string message)
         {
             Device.BeginInvokeOnMainThread(async () =>
