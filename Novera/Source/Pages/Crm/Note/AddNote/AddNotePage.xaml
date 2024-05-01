@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Novera.Source.Pages.Crm.Note.AddNote.AddNotePage"
+               xmlns:extension="clr-namespace:Novera.Source.Utility"
+               xmlns:strings="clr-namespace:Novera.Resources.Strings"
              Title="AddNotePage"
              BackgroundColor="Transparent"
              BackgroundImageSource="top_cloud_straight"
@@ -10,15 +12,15 @@
     <Grid RowDefinitions="*,Auto" >
        
         <Grid Margin="10" RowDefinitions="Auto,Auto,*" Grid.Row="0">
-                <Label Text="Visibility" 
+            <Label Text="{x:Static strings:language.e3102010}" 
                     TextColor="{StaticResource LoginText}" 
                     Style="{StaticResource Font20Label}"
                     Grid.Row="0"/>
                     
                 <StackLayout Grid.Row="1">
-                        <RadioButton Content="Everyone" />
-                        <RadioButton Content="Me Only" />
-                        <RadioButton Content="My Group Only" />
+                <RadioButton Content="{x:Static strings:language.e3102003}" />
+                <RadioButton Content="{x:Static strings:language.e3102004}" />
+                <RadioButton Content="{x:Static strings:language.e3102005}" />
                                 
                 </StackLayout>
                 
@@ -40,7 +42,7 @@
                     BackgroundColor="Transparent"
                             Grid.Column="0"
                             Margin="5" />
-            <Button Text="Save"
+            <Button Text="{x:Static strings:language.e2305046}"
                             Style="{StaticResource ButtonwithWhiteBorder}"
                             Grid.Column="1"
                     BackgroundColor="Transparent"

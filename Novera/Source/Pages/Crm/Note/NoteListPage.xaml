@@ -4,6 +4,8 @@
              x:Class="Novera.Source.Pages.Crm.Note.NoteListPage"
               Title="Notes"
               xmlns:local="clr-namespace:Novera.Source.ViewModel.Note"
+               xmlns:extension="clr-namespace:Novera.Source.Utility"
+               xmlns:strings="clr-namespace:Novera.Resources.Strings"
               BackgroundColor="Transparent"
               BackgroundImageSource="top_cloud_straight"           
               xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui">
@@ -19,7 +21,7 @@
             BorderColor="{StaticResource LoginText}" 
             CornerRadius="5" Padding="2">
             <Grid ColumnDefinitions="0.8*,0.2*">
-                <Entry Placeholder="Find Folder" PlaceholderColor="{StaticResource LoginText}" TextColor="White"  FontSize="15"></Entry>
+                    <Entry Placeholder="{x:Static strings:language.e2402031}" PlaceholderColor="{StaticResource LoginText}" TextColor="White"  FontSize="15"></Entry>
                 <Image Source="close_line" HeightRequest="25" WidthRequest="25" Aspect="AspectFill"  Grid.Column="1"></Image>
             </Grid>
         </Frame>
@@ -28,8 +30,8 @@
             <VerticalStackLayout Margin="15,0,15,15">
                 
                 <Grid Margin="0,5">
-                    <Label Text="Note Summary" Style="{StaticResource Font16Label}" TextColor="White" HorizontalOptions="Start"/>
-                    <Label Text="50 Items" Style="{StaticResource Font14Label}" TextColor="{StaticResource LoginText}" HorizontalOptions="End"></Label>
+                        <Label Text="{x:Static strings:language.e2305005}" Style="{StaticResource Font16Label}" TextColor="White" HorizontalOptions="Start"/>
+                        <Label Text="{x:Static strings:language.e2104634}" Style="{StaticResource Font14Label}" TextColor="{StaticResource LoginText}" HorizontalOptions="End"></Label>
                 </Grid>
                 <CollectionView ItemsSource="{Binding Notes}" 
                     SelectionMode="Single">

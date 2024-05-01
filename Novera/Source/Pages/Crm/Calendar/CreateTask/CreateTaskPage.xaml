@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
             x:Class="Novera.Source.Pages.Crm.Calendar.CreateTask.CreateTaskPage"
+              xmlns:extension="clr-namespace:Novera.Source.Utility"
+              xmlns:strings="clr-namespace:Novera.Resources.Strings"
             Title="CreateTaskPage"
             BackgroundImageSource="cloud_straight"
             xmlns:customControls="clr-namespace:Novera.Source.CustomView"
@@ -42,7 +44,7 @@
 
             </VerticalStackLayout>
         </ScrollView>
-        <Button Text="Save"
+        <Button Text="{x:Static strings:language.e2305046}"
             Grid.Row="1"
             Margin="10,10"
             Clicked = "SaveBtnClicked"

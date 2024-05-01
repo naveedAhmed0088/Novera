@@ -5,6 +5,8 @@
              xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
              xmlns:local="clr-namespace:Novera.Source.Pages.Crm.Calendar.CustomSelector"
              xmlns:schedule="clr-namespace:Novera.Source.ViewModel.Calendar"
+              xmlns:extension="clr-namespace:Novera.Source.Utility"
+              xmlns:strings="clr-namespace:Novera.Resources.Strings"
              BackgroundImageSource="top_cloud_straight"
              Title="Calendar">
     <ContentPage.BindingContext>
@@ -83,23 +85,23 @@
             <Grid Grid.Row= "0" Margin ="10, 10, 10, 10" ColumnDefinitions ="*,*,*,*" ColumnSpacing="10">
             
                 <!-- Button 1 -->
-                <Button x:Name="BtnSchedule" Grid.Column="0" Text="Schedule"
+                <Button x:Name="BtnSchedule" Grid.Column="0" Text="{x:Static strings:language.e2309024}"
                     Clicked="Schedule_Clicked" Padding="0, 0, 0, 0"
                     Style="{StaticResource CalendarButton}"
                     />
 
                 <!-- Button 2 -->
-                <Button x:Name="BtnDay" Grid.Column="1"  Text="Day" 
+                <Button x:Name="BtnDay" Grid.Column="1"  Text="{x:Static strings:language.e3101024}" 
                     Style = "{StaticResource CalendarButton}" Padding="0, 0, 0, 0"
                     Clicked="Day_Clicked" />
 
                 <!-- Button 3 -->
-                <Button x:Name="BtnWeek" Grid.Column="2" Text="Week" 
+                <Button x:Name="BtnWeek" Grid.Column="2" Text="{x:Static strings:language.e2204019}" 
                     Style = "{StaticResource CalendarButton}" Padding="0, 0, 0, 0"
                     Clicked="Week_Clicked" />
 
                 <!-- Button 4 -->
-                <Button x:Name="BtnMonth" Grid.Column="3" Text="Month" 
+                <Button x:Name="BtnMonth" Grid.Column="3" Text="{x:Static strings:language.e2204021}" 
                     Style = "{StaticResource CalendarButton}" Padding="0, 0, 0, 0"
                     Clicked="Month_Clicked" />
             </Grid>
