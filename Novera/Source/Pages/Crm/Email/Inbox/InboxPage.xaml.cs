@@ -1,3 +1,4 @@
+using System.Collections.ObjectModel;
 using System.Text.Json;
 using Novera.Source.ApiServices;
 using Novera.Source.Model.Emails;
@@ -12,11 +13,13 @@ public partial class InboxPage : ContentView
 
 {
 
+    public ObservableCollection<Datum> SelectedItems { get; set; } = new ObservableCollection<Datum>();
     private readonly HttpClient _client = new HttpClient();
     inboxPageApiService apiService;
     private readonly InboxViewModel _viewModel;
     public InboxPage()
     {
+        
 
         apiService = new inboxPageApiService();
         InitializeComponent();
@@ -157,6 +160,25 @@ public partial class InboxPage : ContentView
     {
         var previous = e.PreviousSelection;
         var current = e.CurrentSelection;
+    }
+
+    private void EmailItemTapped(object sender, TappedEventArgs e)
+    {
+
+        var frame = (Frame)sender;
+        var emailItem = (Datum)frame.BindingContext;
+
+        if (SelectedItems.Contains(emailItem)) {
+            SelectedItems.Remove(emailItem);
+            frame.BackgroundColor = Color.FromHex("#00ff00");
+        }
+        else
+        {
+            SelectedItems.Add(emailItem);
+            frame.BackgroundColor = Color.FromHex("#D3D3D3");
+        }
+       
+
     }
 }
 
