@@ -109,7 +109,7 @@ namespace Novera.Source.ApiServices
         }
 
 
-        public async Task<object?> getAsync(string apiUrl, string requestData, Page page,string token)
+        public async Task<object?> getAsync(string apiUrl, Page page,string token)
         {
             try
             {

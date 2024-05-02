@@ -19,7 +19,7 @@ namespace Novera.Source.Response.EmailDetail
         public string important { get; set; }
     }
 
-    public class EmailDetail
+    public class EmailDetailResponse
     {
         public bool success { get; set; }
         public string message { get; set; }
