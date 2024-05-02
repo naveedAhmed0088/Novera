@@ -17,7 +17,7 @@ public class TrashViewModel
 
         TrashMailList = new ObservableCollection<Datum>();
         apiService = new inboxPageApiService();
-        LoadInboxEmailsAsync();
+        //LoadInboxEmailsAsync();
 
     }
 

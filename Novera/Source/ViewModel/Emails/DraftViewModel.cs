@@ -21,7 +21,7 @@ namespace Novera.Source.ViewModel.Emails
 
             DraftList = new ObservableCollection<Datum>();
             apiService = new inboxPageApiService();
-            LoadInboxEmailsAsync();
+            //LoadInboxEmailsAsync();
 
         }
 
