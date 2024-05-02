@@ -12,6 +12,8 @@ namespace Novera.Source.Utility
         public const string LoginEndpoint = BaseUrl + "Account/Login";
         public const string forgetPasswordEndPoint = BaseUrl + "Account/ForgotPassword";
         public const string EmailDetail = BaseUrl + "Emails/";
+        public const string ComposeEmail = BaseUrl + "Emails/send";
+
 
 
     }

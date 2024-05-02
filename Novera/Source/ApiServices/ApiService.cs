@@ -109,16 +109,22 @@ namespace Novera.Source.ApiServices
         }
 
 
-        public async Task<object?> getAsync(string apiUrl, Page page,string token)
+        public async Task<object?> getAsync(string apiUrl, Page page,string token,HttpMethod http_Method,string requestBody="")
         {
             try
             {
-                var request = new HttpRequestMessage(HttpMethod.Get, apiUrl);
+                var request = new HttpRequestMessage(http_Method, apiUrl);
                 request.Headers.Add("Authorization", $"Bearer {token}");
 
+                if (requestBody != "") {
+                    var content = new StringContent(requestBody, Encoding.UTF8, "application/json");
+                    request.Content = content;
+
+                }
 
                 var response = await _client.SendAsync(request);
 
+                
 
                 var responseBody = await response.Content.ReadAsStringAsync();
 

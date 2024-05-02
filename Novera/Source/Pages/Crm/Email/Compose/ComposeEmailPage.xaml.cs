@@ -3,7 +3,10 @@ using System.Collections.ObjectModel;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Text.Json;
+using Novera.Source.ApiServices;
 using Novera.Source.Pages.Crm.Email.EmailDetail;
+using Novera.Source.Response;
+using Novera.Source.Utility;
 using Novera.Source.ViewModel.Emails;
 using Telerik.Maui.Controls;
 using static Novera.Source.ViewModel.Emails.ComposeEmailViewModel;
@@ -12,11 +15,14 @@ namespace Novera.Source.Pages.Crm.Email.Compose;
 
 public partial class ComposeEmailPage : ContentPage
 {
+    ApiService<ComposeEmailResponse> apiService;
+
     public ComposeEmailPage()
     {
         InitializeComponent();
         BindingContext = new ComposeEmailViewModel();
-       
+        apiService = new ApiService<ComposeEmailResponse>();
+
         NavigationPage.SetHasNavigationBar(this, false);
 
         
@@ -79,25 +85,39 @@ public partial class ComposeEmailPage : ContentPage
         }
         else
         {
+            bool allEmailsSentSuccessfully = true;
+
             foreach (City selectedItem in selectedItems)
             {
                 string cityName = selectedItem.Name;
-                await SendEmail(oauthToken, cityName,from,sbj,body,id);
+                try
+                {
+                    await SendEmail(oauthToken, cityName, from, sbj, body, id);
+                }
+                catch (Exception ex)
+                {
+                    allEmailsSentSuccessfully = false; // Update flag to indicate failure
+                }
             }
 
-            // After sending all emails, navigate to another screen
-            await Navigation.PushAsync(new EmailDetailPage());
+            if (allEmailsSentSuccessfully)
+            {
+                // All emails sent successfully, navigate to another screen
+                await Navigation.PushAsync(new EmailPage());
+            }
+            else
+            {
+                DisplayAlert("Error", "Some emails failed to send.", "ok");
+                Console.WriteLine("Some emails failed to send. Navigation aborted.");
+            }
         }
     }
 
     private async Task SendEmail(string token, string sendTo, string cc, string subject, string body, int userId)
     {
+
         try
         {
-            var client = new HttpClient();
-            var request = new HttpRequestMessage(HttpMethod.Post, "http://46.29.2.121/api/Emails/send");
-            request.Headers.Add("Authorization", $"Bearer {token}");
-
             var jsonBody = new
             {
                 sendTo,
@@ -110,15 +130,28 @@ public partial class ComposeEmailPage : ContentPage
                 folderId = 0 // Assuming folderId is not provided as a parameter
             };
 
-            var jsonString = JsonSerializer.Serialize(jsonBody);
-            var content = new StringContent(jsonString, Encoding.UTF8, "application/json");
-            request.Content = content;
+            var response = await apiService.getAsync(ApiUrls.ComposeEmail, this,token,HttpMethod.Post,JsonSerializer.Serialize(jsonBody));
 
-            var response = await client.SendAsync(request);
-            response.EnsureSuccessStatusCode();
+            if (response is ComposeEmailResponse successResponse)
+            {
+               
+                if(successResponse.success==true)
+                {
 
-            Console.WriteLine(await response.Content.ReadAsStringAsync());
+                }
+                else
+                {
+
+                }
+
+
+            }
             
+
+
+
+
+
 
         }
         catch (Exception ex)

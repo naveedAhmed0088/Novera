@@ -44,7 +44,7 @@ public partial class EmailDetailPage : ContentPage
             string email_id = await SecureStorage.Default.GetAsync("email_id");
             string url = $"{ApiUrls.EmailDetail}{email_id}";
 
-            var response = await apiService.getAsync(url,  this,oauthToken);
+            var response = await apiService.getAsync(url,  this,oauthToken,HttpMethod.Get);
 
             if (response is EmailDetailResponse successResponse)
             {
@@ -53,6 +53,10 @@ public partial class EmailDetailPage : ContentPage
 
 
 
+            }
+            else
+            {
+                
             }
 
 
