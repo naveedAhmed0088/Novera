@@ -39,7 +39,7 @@ namespace Novera.Source.Pages.Crm.Email
 			{
 				this.Title = "Sent";
 
-                tabView.Items[0].ImageSource = "tab_unselected_inbox_icon";
+				tabView.Items[0].ImageSource = "tab_unselected_inbox_icon";
 				tabView.SelectedItem.ImageSource = "tab_selected_sent_icon";
 				tabView.Items[2].ImageSource = "tab_unselected_draft_icon";
 				tabView.Items[3].ImageSource = "tab_unselected_delete_icon";

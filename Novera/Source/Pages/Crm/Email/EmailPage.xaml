@@ -10,7 +10,7 @@
              xmlns:draft="clr-namespace:Novera.Source.Pages.Crm.Email.Drafts"
              xmlns:extension="clr-namespace:Novera.Source.Utility"
              xmlns:strings="clr-namespace:Novera.Resources.Strings"
-             Title="Inbox"
+             Title="{x:Static strings:language.e3106007}"
              BackgroundImageSource="top_cloud_straight">
 
    

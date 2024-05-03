@@ -99,8 +99,14 @@ public partial class ForgotPasswordPage : ContentPage
 
     private async void OnContactTapped(object sender, EventArgs e)
     {
-        await Shell.Current.GoToAsync(nameof(ContactDetailPage));
+        // Navigate to the ContactDetailPage
+        await Navigation.PushAsync(new ContactDetailPage());
+
+        // Remove the ForgotPasswordPage from the navigation stack
+        Navigation.RemovePage(this);
     }
+
+
 
 
 }

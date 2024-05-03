@@ -2,15 +2,13 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Novera.Source.Pages.Crm.Email.Compose.ComposeEmailPage"
-             Title="Compose"
+             Title="{x:Static strings:language.e3102014}"
              xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
              xmlns:extension="clr-namespace:Novera.Source.Utility"
              xmlns:strings="clr-namespace:Novera.Resources.Strings"
              BackgroundImageSource="top_cloud_straight"
              Shell.FlyoutBehavior="Disabled">
-          
-            
             <Grid RowDefinitions= "Auto,Auto,Auto,*,Auto">
                 <Grid Grid.Row="0" Padding="16" VerticalOptions="Start">
                     <Grid.ColumnDefinitions>

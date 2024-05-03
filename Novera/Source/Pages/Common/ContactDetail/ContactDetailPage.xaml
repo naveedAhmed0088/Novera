@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:extension="clr-namespace:Novera.Source.Utility"
+             xmlns:strings="clr-namespace:Novera.Resources.Strings"
             x:Class="Novera.Source.Pages.Common.ContactDetail.ContactDetailPage"
             Title="ContactDetailPage"
             BackgroundImageSource="cloud_straight"
@@ -18,7 +20,7 @@
         </Grid>
 
         <VerticalStackLayout Margin="10,0,10,0" Grid.Row="1">
-            <Label Text="Contact"  Margin="10,10,0,0" Style="{StaticResource Font22Label}"
+            <Label Text="{x:Static strings:language.e5502006}"  Margin="10,10,0,0" Style="{StaticResource Font22Label}"
                             HorizontalOptions ="Start" TextColor="{StaticResource LoginText}"/>         
             <Label Text="Elucidate Business s.r.o"  Margin="10,0,10,15" Style="{StaticResource Font18Label}"
                             HorizontalOptions ="Start" TextColor="{StaticResource EntryBackgroundWhite}"/>         
