@@ -5,7 +5,7 @@ using System.Windows.Input;
 using Novera.Resources.Strings;
 using System.Resources;
 namespace Novera.Source.ViewModel.SupportTicket
-{
+{ 
     public partial class SupportTicketViewModel : BaseViewModel
     {
         private readonly ResourceManager _resourceManager;

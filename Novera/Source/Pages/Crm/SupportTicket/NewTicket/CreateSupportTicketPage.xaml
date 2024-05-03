@@ -4,6 +4,8 @@
             x:Class="Novera.Source.Pages.Crm.SupportTicket.NewTicket.CreateSupportTicketPage"
             Title="Create Support Ticket"
             xmlns:viewmodel="clr-namespace:Novera.Source.ViewModel.SupportTicket"
+              xmlns:extension="clr-namespace:Novera.Source.Utility"
+              xmlns:strings="clr-namespace:Novera.Resources.Strings"
             BackgroundColor="Transparent"
             BackgroundImageSource="top_cloud_straight"  
             Shell.FlyoutBehavior="Disabled"         
@@ -17,7 +19,7 @@
                     <TapGestureRecognizer Tapped="BackBtnClicked" />
                 </Image.GestureRecognizers>
             </Image>
-            <Label Grid.Column="1" Text="View Tickets"  Margin="10" Style="{StaticResource Font22Label}"
+            <Label Grid.Column="1" Text="{x:Static strings:language.e9901184}"  Margin="10" Style="{StaticResource Font22Label}"
                     HorizontalOptions ="Center" TextColor="{StaticResource LoginText}"/>         
             <Image Grid.Column="2" HorizontalOptions ="End"  Margin="10, 0, 0, 0" Source="email_more">
                 <Image.GestureRecognizers>
@@ -29,9 +31,9 @@
             <VerticalStackLayout Margin="10,0,10,0">
                 
                 <StackLayout>
-                    <RadioButton Content="View Outstanding Items" />
-                    <RadioButton Content="View Completed Items" />
-                    <RadioButton Content="View All Items" />               
+                    <RadioButton Content="{x:Static strings:language.e5805020}" />
+                    <RadioButton Content="{x:Static strings:language.e5805019}" />
+                    <RadioButton Content="{x:Static strings:language.e5805018}" />               
                 </StackLayout>
                         
                 <Grid Grid.ColumnDefinitions ="Auto,*,Auto" >
@@ -67,7 +69,7 @@
                 <BoxView Color="{StaticResource EntryTextColorWhite}" HeightRequest="1" HorizontalOptions="FillAndExpand" />
                 
                 <Grid Grid.ColumnDefinitions ="Auto,*,Auto" Margin="10,0,10,0">
-                    <Label Text="Module : " 
+                    <Label Text="{x:Static strings:language.e5401003} " 
                         TextColor="{StaticResource LoginText}" 
                         Style="{StaticResource Font16Label}"
                         VerticalOptions="Center"/>
@@ -99,7 +101,7 @@
                 <BoxView Color="{StaticResource EntryTextColorWhite}" HeightRequest="1" HorizontalOptions="FillAndExpand" />
                 
                 <Grid Grid.ColumnDefinitions ="Auto,*" Margin="10,0,10,0">
-                    <Label Text="Subject : " 
+                    <Label Text="{x:Static strings:language.e3105017}  " 
                         TextColor="{StaticResource LoginText}" 
                         Style="{StaticResource Font16Label}"
                         VerticalOptions="Center"/>
@@ -132,7 +134,7 @@
                     BackgroundColor="Transparent"
                             Grid.Column="0"
                             Margin="5" />
-            <Button Text="Update Ticket"
+            <Button Text="{x:Static strings:language.e9901186}"
                             Style="{StaticResource ButtonwithWhiteBorder}"
                             Grid.Column="1"
                     BackgroundColor="Transparent"

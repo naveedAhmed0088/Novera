@@ -5,6 +5,8 @@
              Title="Compose"
              xmlns:telerik="http://schemas.telerik.com/2022/xaml/maui"
              xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             xmlns:extension="clr-namespace:Novera.Source.Utility"
+             xmlns:strings="clr-namespace:Novera.Resources.Strings"
              BackgroundImageSource="top_cloud_straight"
              Shell.FlyoutBehavior="Disabled">
           
@@ -15,8 +17,8 @@
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-            
-                    <Label Text="From:" VerticalOptions="Center" 
+
+            <Label Text="{x:Static strings:language.e3105008}" VerticalOptions="Center" 
                         TextColor="{StaticResource LabelColor}"
                         Style="{StaticResource Font16Label}" />
                     <Entry x:Name="FromEntry" Grid.Column="1" 
@@ -32,8 +34,8 @@
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-            
-                    <Label Text="To:" VerticalOptions="Center" 
+
+            <Label Text="{x:Static strings:language.e2203017}" VerticalOptions="Center" 
                         TextColor="{StaticResource LabelColor}"
                         Style="{StaticResource Font16Label}" />
                     
@@ -84,8 +86,8 @@
                         <ColumnDefinition Width="Auto" />
                         <ColumnDefinition Width="*" />
                     </Grid.ColumnDefinitions>
-            
-                    <Label Text="Subject:" VerticalOptions="Center" 
+
+            <Label Text="{x:Static strings:language.e3105017}" VerticalOptions="Center" 
                         TextColor="{StaticResource LabelColor}"
                         Style="{StaticResource Font16Label}" />
                     <Entry x:Name="SubjectEntry" Grid.Column="1" 
@@ -107,7 +109,7 @@
                             BackgroundColor="Transparent"
                             Grid.Column="0"
                             Margin="5" />
-                    <Button Text="Send"
+            <Button Text="{x:Static strings:language.e4206027}"
                             Style="{StaticResource ButtonwithWhiteBorder}"
                             Grid.Column="1"
                             BackgroundColor="Transparent"

@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:extension="clr-namespace:Novera.Source.Utility"
+		     xmlns:strings="clr-namespace:Novera.Resources.Strings"
              x:Class="Novera.Source.Pages.Crm.Document.DocumentDetailPage"
              Title="Document Detail"
              BackgroundColor="{StaticResource Transparent}"
@@ -15,7 +17,7 @@
 			       CornerRadius="10"
 			       Padding="5">
                 <Grid ColumnDefinitions="0.8*,0.2*">
-                    <Entry Placeholder="Search"
+                    <Entry Placeholder="{x:Static strings:language.e3101012}"
 					       PlaceholderColor="{StaticResource LoginText}"
 					       TextColor="White"
 					       FontSize="15"/>

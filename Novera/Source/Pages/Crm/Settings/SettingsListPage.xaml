@@ -5,6 +5,8 @@
             Title="Settings"
             xmlns:local="clr-namespace:Novera.Source.ViewModel.Settings"
             xmlns:models="clr-namespace:Novera.Source.Model.Settings"
+             xmlns:extension="clr-namespace:Novera.Source.Utility"
+xmlns:strings="clr-namespace:Novera.Resources.Strings"
             BackgroundColor="Transparent"
             BackgroundImageSource="top_cloud_straight">
             
@@ -20,7 +22,7 @@
             Margin ="20,10,20,10"
             BorderColor="{StaticResource LoginText}" CornerRadius="5"  >
             <Grid ColumnDefinitions="*, Auto">
-                <Entry  Placeholder="Search" 
+                <Entry  Placeholder="{x:Static strings:language.e3101012}" 
                     PlaceholderColor="{StaticResource LoginText}"
                     TextColor="{StaticResource EntryTextColorWhite}" Style="{StaticResource Font20Label}" />
                  <Image Grid.Column ="1" Source="notes_search"/>

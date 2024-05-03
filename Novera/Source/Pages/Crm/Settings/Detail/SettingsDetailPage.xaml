@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Novera.Source.Pages.Crm.Settings.Detail.SettingsDetailPage"
+             xmlns:extension="clr-namespace:Novera.Source.Utility"
+             xmlns:strings="clr-namespace:Novera.Resources.Strings"
              Title="Details"
              xmlns:local="clr-namespace:Novera.Source.ViewModel.Settings"
 xmlns:models="clr-namespace:Novera.Source.Model.Settings"
@@ -36,7 +38,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
 
 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,0">
-                    <Label Text="User Id : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e2511073} "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="12345"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_view_color" Grid.Column="2"></Image>
                 </Grid>
@@ -48,7 +50,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
                          HorizontalOptions="FillAndExpand" />
 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="Name : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e3104016}"  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="Jeneby Mathews"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -60,7 +62,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
            HorizontalOptions="FillAndExpand" />
 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="Email : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e3105006} "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="Jmaes@novera.sk"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -72,7 +74,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
            HorizontalOptions="FillAndExpand" />
 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="Position : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e4205004} "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="Senior Technical Consultant"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -97,7 +99,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
                 
                 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="Language : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e1302031} "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="Slovak"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -109,7 +111,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
            HorizontalOptions="FillAndExpand" />
                 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="Access Role : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e9901231} "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="Super User"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -121,7 +123,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
            HorizontalOptions="FillAndExpand" />
                 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="GDPR Role : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e6104038} "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="It Security Offices"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -133,7 +135,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
            HorizontalOptions="FillAndExpand" />
 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="Home : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e5807001}"  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="Dashboard"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -145,7 +147,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
            HorizontalOptions="FillAndExpand" />
 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="Calender : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e1302007} "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="Work Week"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -157,7 +159,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
            HorizontalOptions="FillAndExpand" />
 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="Payroll Tax : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e5302018}"  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="Slovakia"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -169,7 +171,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
            HorizontalOptions="FillAndExpand" />
                 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="Time Zone : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e5201015}"  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="1"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -181,7 +183,7 @@ HorizontalOptions="Center" VerticalOptions="Center">
            HorizontalOptions="FillAndExpand" />
                 
                 <Grid ColumnDefinitions="Auto,*,0.2*" Margin="10,10">
-                    <Label Text="End Date : "  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
+                    <Label Text="{x:Static strings:language.e4205004}"  TextColor="{StaticResource White}" Style="{StaticResource Font14Label}" />
                     <Label Text="Stuart Ashford"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}"  Grid.Column="1" />
                     <Image HorizontalOptions="End" HeightRequest="20" WidthRequest="20" Source="settings_drop_down" Grid.Column="2"></Image>
                 </Grid>
@@ -212,9 +214,9 @@ BorderColor="{StaticResource LoginText}" CornerRadius="5"  >
                     <Label Text="jmathews@novera.ek"  TextColor="{StaticResource LoginText}" Style="{StaticResource Font14Label}" />
 
                 </Frame>
-                <RadioButton Content="HTML Signature" IsChecked="True" Margin="10,0"/>
-                <RadioButton Content="Text Signature" Margin="10,0"/>
-                <RadioButton Content="Show Other Email" Margin="10,0"/>
+                <RadioButton Content="{x:Static strings:language.e3101055}" IsChecked="True" Margin="10,0"/>
+                <RadioButton Content="{x:Static strings:language.e9901229}" Margin="10,0"/>
+                <RadioButton Content="{x:Static strings:language.e5202026}" Margin="10,0"/>
 
                 <BoxView Color="{StaticResource LineBackgroundColor}"
 HeightRequest="1"
@@ -227,12 +229,12 @@ HorizontalOptions="FillAndExpand" />
 
         <Grid ColumnDefinitions="*,*" Grid.Row="2"
        Margin="20,0,20,0">
-            <Button Text="Save"
+            <Button Text="{x:Static strings:language.e2305046}"
               Style="{StaticResource ButtonwithWhiteBorder}"
               Clicked="Save_Btn_Clicked"
               Grid.Column="0"
               Margin="5" />
-            <Button Text="Team"
+            <Button Text="{x:Static strings:language.e2307011}"
               Style="{StaticResource ButtonwithWhiteBorder}"
               Grid.Column="1"
               Margin="5" />

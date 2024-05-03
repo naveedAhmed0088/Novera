@@ -6,4 +6,9 @@
     <ActiveDebugProfile>Samsung SM-A525F (Android 14.0 - API 34)</ActiveDebugProfile>
     <SelectedPlatformGroup>PhysicalDevice</SelectedPlatformGroup>
   </PropertyGroup>
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\Strings\language.resx">
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
 </Project>

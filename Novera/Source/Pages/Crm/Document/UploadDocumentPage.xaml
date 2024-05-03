@@ -2,6 +2,8 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Novera.Source.Pages.Crm.Document.UploadDocumentPage"
+             xmlns:extension="clr-namespace:Novera.Source.Utility"
+             xmlns:strings="clr-namespace:Novera.Resources.Strings"
              Title="Upload Document"
              BackgroundColor="Transparent"
              xmlns:local="clr-namespace:Novera.Source.ViewModel.Document"
@@ -19,7 +21,7 @@
                         Stroke="{StaticResource LoginText}">
                 <VerticalStackLayout>
                     <Image Source="document_upload" HorizontalOptions="Center" Margin="10,20"/>
-                    <Label Text="Select file"
+                        <Label Text="{x:Static strings:language.e5806035}"
                         TextColor="White"
                         Style="{StaticResource Font14Label}" HorizontalOptions="Center"/>
                     <Label Text="Supported formates: JPEG, PNG, GIF, MP4, PDF, PSD, AI, Word, PPT"
@@ -100,7 +102,7 @@
                 </CollectionView>
             </VerticalStackLayout>
         </ScrollView>
-        <Button Text="Upload File"
+        <Button Text="{x:Static strings:language.e5805017}"
 		        Margin="10,10"
 		        Style="{StaticResource MainButtonTransparentStyle}"
 		        Grid.Row="1"/>

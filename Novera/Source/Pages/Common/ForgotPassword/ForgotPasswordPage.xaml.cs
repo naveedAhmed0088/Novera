@@ -1,3 +1,4 @@
+using Novera.Source.Pages.Common.ContactDetail;
 using Novera.Source.Pages.Common.Login;
 using Novera.Source.Response.CommpnPages;
 using Novera.Source.Services;
@@ -96,6 +97,10 @@ public partial class ForgotPasswordPage : ContentPage
         Shell.Current.Navigation.PopAsync();
     }
 
-
-  
+    private async void OnContactTapped(object sender, EventArgs e)
+    {
+        await Shell.Current.GoToAsync(nameof(ContactDetailPage));
     }
+
+
+}

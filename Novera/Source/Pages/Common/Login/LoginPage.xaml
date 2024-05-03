@@ -97,7 +97,7 @@
                 Margin="20,0,20,0"
                 HorizontalOptions="FillAndExpand" />
 
-            <Label Text="{x:Static strings:language.e5202020}"
+            <Label Text="{x:Static strings:language.e1302026}"
                    TextColor="White"
                    HorizontalOptions="EndAndExpand"
                    Margin="10"

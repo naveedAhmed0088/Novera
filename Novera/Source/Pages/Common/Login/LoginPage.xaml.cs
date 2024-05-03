@@ -154,6 +154,9 @@ public partial class LoginPage : ContentPage
         Shell.Current.GoToAsync(nameof(ForgotPasswordPage));
     }
 
-   
+    private void OnContactTapped(object sender, TappedEventArgs e)
+    {
+
+    }
 }
 
