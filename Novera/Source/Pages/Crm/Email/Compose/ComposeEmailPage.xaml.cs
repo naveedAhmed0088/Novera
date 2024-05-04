@@ -125,7 +125,7 @@ public partial class ComposeEmailPage : ContentPage
                 bcc = "", // Assuming bcc is not provided as a parameter
                 subject,
                 bodyText = body,
-                bodyHtml = "", // Assuming bodyHtml is not provided as a parameter
+                bodyHtml = body, // Assuming bodyHtml is not provided as a parameter
                 userId,
                 folderId = 0 // Assuming folderId is not provided as a parameter
             };

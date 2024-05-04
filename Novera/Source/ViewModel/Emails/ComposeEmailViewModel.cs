@@ -13,6 +13,7 @@ public class ComposeEmailViewModel : BaseViewModel
     {
         this.Items = new ObservableCollection<City>
         {
+            new City { Name = "naveed2@test.com", Population = 13929286 },
             new City { Name = "deepak@sixwares.com", Population = 13929286 },
             new City { Name = "pankaj@sixwares.com", Population = 8623000 },
             new City { Name = "sonal@sixwares.com", Population = 8908081 },

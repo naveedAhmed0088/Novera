@@ -1,4 +1,5 @@
 ﻿using Novera.Source.Response.CommpnPages;
+using Novera.Source.Response.CRMPages;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -117,8 +118,35 @@ namespace Novera.Source.ApiServices
                 request.Headers.Add("Authorization", $"Bearer {token}");
 
                 if (requestBody != "") {
-                    var content = new StringContent(requestBody, Encoding.UTF8, "application/json");
-                    request.Content = content;
+                    // var content = new StringContent(requestBody, Encoding.UTF8, "application/json");
+                    // request.Content = content;
+
+
+                    // Split the request body into key-value pairs assuming it's in JSON format
+                    var requestData = JsonSerializer.Deserialize<Dictionary<string, object>>(requestBody);
+
+                    // Create a MultipartFormDataContent to hold the form data
+                    var formData = new MultipartFormDataContent();
+
+                    // Add each key-value pair to the form data
+                    foreach (var item in requestData)
+                    {
+                        if (item.Value is string stringValue)
+                        {
+                            // If the value is a string, add it directly
+                            formData.Add(new StringContent(stringValue), item.Key);
+                        }
+                        else
+                        {
+                            // If the value is not a string, convert it to a string before adding
+                            formData.Add(new StringContent(item.Value.ToString()), item.Key);
+                        }
+
+                        
+                    }
+
+                    // Assign the multipart form data content to the request
+                    request.Content = formData;
 
                 }
 

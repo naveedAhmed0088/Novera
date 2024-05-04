@@ -1,5 +1,6 @@
 using Novera.Source.ApiServices;
 using Novera.Source.Pages.Crm.Email.Compose;
+using Novera.Source.Pages.Crm.Email.EmailDetail;
 using Novera.Source.Response.CRMPages;
 using Novera.Source.Utility;
 using Novera.Source.ViewModel.Emails;
@@ -147,5 +148,14 @@ public partial class SentMailView : ContentView
                 }
             }
         }
+    }
+    private async void EmailItemTapped(object sender, TappedEventArgs e)
+    {
+        var frame = (Frame)sender;
+        var emailItem = (Datum)frame.BindingContext;
+        string email_id = emailItem.mailId.ToString();
+        await SecureStorage.Default.SetAsync("email_id", email_id);
+        await Navigation.PushAsync(new EmailDetailPage());
+
     }
 }

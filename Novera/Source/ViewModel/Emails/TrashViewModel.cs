@@ -9,13 +9,13 @@ namespace Novera.Source.ViewModel.Emails;
 
 public class TrashViewModel
 {
-    public ObservableCollection<EmailVM> TrashMailList { get; }
+    public ObservableCollection<Datum> TrashMailList { get; }
     inboxPageApiService apiService;
 
     public TrashViewModel()
     {
 
-        TrashMailList = new ObservableCollection<EmailVM>();
+        TrashMailList = new ObservableCollection<Datum>();
         apiService = new inboxPageApiService();
         LoadInboxEmailsAsync();
 
@@ -80,7 +80,7 @@ public class TrashViewModel
         {
             // Handle exception
             Console.WriteLine($"Exception: {ex.Message}");
-            App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
+            //App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
 
         }

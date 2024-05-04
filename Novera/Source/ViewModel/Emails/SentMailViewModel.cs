@@ -8,13 +8,13 @@ using Novera.Source.Utility;
 namespace Novera.Source.ViewModel.Emails;
 public class SentMailViewModel
 {
-    public ObservableCollection<EmailVM> SentEmailList { get; }
+    public ObservableCollection<Datum> SentEmailList { get; }
 
     inboxPageApiService apiService;
 
     public SentMailViewModel()
     {
-        SentEmailList = new ObservableCollection<EmailVM>();
+        SentEmailList = new ObservableCollection<Datum>();
         apiService = new inboxPageApiService();
         LoadInboxEmailsAsync();
 
@@ -79,7 +79,7 @@ public class SentMailViewModel
         {
             // Handle exception
             Console.WriteLine($"Exception: {ex.Message}");
-            App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
+            //App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
 
         }
