@@ -163,20 +163,11 @@ public partial class InboxPage : ContentView
 
     private async void EmailItemTapped(object sender, TappedEventArgs e)
     {
-
         var frame = (Frame)sender;
         var emailItem = (Datum)frame.BindingContext;
         string email_id = emailItem.mailId.ToString();
         await SecureStorage.Default.SetAsync("email_id", email_id);
-
         await Navigation.PushAsync(new EmailDetailPage());
-
-
-
-
-
-
-
 
     }
 }
