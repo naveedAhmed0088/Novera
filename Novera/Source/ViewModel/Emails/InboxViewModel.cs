@@ -7,13 +7,13 @@ namespace Novera.Source.ViewModel.Emails
 {
     public class InboxViewModel
     {
-        public ObservableCollection<Datum> InboxEmails { get; }
+        public ObservableCollection<EmailVM> InboxEmails { get; }
         inboxPageApiService apiService;
         public InboxViewModel()
         {
             // This default constructor is added to satisfy XAML requirements
             // You can leave it empty or initialize properties if needed
-            InboxEmails = new ObservableCollection<Datum>();
+            InboxEmails = new ObservableCollection<EmailVM>();
             apiService = new inboxPageApiService();
             LoadInboxEmailsAsync();
 
@@ -45,15 +45,13 @@ namespace Novera.Source.ViewModel.Emails
             try
             {
                 string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
-                int id = int.Parse(await SecureStorage.Default.GetAsync("userid"));
-
-
+                var userEmail = await SecureStorage.Default.GetAsync("user_email");
 
 
                 // Retrieve OAuth token from SecureStorage
 
 
-                string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}";
+                string url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&PageSize=10&PageNumber=0&EmailType=1";
 
 
                 var response = await apiService.showEmails(url, oauthToken);
@@ -61,7 +59,7 @@ namespace Novera.Source.ViewModel.Emails
                 if (response is InboxPageResponse successResponse)
                 {
                     InboxEmails.Clear();
-                    foreach (var email in successResponse.data)
+                    foreach (var email in successResponse.data.emails)
                     {
                         InboxEmails.Add(email);
                     }

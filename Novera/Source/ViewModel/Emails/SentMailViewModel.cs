@@ -8,13 +8,13 @@ using Novera.Source.Utility;
 namespace Novera.Source.ViewModel.Emails;
 public class SentMailViewModel
 {
-    public ObservableCollection<Datum> SentEmailList { get; }
+    public ObservableCollection<EmailVM> SentEmailList { get; }
 
     inboxPageApiService apiService;
 
     public SentMailViewModel()
     {
-        SentEmailList = new ObservableCollection<Datum>();
+        SentEmailList = new ObservableCollection<EmailVM>();
         apiService = new inboxPageApiService();
         LoadInboxEmailsAsync();
 
@@ -46,14 +46,16 @@ public class SentMailViewModel
         try
         {
             string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
-            int id = int.Parse(await SecureStorage.Default.GetAsync("userid"));
+            var userEmail = await SecureStorage.Default.GetAsync("user_email");
 
 
 
 
-            
 
-            string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}&Sent=true";
+
+
+            string url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&PageSize=10&PageNumber=0&EmailType=3";
+
 
 
             var response = await apiService.showEmails(url, oauthToken);
@@ -62,7 +64,7 @@ public class SentMailViewModel
             {
                 SentEmailList.Clear();
                
-                foreach (var email in successResponse.data)
+                foreach (var email in successResponse.data.emails)
                 {
                     SentEmailList.Add(email);
                 }

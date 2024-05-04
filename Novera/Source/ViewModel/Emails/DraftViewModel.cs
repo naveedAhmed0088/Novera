@@ -13,13 +13,13 @@ namespace Novera.Source.ViewModel.Emails
 {
     public class DraftViewModel
     {
-        public ObservableCollection<Datum> DraftList { get; }
+        public ObservableCollection<EmailVM> DraftList { get; }
         inboxPageApiService apiService;
 
         public DraftViewModel()
         {
 
-            DraftList = new ObservableCollection<Datum>();
+            DraftList = new ObservableCollection<EmailVM>();
             apiService = new inboxPageApiService();
             LoadInboxEmailsAsync();
 
@@ -51,7 +51,8 @@ namespace Novera.Source.ViewModel.Emails
             try
             {
                 string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
-                int id = int.Parse(await SecureStorage.Default.GetAsync("userid"));
+                var userEmail = await SecureStorage.Default.GetAsync("user_email");
+
 
 
 
@@ -59,7 +60,8 @@ namespace Novera.Source.ViewModel.Emails
                 // Retrieve OAuth token from SecureStorage
 
 
-                string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}&Draft=true";
+                string url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&PageSize=10&PageNumber=0&EmailType=2";
+
 
 
                 var response = await apiService.showEmails(url, oauthToken);
@@ -67,7 +69,7 @@ namespace Novera.Source.ViewModel.Emails
                 if (response is InboxPageResponse successResponse)
                 {
                     DraftList.Clear();
-                    foreach (var email in successResponse.data)
+                    foreach (var email in successResponse.data.emails)
                     {
                         DraftList.Add(email);
                     }

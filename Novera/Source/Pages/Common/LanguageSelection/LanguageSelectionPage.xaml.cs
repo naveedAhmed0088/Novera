@@ -7,40 +7,45 @@ using Novera.Source.Utility;
 using System.Globalization;
 using System.Text.Json.Serialization;
 
-namespace Novera.Source.Pages.Common.LanguageSelection;
-
-public partial class LanguageSelectionPage : ContentPage
+namespace Novera.Source.Pages.Common.LanguageSelection
 {
-    public LanguageSelectionPage()
+    public partial class LanguageSelectionPage : ContentPage
     {
-        InitializeComponent();
-    }
-
-    private void BackBtnClicked(object sender, EventArgs e)
-    {
-        Shell.Current.Navigation.PopAsync();
-    }
-
-    private void OnNextClicked(object sender, EventArgs e)
-    {
-        Shell.Current.GoToAsync(nameof(LoginPage));
-    }
-
-    private void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
-    {
-        // Check if an item is actually selected
-        if (e.CurrentSelection.Count > 0)
+        public LanguageSelectionPage()
         {
-            string lang_code = (e.CurrentSelection.FirstOrDefault() as LanguageModel)?.languageCode;
-            if(!string.IsNullOrEmpty(lang_code))
+            InitializeComponent();
+        }
+
+        // Add the event handler for Frame tap
+        private void OnFrameTapped(object sender, EventArgs e)
+        {
+            // Get the selected item from the BindingContext
+            if (sender is Frame frame && frame.BindingContext is LanguageModel selectedItem)
             {
-                //Translator.Instance.CultureInfo = new CultureInfo(lang_code);
-                //Translator.Instance.OnPropertyChanged();
-
-                language.Culture = new System.Globalization.CultureInfo(lang_code);
-                (App.Current as App).MainPage = new AppShell();
-
+                // Handle the selection here
+                string lang_code = selectedItem.languageCode;
+                if (!string.IsNullOrEmpty(lang_code))
+                {
+                    // Change the language and navigate or update UI accordingly
+                    language.Culture = new System.Globalization.CultureInfo(lang_code);
+                    (App.Current as App).MainPage = new AppShell();
+                }
             }
+        }
+
+        private void BackBtnClicked(object sender, EventArgs e)
+        {
+            Shell.Current.Navigation.PopAsync();
+        }
+
+        private void OnNextClicked(object sender, EventArgs e)
+        {
+            Shell.Current.GoToAsync(nameof(LoginPage));
+        }
+
+        private void OnCollectionViewSelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            // This method might not be needed if you are handling selection with Frame tap
         }
     }
 }

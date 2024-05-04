@@ -98,6 +98,7 @@ public partial class LoginPage : ContentPage
                     //save data in async
                     await SecureStorage.Default.SetAsync("oauth_token", successResponse.data.sessionToken);
                     await SecureStorage.Default.SetAsync("userid", successResponse.data.userDetails.userId.ToString());
+                    await SecureStorage.Default.SetAsync("user_email", successResponse.data.userDetails.userEmail.ToString());
 
                     await Shell.Current.GoToAsync($"//{nameof(EmailPage)}");
 

@@ -9,13 +9,13 @@ namespace Novera.Source.ViewModel.Emails;
 
 public class TrashViewModel
 {
-    public ObservableCollection<Datum> TrashMailList { get; }
+    public ObservableCollection<EmailVM> TrashMailList { get; }
     inboxPageApiService apiService;
 
     public TrashViewModel()
     {
 
-        TrashMailList = new ObservableCollection<Datum>();
+        TrashMailList = new ObservableCollection<EmailVM>();
         apiService = new inboxPageApiService();
         LoadInboxEmailsAsync();
 
@@ -47,7 +47,8 @@ public class TrashViewModel
         try
         {
             string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
-            int id = int.Parse(await SecureStorage.Default.GetAsync("userid"));
+            var userEmail = await SecureStorage.Default.GetAsync("user_email");
+
 
 
 
@@ -55,7 +56,8 @@ public class TrashViewModel
             // Retrieve OAuth token from SecureStorage
 
 
-            string url = $"{ApiUrls.BaseUrl}Emails?UserId={id}&Trash=true";
+            string url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&PageSize=10&PageNumber=0&EmailType=4";
+
 
 
             var response = await apiService.showEmails(url, oauthToken);
@@ -63,7 +65,7 @@ public class TrashViewModel
             if (response is InboxPageResponse successResponse)
             {
                 TrashMailList.Clear();
-                foreach (var email in successResponse.data)
+                foreach (var email in successResponse.data.emails)
                 {
                     TrashMailList.Add(email);
                 }
