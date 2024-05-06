@@ -9,6 +9,10 @@ namespace Novera.Source.ViewModel.Emails;
 
 public class TrashViewModel
 {
+#pragma warning disable CS8602
+#pragma warning disable CS8600
+#pragma warning disable CS8604
+
     public ObservableCollection<Datum> TrashMailList { get; }
     inboxPageApiService apiService;
 
@@ -17,7 +21,7 @@ public class TrashViewModel
 
         TrashMailList = new ObservableCollection<Datum>();
         apiService = new inboxPageApiService();
-        LoadInboxEmailsAsync();
+        _ = LoadInboxEmailsAsync();
 
     }
 
@@ -80,8 +84,7 @@ public class TrashViewModel
         {
             // Handle exception
             Console.WriteLine($"Exception: {ex.Message}");
-            //App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
-
+           
 
         }
         finally

@@ -1,14 +1,9 @@
 
-using System.Collections.ObjectModel;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Text.Json;
 using Novera.Source.ApiServices;
-using Novera.Source.Pages.Crm.Email.EmailDetail;
 using Novera.Source.Response;
 using Novera.Source.Utility;
 using Novera.Source.ViewModel.Emails;
-using Telerik.Maui.Controls;
 using static Novera.Source.ViewModel.Emails.ComposeEmailViewModel;
 
 namespace Novera.Source.Pages.Crm.Email.Compose;
@@ -16,6 +11,10 @@ namespace Novera.Source.Pages.Crm.Email.Compose;
 public partial class ComposeEmailPage : ContentPage
 {
     ApiService<ComposeEmailResponse> apiService;
+#pragma warning disable CS8602
+#pragma warning disable CS8600
+#pragma warning disable CS8604
+
 
     public ComposeEmailPage()
     {
@@ -69,19 +68,19 @@ public partial class ComposeEmailPage : ContentPage
         {
             // Display an error message or handle the empty email case accordingly
             // For example:
-            DisplayAlert("Error", "Please enter your email.", "OK");
+            await DisplayAlert("Error", "Please enter your email.", "OK");
         }
         else if (selectedItems.Count <= 0)
         {
-            DisplayAlert("Error", "Please select at least one email.", "OK");
+            await DisplayAlert("Error", "Please select at least one email.", "OK");
         }
         else if (string.IsNullOrWhiteSpace(sbj))
         {
-            DisplayAlert("Error", "Please enter subject.", "OK");
+            await DisplayAlert("Error", "Please enter subject.", "OK");
         }
         else if (string.IsNullOrWhiteSpace(body))
         {
-            DisplayAlert("Error", "Please enter body.", "OK");
+            await DisplayAlert("Error", "Please enter body.", "OK");
         }
         else
         {
@@ -92,32 +91,41 @@ public partial class ComposeEmailPage : ContentPage
                 string cityName = selectedItem.Name;
                 try
                 {
-                    await SendEmail(oauthToken, cityName, from, sbj, body, id);
+                    // Use the SendEmail method and check its return value
+                    bool emailSentSuccessfully = await SendEmail(oauthToken, cityName, from, sbj, body, id);
+
+                    if (!emailSentSuccessfully)
+                    {
+                        allEmailsSentSuccessfully = false; // Update flag to indicate failure
+                        break;
+                    }
                 }
                 catch (Exception ex)
                 {
                     allEmailsSentSuccessfully = false; // Update flag to indicate failure
+                    Console.WriteLine(ex.Message);
                 }
             }
 
             if (allEmailsSentSuccessfully)
             {
-                // All emails sent successfully, navigate to another screen
                 await Navigation.PushAsync(new EmailPage());
             }
             else
             {
-                DisplayAlert("Error", "Some emails failed to send.", "ok");
+                await DisplayAlert("Error", "Some emails failed to send.", "OK");
                 Console.WriteLine("Some emails failed to send. Navigation aborted.");
             }
         }
     }
 
-    private async Task SendEmail(string token, string sendTo, string cc, string subject, string body, int userId)
+    private async Task<bool> SendEmail(string token, string sendTo, string cc, string subject, string body, int userId)
     {
-
+        bool allEmailsSentSuccessfully = true;
         try
         {
+           
+
             var jsonBody = new
             {
                 sendTo,
@@ -137,10 +145,12 @@ public partial class ComposeEmailPage : ContentPage
                
                 if(successResponse.success==true)
                 {
+                   allEmailsSentSuccessfully = true;
 
                 }
                 else
                 {
+                    allEmailsSentSuccessfully = false;
 
                 }
 
@@ -157,8 +167,11 @@ public partial class ComposeEmailPage : ContentPage
         catch (Exception ex)
         {
             Console.WriteLine($"Error: {ex.Message}");
-            DisplayAlert("Error", ex.Message, "ok");
+            await DisplayAlert("Error", ex.Message, "ok");
+            allEmailsSentSuccessfully = false;
+
         }
+        return allEmailsSentSuccessfully;
     }
 
 

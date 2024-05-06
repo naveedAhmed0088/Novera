@@ -5,6 +5,10 @@ using Novera.Source.Utility;
 
 namespace Novera.Source.ViewModel.Emails
 {
+#pragma warning disable CS8602
+#pragma warning disable CS8600
+#pragma warning disable CS8604
+
     public class InboxViewModel
     {
         public ObservableCollection<Datum> InboxEmails { get; }
@@ -15,7 +19,7 @@ namespace Novera.Source.ViewModel.Emails
             // You can leave it empty or initialize properties if needed
             InboxEmails = new ObservableCollection<Datum>();
             apiService = new inboxPageApiService();
-            LoadInboxEmailsAsync();
+            _ = LoadInboxEmailsAsync();
 
         }
 

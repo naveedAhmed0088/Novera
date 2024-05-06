@@ -12,11 +12,15 @@ public class SentMailViewModel
 
     inboxPageApiService apiService;
 
+#pragma warning disable CS8602
+#pragma warning disable CS8600
+#pragma warning disable CS8604
+
     public SentMailViewModel()
     {
         SentEmailList = new ObservableCollection<Datum>();
         apiService = new inboxPageApiService();
-        LoadInboxEmailsAsync();
+        _ = LoadInboxEmailsAsync();
 
     }
 

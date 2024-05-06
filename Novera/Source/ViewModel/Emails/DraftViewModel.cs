@@ -11,6 +11,10 @@ using Novera.Source.Utility;
 
 namespace Novera.Source.ViewModel.Emails
 {
+#pragma warning disable CS8602
+#pragma warning disable CS8600
+#pragma warning disable CS8604
+
     public class DraftViewModel
     {
         public ObservableCollection<Datum> DraftList { get; }
@@ -21,7 +25,7 @@ namespace Novera.Source.ViewModel.Emails
 
             DraftList = new ObservableCollection<Datum>();
             apiService = new inboxPageApiService();
-            LoadInboxEmailsAsync();
+            _ = LoadInboxEmailsAsync();
 
         }
 
