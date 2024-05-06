@@ -1,1 +1,0 @@
-D:\work\Novera\Novera\Novera.csproj;x64
