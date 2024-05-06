@@ -16,7 +16,7 @@ public partial class InboxPage : ContentView
 
     public ObservableCollection<Datum> SelectedItems { get; set; } = new ObservableCollection<Datum>();
     private readonly HttpClient _client = new HttpClient();
-    inboxPageApiService apiService;
+    EmailApiService apiService;
     private readonly InboxViewModel _viewModel;
 #pragma warning disable CS8602
 #pragma warning disable CS8600
@@ -25,7 +25,7 @@ public partial class InboxPage : ContentView
     {
         
 
-        apiService = new inboxPageApiService();
+        apiService = new EmailApiService();
         InitializeComponent();
         Resources.Add("FirstCharacterConverter", new FirstCharacterConverter());
         _viewModel = new InboxViewModel();

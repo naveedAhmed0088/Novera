@@ -10,14 +10,14 @@ namespace Novera.Source.Pages.Crm.Email.Sent;
 
 public partial class SentMailView : ContentView
 {
-    inboxPageApiService apiService;
+    EmailApiService apiService;
     private readonly SentMailViewModel _viewModel;
     #pragma warning disable CS8602
 #pragma warning disable CS8600
 
     public SentMailView()
 	{
-        apiService = new inboxPageApiService();
+        apiService = new EmailApiService();
         InitializeComponent();
         Resources.Add("FirstCharacterConverter", new FirstCharacterConverter());
         _viewModel = new SentMailViewModel();

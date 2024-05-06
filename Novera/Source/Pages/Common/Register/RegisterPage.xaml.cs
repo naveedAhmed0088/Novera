@@ -1,6 +1,8 @@
 using System.Text;
 using System.Text.Json;
 using Novera.Source.ApiServices;
+using Novera.Source.Pages.Common.LanguageSelection;
+using Novera.Source.Pages.Common.LoginOptionDialog;
 using Novera.Source.Response.CommpnPages;
 using Novera.Source.Utility;
 namespace Novera.Source.Pages.Common.Register;
@@ -79,5 +81,16 @@ public partial class RegisterPage : ContentPage
     private void OnLoginTapped(object sender, EventArgs e)
     {
         Shell.Current.Navigation.PopAsync();
+    }
+
+    private void OnLanguageClicked(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(LanguageSelectionPage));
+    }
+
+    private void OnLoginWithClicked(object sender, EventArgs e)
+    {
+        var myDialog = new LoginOptionDialogPage();
+        Navigation.PushModalAsync(myDialog);
     }
 }

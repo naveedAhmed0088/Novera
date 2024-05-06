@@ -12,13 +12,13 @@ namespace Novera.Source.ViewModel.Emails
     public class InboxViewModel
     {
         public ObservableCollection<Datum> InboxEmails { get; }
-        inboxPageApiService apiService;
+        EmailApiService apiService;
         public InboxViewModel()
         {
             // This default constructor is added to satisfy XAML requirements
             // You can leave it empty or initialize properties if needed
             InboxEmails = new ObservableCollection<Datum>();
-            apiService = new inboxPageApiService();
+            apiService = new EmailApiService();
             _ = LoadInboxEmailsAsync();
 
         }
@@ -28,7 +28,7 @@ namespace Novera.Source.ViewModel.Emails
         {
             // Clear existing emails and reload
             InboxEmails.Clear();
-            apiService = new inboxPageApiService();
+            apiService = new EmailApiService();
 
             await LoadInboxEmailsAsync();
         }

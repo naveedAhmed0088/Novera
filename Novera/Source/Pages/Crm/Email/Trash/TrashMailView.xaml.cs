@@ -12,7 +12,7 @@ public partial class TrashMailView : ContentView
 {
 
     private readonly HttpClient _client = new HttpClient();
-    inboxPageApiService apiService;
+    EmailApiService apiService;
     private readonly TrashViewModel _viewModel;
 
 #pragma warning disable CS8602
@@ -20,7 +20,7 @@ public partial class TrashMailView : ContentView
 
     public TrashMailView()
 	{
-        apiService = new inboxPageApiService();
+        apiService = new EmailApiService();
         InitializeComponent();
         Resources.Add("FirstCharacterConverter", new FirstCharacterConverter());
         _viewModel = new TrashViewModel();

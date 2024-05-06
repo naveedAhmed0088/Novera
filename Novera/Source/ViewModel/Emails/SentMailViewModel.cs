@@ -10,7 +10,7 @@ public class SentMailViewModel
 {
     public ObservableCollection<Datum> SentEmailList { get; }
 
-    inboxPageApiService apiService;
+    EmailApiService apiService;
 
 #pragma warning disable CS8602
 #pragma warning disable CS8600
@@ -19,7 +19,7 @@ public class SentMailViewModel
     public SentMailViewModel()
     {
         SentEmailList = new ObservableCollection<Datum>();
-        apiService = new inboxPageApiService();
+        apiService = new EmailApiService();
         _ = LoadInboxEmailsAsync();
 
     }
@@ -29,7 +29,7 @@ public class SentMailViewModel
     {
         // Clear existing emails and reload
         SentEmailList.Clear();
-        apiService = new inboxPageApiService();
+        apiService = new EmailApiService();
 
         await LoadInboxEmailsAsync();
     }

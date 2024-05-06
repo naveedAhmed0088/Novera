@@ -10,7 +10,7 @@ namespace Novera.Source.Pages.Crm.Email.Drafts;
 public partial class DraftPage : ContentView
 {
     private readonly HttpClient _client = new HttpClient();
-    inboxPageApiService apiService;
+    EmailApiService apiService;
     private readonly DraftViewModel _viewModel;
 
 #pragma warning disable CS8602

@@ -18,13 +18,13 @@ namespace Novera.Source.ViewModel.Emails
     public class DraftViewModel
     {
         public ObservableCollection<Datum> DraftList { get; }
-        inboxPageApiService apiService;
+        EmailApiService apiService;
 
         public DraftViewModel()
         {
 
             DraftList = new ObservableCollection<Datum>();
-            apiService = new inboxPageApiService();
+            apiService = new EmailApiService();
             _ = LoadInboxEmailsAsync();
 
         }
@@ -34,7 +34,7 @@ namespace Novera.Source.ViewModel.Emails
         {
             // Clear existing emails and reload
             DraftList.Clear();
-            apiService = new inboxPageApiService();
+            apiService = new EmailApiService();
 
             await LoadInboxEmailsAsync();
         }

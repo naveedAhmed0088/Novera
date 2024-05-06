@@ -14,13 +14,13 @@ public class TrashViewModel
 #pragma warning disable CS8604
 
     public ObservableCollection<Datum> TrashMailList { get; }
-    inboxPageApiService apiService;
+    EmailApiService apiService;
 
     public TrashViewModel()
     {
 
         TrashMailList = new ObservableCollection<Datum>();
-        apiService = new inboxPageApiService();
+        apiService = new EmailApiService();
         _ = LoadInboxEmailsAsync();
 
     }
@@ -30,7 +30,7 @@ public class TrashViewModel
     {
         // Clear existing emails and reload
         TrashMailList.Clear();
-        apiService = new inboxPageApiService();
+        apiService = new EmailApiService();
 
         await LoadInboxEmailsAsync();
     }

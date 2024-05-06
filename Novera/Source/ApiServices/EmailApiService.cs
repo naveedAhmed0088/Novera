@@ -9,11 +9,11 @@ using System.Threading.Tasks;
 
 namespace Novera.Source.ApiServices
 {
-    public class inboxPageApiService
+    public class EmailApiService
     {
         private readonly HttpClient _client;
 
-        public inboxPageApiService()
+        public EmailApiService()
         {
             _client = new HttpClient();
         }
