@@ -86,6 +86,9 @@
 	  <Folder Include="Platforms\Android\Resources\xml\" />
 	</ItemGroup>
 	<ItemGroup>
+	  <None Include="..\.editorconfig" Link=".editorconfig" />
+	</ItemGroup>
+	<ItemGroup>
 	  <Compile Update="Resources\AppRes.Designer.cs">
 	    <DesignTime>True</DesignTime>
 	    <AutoGen>True</AutoGen>

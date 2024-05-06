@@ -1,11 +1,6 @@
 ﻿using Novera.Source.Response.CommpnPages;
-using Novera.Source.Response.CRMPages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace Novera.Source.ApiServices
 {
@@ -64,7 +59,7 @@ namespace Novera.Source.ApiServices
         }
 
 
-        public async Task<object?> PostAsyncWithHeader(string apiUrl, string requestData, Page page,HttpMethod httpmethod,string token)
+        public async Task<object?> PostAsyncWithHeader(string apiUrl, string requestData,HttpMethod httpmethod,string token, Page page=null)
         {
             try
             {
@@ -73,8 +68,13 @@ namespace Novera.Source.ApiServices
 
 
 
-                var content = new StringContent(requestData, Encoding.UTF8, "application/json");
-                request.Content = content;
+                if (requestData != "")
+                {
+                    var content = new StringContent(requestData, Encoding.UTF8, "application/json");
+                    request.Content = content;
+                }
+              
+                
                 var response = await _client.SendAsync(request);
                 var responseBody = await response.Content.ReadAsStringAsync();
 
