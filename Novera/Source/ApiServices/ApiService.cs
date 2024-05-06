@@ -187,6 +187,7 @@ namespace Novera.Source.ApiServices
             }
         }
 
+        [Obsolete]
         private void DisplayAlert(Page page, string title, string message)
         {
             Device.BeginInvokeOnMainThread(async () =>

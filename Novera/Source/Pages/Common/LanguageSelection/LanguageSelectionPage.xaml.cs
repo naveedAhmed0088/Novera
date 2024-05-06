@@ -20,7 +20,7 @@ namespace Novera.Source.Pages.Common.LanguageSelection
         private void OnFrameTapped(object sender, EventArgs e)
         {
             // Get the selected item from the BindingContext
-            if (sender is Frame frame && frame.BindingContext is LanguageModel selectedItem)
+            if (sender is VerticalStackLayout frame && frame.BindingContext is LanguageModel selectedItem)
             {
                 // Handle the selection here
                 string lang_code = selectedItem.languageCode;

@@ -50,7 +50,7 @@ namespace Novera.Source.ApiServices
                 {
                     success = false,
                     message = ex.Message,
-                    data=null,
+                    data = null,
                 };
             }
         }

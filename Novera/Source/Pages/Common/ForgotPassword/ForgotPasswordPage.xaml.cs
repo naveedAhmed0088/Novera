@@ -1,20 +1,18 @@
+using Novera.Source.ApiServices;
 using Novera.Source.Pages.Common.ContactDetail;
-using Novera.Source.Pages.Common.Login;
 using Novera.Source.Response.CommpnPages;
-using Novera.Source.Services;
 using Novera.Source.Utility;
-using System.Text;
 using System.Text.Json;
 
 namespace Novera.Source.Pages.Common.ForgotPassword;
 
 public partial class ForgotPasswordPage : ContentPage
 {
-    ForgetPasswordApiService<ForgetPasswordResponse> apiService;
+    ApiService<ForgetPasswordResponse> apiService;
     public ForgotPasswordPage()
     {
         InitializeComponent();
-        apiService = new ForgetPasswordApiService<ForgetPasswordResponse>();
+        apiService = new ApiService<ForgetPasswordResponse>();
     }
     private async void OnResetClicked(object sender, EventArgs e)
     {
@@ -27,24 +25,21 @@ public partial class ForgotPasswordPage : ContentPage
         string confirm = confirmEntry.Text;
         if (string.IsNullOrWhiteSpace(email))
         {
-            // Display an error message or handle the empty email case accordingly
-            // For example:
-            DisplayAlert("Error", "Please enter your email.", "OK");
+            await DisplayAlert("Alert", "Please enter your email.", "OK");
         }
         else if (string.IsNullOrWhiteSpace(password))
         {
-            DisplayAlert("Error", "Please enter your password.", "OK");
+            await DisplayAlert("Alert", "Please enter your password.", "OK");
 
         }
         else if (string.IsNullOrWhiteSpace(confirm))
         {
-            DisplayAlert("Error", "Please Re-Type-Password.", "OK");
+            await DisplayAlert("Alert", "Please Re-Type-Password.", "OK");
 
         }
         else if (password != confirm)
         {
-            // Show error message or handle mismatched passwords
-            DisplayAlert("Error", "Passwords do not match", "OK");
+            await  DisplayAlert("Alert", "Passwords do not match", "OK");
         }
 
 
@@ -63,7 +58,7 @@ public partial class ForgotPasswordPage : ContentPage
 
                 if (response is ForgetPasswordResponse successResponse)
                 {
-                    DisplayAlert("Success", successResponse.message, "ok");
+                    await DisplayAlert("Alert", successResponse.message, "ok");
 
 
 
