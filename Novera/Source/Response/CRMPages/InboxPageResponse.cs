@@ -47,17 +47,8 @@ namespace Novera.Source.Response.CRMPages
 
     public class EmailListData
     {
-        public List<EmailVM> emails { get; set; }
+        public List<Datum> emails { get; set; }
         public int totalRecords { get; set; }
     }
-
-    public class EmailVM
-    {
-        public int mailId { get; set; }
-        public string subject { get; set; }
-        public string sender { get; set; }
-        public string senderName { get; set; }
-        public string important { get; set; }
-        public DateTime received { get; set; }
-    }
+   
 }

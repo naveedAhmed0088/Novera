@@ -7,13 +7,13 @@ namespace Novera.Source.ViewModel.Emails
 {
     public class InboxViewModel
     {
-        public ObservableCollection<EmailVM> InboxEmails { get; }
+        public ObservableCollection<Datum> InboxEmails { get; }
         inboxPageApiService apiService;
         public InboxViewModel()
         {
             // This default constructor is added to satisfy XAML requirements
             // You can leave it empty or initialize properties if needed
-            InboxEmails = new ObservableCollection<EmailVM>();
+            InboxEmails = new ObservableCollection<Datum>();
             apiService = new inboxPageApiService();
             LoadInboxEmailsAsync();
 
@@ -74,7 +74,7 @@ namespace Novera.Source.ViewModel.Emails
             {
                 // Handle exception
                 Console.WriteLine($"Exception: {ex.Message}");
-                App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
+                //App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
 
             }

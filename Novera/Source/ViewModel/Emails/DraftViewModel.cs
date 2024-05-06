@@ -13,13 +13,13 @@ namespace Novera.Source.ViewModel.Emails
 {
     public class DraftViewModel
     {
-        public ObservableCollection<EmailVM> DraftList { get; }
+        public ObservableCollection<Datum> DraftList { get; }
         inboxPageApiService apiService;
 
         public DraftViewModel()
         {
 
-            DraftList = new ObservableCollection<EmailVM>();
+            DraftList = new ObservableCollection<Datum>();
             apiService = new inboxPageApiService();
             LoadInboxEmailsAsync();
 
@@ -84,7 +84,7 @@ namespace Novera.Source.ViewModel.Emails
             {
                 // Handle exception
                 Console.WriteLine($"Exception: {ex.Message}");
-                App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
+                //App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
 
             }

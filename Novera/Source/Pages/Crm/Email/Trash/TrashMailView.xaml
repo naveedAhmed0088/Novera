@@ -9,7 +9,6 @@
             <viewmodel:TrashViewModel />
     </ContentView.BindingContext>
     <Grid>
-        
         <Grid RowDefinitions = "Auto, *">
             <Frame Margin="15, 0, 15, 0" Grid.Row="0" 
                 BackgroundColor="Transparent" 
@@ -24,7 +23,7 @@
             <ScrollView Grid.Row="1">
                 <VerticalStackLayout Margin="10,15,10,15">
                     <ActivityIndicator x:Name="loader"
-IsRunning="False" IsVisible="False" Color="white"
+                        IsRunning="False" IsVisible="False" Color="white"
                    VerticalOptions="Center" HorizontalOptions="Center"
                    />
                     <CollectionView ItemsSource="{Binding TrashMailList}" BackgroundColor="Transparent" VerticalScrollBarVisibility="Always">
@@ -33,10 +32,10 @@ IsRunning="False" IsVisible="False" Color="white"
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-
-
-
                                 <Frame BorderColor="{StaticResource Transparent}" Margin="5, 0, 5 ,0" CornerRadius="10" Padding="5" BackgroundColor="{StaticResource EditorBackgroundBlue}">
+                                    <Frame.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="EmailItemTapped" />
+                                    </Frame.GestureRecognizers>
                                     <Grid ColumnDefinitions="Auto,*, Auto" >
                                         <Frame BackgroundColor="Orange" Margin="5, 0, 0 ,0" Grid.Column= "0" WidthRequest="34" HeightRequest="34" CornerRadius="17" Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                                             <Label Text="{Binding sender, Converter={StaticResource FirstCharacterConverter}}"  TextColor="White" HorizontalOptions="CenterAndExpand"/>
@@ -63,20 +62,16 @@ IsRunning="False" IsVisible="False" Color="white"
                                                     </ImageButton.Triggers>
                                                 </ImageButton>
                                                 <ImageButton Source="document_delete_folder" WidthRequest="16" HeightRequest="16" HorizontalOptions="End" Clicked="deleteButtonClicked"
-        BindingContext="{Binding .}" 
-         >
+                                                        BindingContext="{Binding .}" 
+                                                         >
                                                 </ImageButton>
                                             </StackLayout>
                                         </StackLayout>
-
                                     </Grid>
                                 </Frame>
-
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
-
-                    
                 </VerticalStackLayout>
             </ScrollView>
         </Grid>

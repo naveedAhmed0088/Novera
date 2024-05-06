@@ -1,5 +1,6 @@
-using Novera.Source.ApiServices;
+ using Novera.Source.ApiServices;
 using Novera.Source.Pages.Crm.Email.Compose;
+using Novera.Source.Pages.Crm.Email.EmailDetail;
 using Novera.Source.Response.CRMPages;
 using Novera.Source.Utility;
 using Novera.Source.ViewModel.Emails;
@@ -87,12 +88,10 @@ public partial class TrashMailView : ContentView
                     loader.IsVisible = false;
 
                 }
-
-
-
             }
         }
     }
+
 
     private async void deleteButtonClicked(object sender, EventArgs e)
     {
@@ -146,5 +145,13 @@ public partial class TrashMailView : ContentView
                 }
             }
         }
+    }
+    private async void EmailItemTapped(object sender, TappedEventArgs e)
+    {
+        var frame = (Frame)sender;
+        var emailItem = (Datum)frame.BindingContext;
+        string email_id = emailItem.mailId.ToString();
+        await SecureStorage.Default.SetAsync("email_id", email_id);
+        await Navigation.PushAsync(new EmailDetailPage());
     }
 }

@@ -40,20 +40,1853 @@
     <AppxPackagedFile Include="D:\work\Novera\Novera\Resources\Raw\AboutAssets.txt">
       <PackagePath>AboutAssets.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-100.png">
+      <PackagePath>splashSplashScreen.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-125.png">
+      <PackagePath>splashSplashScreen.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-150.png">
+      <PackagePath>splashSplashScreen.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-200.png">
+      <PackagePath>splashSplashScreen.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\sp\splashSplashScreen.scale-400.png">
+      <PackagePath>splashSplashScreen.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\applegothic.ttf">
+      <PackagePath>applegothic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\Century Gothic.ttf">
+      <PackagePath>Century Gothic.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\gothicb.ttf">
+      <PackagePath>gothicb.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Regular.ttf">
+      <PackagePath>OpenSans-Regular.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\OpenSans-Semibold.ttf">
+      <PackagePath>OpenSans-Semibold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\f\seville_bold.ttf">
+      <PackagePath>seville_bold.ttf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_document.scale-400.png">
+      <PackagePath>drawer_document.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_document.scale-200.png">
+      <PackagePath>drawer_document.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_document.scale-150.png">
+      <PackagePath>drawer_document.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_document.scale-125.png">
+      <PackagePath>drawer_document.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_document.scale-100.png">
+      <PackagePath>drawer_document.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_dashboard.scale-400.png">
+      <PackagePath>drawer_dashboard.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_dashboard.scale-200.png">
+      <PackagePath>drawer_dashboard.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_dashboard.scale-150.png">
+      <PackagePath>drawer_dashboard.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_dashboard.scale-125.png">
+      <PackagePath>drawer_dashboard.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_dashboard.scale-100.png">
+      <PackagePath>drawer_dashboard.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_close.scale-400.png">
+      <PackagePath>document_close.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_close.scale-200.png">
+      <PackagePath>document_close.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_close.scale-150.png">
+      <PackagePath>document_close.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_close.scale-125.png">
+      <PackagePath>document_close.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_close.scale-100.png">
+      <PackagePath>document_close.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_bank.scale-400.png">
+      <PackagePath>dashboard_bank.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_bank.scale-200.png">
+      <PackagePath>dashboard_bank.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_bank.scale-150.png">
+      <PackagePath>dashboard_bank.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_bank.scale-125.png">
+      <PackagePath>dashboard_bank.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_bank.scale-100.png">
+      <PackagePath>dashboard_bank.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_logo.scale-400.png">
+      <PackagePath>contact_logo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_logo.scale-200.png">
+      <PackagePath>contact_logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_logo.scale-150.png">
+      <PackagePath>contact_logo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_logo.scale-125.png">
+      <PackagePath>contact_logo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_logo.scale-100.png">
+      <PackagePath>contact_logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-400.png">
+      <PackagePath>appiconLargeTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-200.png">
+      <PackagePath>appiconLargeTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-150.png">
+      <PackagePath>appiconLargeTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-125.png">
+      <PackagePath>appiconLargeTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLargeTile.scale-100.png">
+      <PackagePath>appiconLargeTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-400.png">
+      <PackagePath>appiconWideTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-200.png">
+      <PackagePath>appiconWideTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-150.png">
+      <PackagePath>appiconWideTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-125.png">
+      <PackagePath>appiconWideTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconWideTile.scale-100.png">
+      <PackagePath>appiconWideTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-400.png">
+      <PackagePath>appiconMediumTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-200.png">
+      <PackagePath>appiconMediumTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-150.png">
+      <PackagePath>appiconMediumTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-125.png">
+      <PackagePath>appiconMediumTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconMediumTile.scale-100.png">
+      <PackagePath>appiconMediumTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-400.png">
+      <PackagePath>appiconSmallTile.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-200.png">
+      <PackagePath>appiconSmallTile.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-150.png">
+      <PackagePath>appiconSmallTile.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-125.png">
+      <PackagePath>appiconSmallTile.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconSmallTile.scale-100.png">
+      <PackagePath>appiconSmallTile.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-400.png">
+      <PackagePath>appiconStoreLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-200.png">
+      <PackagePath>appiconStoreLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-150.png">
+      <PackagePath>appiconStoreLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-125.png">
+      <PackagePath>appiconStoreLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconStoreLogo.scale-100.png">
+      <PackagePath>appiconStoreLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-lightunplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-lightunplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-256.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-48.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-32.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-24.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.altform-unplated_targetsize-16.png">
+      <PackagePath>appiconLogo.altform-unplated_targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-256.png">
+      <PackagePath>appiconLogo.targetsize-256.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-48.png">
+      <PackagePath>appiconLogo.targetsize-48.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-32.png">
+      <PackagePath>appiconLogo.targetsize-32.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-24.png">
+      <PackagePath>appiconLogo.targetsize-24.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.targetsize-16.png">
+      <PackagePath>appiconLogo.targetsize-16.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-400.png">
+      <PackagePath>appiconLogo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-200.png">
+      <PackagePath>appiconLogo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-150.png">
+      <PackagePath>appiconLogo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-125.png">
+      <PackagePath>appiconLogo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appiconLogo.scale-100.png">
+      <PackagePath>appiconLogo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\appicon.ico">
+      <PackagePath>appicon.ico</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\top_cloud_straight.scale-400.png">
+      <PackagePath>top_cloud_straight.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\top_cloud_straight.scale-200.png">
+      <PackagePath>top_cloud_straight.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\top_cloud_straight.scale-150.png">
+      <PackagePath>top_cloud_straight.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\top_cloud_straight.scale-125.png">
+      <PackagePath>top_cloud_straight.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\top_cloud_straight.scale-100.png">
+      <PackagePath>top_cloud_straight.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_pdf_doc.scale-400.png">
+      <PackagePath>ticket_pdf_doc.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_pdf_doc.scale-200.png">
+      <PackagePath>ticket_pdf_doc.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_pdf_doc.scale-150.png">
+      <PackagePath>ticket_pdf_doc.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_pdf_doc.scale-125.png">
+      <PackagePath>ticket_pdf_doc.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_pdf_doc.scale-100.png">
+      <PackagePath>ticket_pdf_doc.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_left_arrow.scale-400.png">
+      <PackagePath>ticket_left_arrow.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_left_arrow.scale-200.png">
+      <PackagePath>ticket_left_arrow.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_left_arrow.scale-150.png">
+      <PackagePath>ticket_left_arrow.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_left_arrow.scale-125.png">
+      <PackagePath>ticket_left_arrow.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_left_arrow.scale-100.png">
+      <PackagePath>ticket_left_arrow.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_delete.scale-400.png">
+      <PackagePath>ticket_delete.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_delete.scale-200.png">
+      <PackagePath>ticket_delete.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_delete.scale-150.png">
+      <PackagePath>ticket_delete.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_delete.scale-125.png">
+      <PackagePath>ticket_delete.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_delete.scale-100.png">
+      <PackagePath>ticket_delete.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_time.scale-400.png">
+      <PackagePath>task_time.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_time.scale-200.png">
+      <PackagePath>task_time.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_time.scale-150.png">
+      <PackagePath>task_time.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_time.scale-125.png">
+      <PackagePath>task_time.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_time.scale-100.png">
+      <PackagePath>task_time.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_on.scale-400.png">
+      <PackagePath>task_switch_on.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_on.scale-200.png">
+      <PackagePath>task_switch_on.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_on.scale-150.png">
+      <PackagePath>task_switch_on.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_on.scale-125.png">
+      <PackagePath>task_switch_on.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_on.scale-100.png">
+      <PackagePath>task_switch_on.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_off.scale-400.png">
+      <PackagePath>task_switch_off.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_off.scale-200.png">
+      <PackagePath>task_switch_off.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_off.scale-150.png">
+      <PackagePath>task_switch_off.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_off.scale-125.png">
+      <PackagePath>task_switch_off.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_switch_off.scale-100.png">
+      <PackagePath>task_switch_off.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_does_not_repeat.scale-400.png">
+      <PackagePath>task_does_not_repeat.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_does_not_repeat.scale-200.png">
+      <PackagePath>task_does_not_repeat.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_does_not_repeat.scale-150.png">
+      <PackagePath>task_does_not_repeat.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_does_not_repeat.scale-125.png">
+      <PackagePath>task_does_not_repeat.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_does_not_repeat.scale-100.png">
+      <PackagePath>task_does_not_repeat.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_user.scale-400.png">
+      <PackagePath>settings_user.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_user.scale-200.png">
+      <PackagePath>settings_user.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_user.scale-150.png">
+      <PackagePath>settings_user.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_user.scale-125.png">
+      <PackagePath>settings_user.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_user.scale-100.png">
+      <PackagePath>settings_user.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_drop_down.scale-400.png">
+      <PackagePath>settings_drop_down.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_drop_down.scale-200.png">
+      <PackagePath>settings_drop_down.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_drop_down.scale-150.png">
+      <PackagePath>settings_drop_down.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_drop_down.scale-125.png">
+      <PackagePath>settings_drop_down.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_drop_down.scale-100.png">
+      <PackagePath>settings_drop_down.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\register_novera_logo.scale-400.png">
+      <PackagePath>register_novera_logo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\register_novera_logo.scale-200.png">
+      <PackagePath>register_novera_logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\register_novera_logo.scale-150.png">
+      <PackagePath>register_novera_logo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\register_novera_logo.scale-125.png">
+      <PackagePath>register_novera_logo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\register_novera_logo.scale-100.png">
+      <PackagePath>register_novera_logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_view.scale-400.png">
+      <PackagePath>notes_view.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_view.scale-200.png">
+      <PackagePath>notes_view.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_view.scale-150.png">
+      <PackagePath>notes_view.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_view.scale-125.png">
+      <PackagePath>notes_view.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_view.scale-100.png">
+      <PackagePath>notes_view.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_germany.scale-400.png">
+      <PackagePath>flag_germany.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_germany.scale-200.png">
+      <PackagePath>flag_germany.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_germany.scale-150.png">
+      <PackagePath>flag_germany.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_germany.scale-125.png">
+      <PackagePath>flag_germany.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_germany.scale-100.png">
+      <PackagePath>flag_germany.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_china.scale-400.png">
+      <PackagePath>flag_china.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_china.scale-200.png">
+      <PackagePath>flag_china.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_china.scale-150.png">
+      <PackagePath>flag_china.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_china.scale-125.png">
+      <PackagePath>flag_china.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_china.scale-100.png">
+      <PackagePath>flag_china.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_canada.scale-400.png">
+      <PackagePath>flag_canada.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_canada.scale-200.png">
+      <PackagePath>flag_canada.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_canada.scale-150.png">
+      <PackagePath>flag_canada.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_canada.scale-125.png">
+      <PackagePath>flag_canada.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_canada.scale-100.png">
+      <PackagePath>flag_canada.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_bangladesh.scale-400.png">
+      <PackagePath>flag_bangladesh.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_bangladesh.scale-200.png">
+      <PackagePath>flag_bangladesh.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_bangladesh.scale-150.png">
+      <PackagePath>flag_bangladesh.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_bangladesh.scale-125.png">
+      <PackagePath>flag_bangladesh.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_bangladesh.scale-100.png">
+      <PackagePath>flag_bangladesh.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_delete.scale-400.png">
+      <PackagePath>event_delete.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_delete.scale-200.png">
+      <PackagePath>event_delete.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_delete.scale-150.png">
+      <PackagePath>event_delete.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_delete.scale-125.png">
+      <PackagePath>event_delete.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_delete.scale-100.png">
+      <PackagePath>event_delete.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_calendar.scale-400.png">
+      <PackagePath>event_calendar.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_calendar.scale-200.png">
+      <PackagePath>event_calendar.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_calendar.scale-150.png">
+      <PackagePath>event_calendar.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_calendar.scale-125.png">
+      <PackagePath>event_calendar.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_calendar.scale-100.png">
+      <PackagePath>event_calendar.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_search.scale-400.png">
+      <PackagePath>email_search.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_search.scale-200.png">
+      <PackagePath>email_search.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_search.scale-150.png">
+      <PackagePath>email_search.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_search.scale-125.png">
+      <PackagePath>email_search.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_search.scale-100.png">
+      <PackagePath>email_search.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_reply.scale-400.png">
+      <PackagePath>email_reply.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_reply.scale-200.png">
+      <PackagePath>email_reply.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_reply.scale-150.png">
+      <PackagePath>email_reply.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_reply.scale-125.png">
+      <PackagePath>email_reply.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_reply.scale-100.png">
+      <PackagePath>email_reply.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_create.scale-400.png">
+      <PackagePath>email_create.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_create.scale-200.png">
+      <PackagePath>email_create.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_create.scale-150.png">
+      <PackagePath>email_create.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_create.scale-125.png">
+      <PackagePath>email_create.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_create.scale-100.png">
+      <PackagePath>email_create.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_archive.scale-400.png">
+      <PackagePath>email_archive.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_archive.scale-200.png">
+      <PackagePath>email_archive.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_archive.scale-150.png">
+      <PackagePath>email_archive.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_archive.scale-125.png">
+      <PackagePath>email_archive.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_archive.scale-100.png">
+      <PackagePath>email_archive.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_notes.scale-400.png">
+      <PackagePath>drawer_notes.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_notes.scale-200.png">
+      <PackagePath>drawer_notes.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_notes.scale-150.png">
+      <PackagePath>drawer_notes.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_notes.scale-125.png">
+      <PackagePath>drawer_notes.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_notes.scale-100.png">
+      <PackagePath>drawer_notes.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_vat.scale-400.png">
+      <PackagePath>dashboard_vat.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_vat.scale-200.png">
+      <PackagePath>dashboard_vat.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_vat.scale-150.png">
+      <PackagePath>dashboard_vat.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_vat.scale-125.png">
+      <PackagePath>dashboard_vat.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_vat.scale-100.png">
+      <PackagePath>dashboard_vat.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_done.scale-400.png">
+      <PackagePath>calendar_done.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_done.scale-200.png">
+      <PackagePath>calendar_done.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_done.scale-150.png">
+      <PackagePath>calendar_done.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_done.scale-125.png">
+      <PackagePath>calendar_done.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_done.scale-100.png">
+      <PackagePath>calendar_done.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_delete_white.scale-400.png">
+      <PackagePath>email_delete_white.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_delete_white.scale-200.png">
+      <PackagePath>email_delete_white.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_delete_white.scale-150.png">
+      <PackagePath>email_delete_white.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_delete_white.scale-125.png">
+      <PackagePath>email_delete_white.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_delete_white.scale-100.png">
+      <PackagePath>email_delete_white.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_email.scale-400.png">
+      <PackagePath>drawer_email.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_email.scale-200.png">
+      <PackagePath>drawer_email.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_email.scale-150.png">
+      <PackagePath>drawer_email.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_email.scale-125.png">
+      <PackagePath>drawer_email.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_email.scale-100.png">
+      <PackagePath>drawer_email.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_exchange.scale-400.png">
+      <PackagePath>dashboard_exchange.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_exchange.scale-200.png">
+      <PackagePath>dashboard_exchange.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_exchange.scale-150.png">
+      <PackagePath>dashboard_exchange.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_exchange.scale-125.png">
+      <PackagePath>dashboard_exchange.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_exchange.scale-100.png">
+      <PackagePath>dashboard_exchange.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\close_line.scale-400.png">
+      <PackagePath>close_line.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\close_line.scale-200.png">
+      <PackagePath>close_line.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\close_line.scale-150.png">
+      <PackagePath>close_line.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\close_line.scale-125.png">
+      <PackagePath>close_line.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\close_line.scale-100.png">
+      <PackagePath>close_line.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_hamburger.scale-400.png">
+      <PackagePath>drawer_hamburger.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_hamburger.scale-200.png">
+      <PackagePath>drawer_hamburger.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_hamburger.scale-150.png">
+      <PackagePath>drawer_hamburger.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_hamburger.scale-125.png">
+      <PackagePath>drawer_hamburger.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_hamburger.scale-100.png">
+      <PackagePath>drawer_hamburger.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_folder.scale-400.png">
+      <PackagePath>document_folder.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_folder.scale-200.png">
+      <PackagePath>document_folder.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_folder.scale-150.png">
+      <PackagePath>document_folder.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_folder.scale-125.png">
+      <PackagePath>document_folder.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_folder.scale-100.png">
+      <PackagePath>document_folder.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_report.scale-400.png">
+      <PackagePath>dashboard_report.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_report.scale-200.png">
+      <PackagePath>dashboard_report.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_report.scale-150.png">
+      <PackagePath>dashboard_report.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_report.scale-125.png">
+      <PackagePath>dashboard_report.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_report.scale-100.png">
+      <PackagePath>dashboard_report.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_user.scale-400.png">
+      <PackagePath>contact_user.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_user.scale-200.png">
+      <PackagePath>contact_user.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_user.scale-150.png">
+      <PackagePath>contact_user.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_user.scale-125.png">
+      <PackagePath>contact_user.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_user.scale-100.png">
+      <PackagePath>contact_user.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_add_details.scale-400.png">
+      <PackagePath>task_add_details.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_add_details.scale-200.png">
+      <PackagePath>task_add_details.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_add_details.scale-150.png">
+      <PackagePath>task_add_details.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_add_details.scale-125.png">
+      <PackagePath>task_add_details.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\task_add_details.scale-100.png">
+      <PackagePath>task_add_details.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_sent_icon.scale-400.png">
+      <PackagePath>tab_unselected_sent_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_sent_icon.scale-200.png">
+      <PackagePath>tab_unselected_sent_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_sent_icon.scale-150.png">
+      <PackagePath>tab_unselected_sent_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_sent_icon.scale-125.png">
+      <PackagePath>tab_unselected_sent_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_sent_icon.scale-100.png">
+      <PackagePath>tab_unselected_sent_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_inbox_icon.scale-400.png">
+      <PackagePath>tab_unselected_inbox_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_inbox_icon.scale-200.png">
+      <PackagePath>tab_unselected_inbox_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_inbox_icon.scale-150.png">
+      <PackagePath>tab_unselected_inbox_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_inbox_icon.scale-125.png">
+      <PackagePath>tab_unselected_inbox_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_inbox_icon.scale-100.png">
+      <PackagePath>tab_unselected_inbox_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_draft_icon.scale-400.png">
+      <PackagePath>tab_unselected_draft_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_draft_icon.scale-200.png">
+      <PackagePath>tab_unselected_draft_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_draft_icon.scale-150.png">
+      <PackagePath>tab_unselected_draft_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_draft_icon.scale-125.png">
+      <PackagePath>tab_unselected_draft_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_draft_icon.scale-100.png">
+      <PackagePath>tab_unselected_draft_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_delete_icon.scale-400.png">
+      <PackagePath>tab_unselected_delete_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_delete_icon.scale-200.png">
+      <PackagePath>tab_unselected_delete_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_delete_icon.scale-150.png">
+      <PackagePath>tab_unselected_delete_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_delete_icon.scale-125.png">
+      <PackagePath>tab_unselected_delete_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_unselected_delete_icon.scale-100.png">
+      <PackagePath>tab_unselected_delete_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_sent_icon.scale-400.png">
+      <PackagePath>tab_sent_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_sent_icon.scale-200.png">
+      <PackagePath>tab_sent_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_sent_icon.scale-150.png">
+      <PackagePath>tab_sent_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_sent_icon.scale-125.png">
+      <PackagePath>tab_sent_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_sent_icon.scale-100.png">
+      <PackagePath>tab_sent_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_sent_icon.scale-400.png">
+      <PackagePath>tab_selected_sent_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_sent_icon.scale-200.png">
+      <PackagePath>tab_selected_sent_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_sent_icon.scale-150.png">
+      <PackagePath>tab_selected_sent_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_sent_icon.scale-125.png">
+      <PackagePath>tab_selected_sent_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_sent_icon.scale-100.png">
+      <PackagePath>tab_selected_sent_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_inbox_icon.scale-400.png">
+      <PackagePath>tab_selected_inbox_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_inbox_icon.scale-200.png">
+      <PackagePath>tab_selected_inbox_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_inbox_icon.scale-150.png">
+      <PackagePath>tab_selected_inbox_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_inbox_icon.scale-125.png">
+      <PackagePath>tab_selected_inbox_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_inbox_icon.scale-100.png">
+      <PackagePath>tab_selected_inbox_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_draft_icon.scale-400.png">
+      <PackagePath>tab_selected_draft_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_draft_icon.scale-200.png">
+      <PackagePath>tab_selected_draft_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_draft_icon.scale-150.png">
+      <PackagePath>tab_selected_draft_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_draft_icon.scale-125.png">
+      <PackagePath>tab_selected_draft_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_draft_icon.scale-100.png">
+      <PackagePath>tab_selected_draft_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_delete_icon.scale-400.png">
+      <PackagePath>tab_selected_delete_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_delete_icon.scale-200.png">
+      <PackagePath>tab_selected_delete_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_delete_icon.scale-150.png">
+      <PackagePath>tab_selected_delete_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_delete_icon.scale-125.png">
+      <PackagePath>tab_selected_delete_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\tab_selected_delete_icon.scale-100.png">
+      <PackagePath>tab_selected_delete_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view_color.scale-400.png">
+      <PackagePath>settings_view_color.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view_color.scale-200.png">
+      <PackagePath>settings_view_color.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view_color.scale-150.png">
+      <PackagePath>settings_view_color.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view_color.scale-125.png">
+      <PackagePath>settings_view_color.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view_color.scale-100.png">
+      <PackagePath>settings_view_color.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view.scale-400.png">
+      <PackagePath>settings_view.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view.scale-200.png">
+      <PackagePath>settings_view.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view.scale-150.png">
+      <PackagePath>settings_view.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view.scale-125.png">
+      <PackagePath>settings_view.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\settings_view.scale-100.png">
+      <PackagePath>settings_view.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_search.scale-400.png">
+      <PackagePath>notes_search.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_search.scale-200.png">
+      <PackagePath>notes_search.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_search.scale-150.png">
+      <PackagePath>notes_search.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_search.scale-125.png">
+      <PackagePath>notes_search.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_search.scale-100.png">
+      <PackagePath>notes_search.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_dropdown.scale-400.png">
+      <PackagePath>notes_dropdown.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_dropdown.scale-200.png">
+      <PackagePath>notes_dropdown.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_dropdown.scale-150.png">
+      <PackagePath>notes_dropdown.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_dropdown.scale-125.png">
+      <PackagePath>notes_dropdown.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_dropdown.scale-100.png">
+      <PackagePath>notes_dropdown.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_delete.scale-400.png">
+      <PackagePath>notes_delete.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_delete.scale-200.png">
+      <PackagePath>notes_delete.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_delete.scale-150.png">
+      <PackagePath>notes_delete.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_delete.scale-125.png">
+      <PackagePath>notes_delete.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_delete.scale-100.png">
+      <PackagePath>notes_delete.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_attachment.scale-400.png">
+      <PackagePath>notes_attachment.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_attachment.scale-200.png">
+      <PackagePath>notes_attachment.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_attachment.scale-150.png">
+      <PackagePath>notes_attachment.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_attachment.scale-125.png">
+      <PackagePath>notes_attachment.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_attachment.scale-100.png">
+      <PackagePath>notes_attachment.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_australia.scale-400.png">
+      <PackagePath>flag_australia.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_australia.scale-200.png">
+      <PackagePath>flag_australia.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_australia.scale-150.png">
+      <PackagePath>flag_australia.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_australia.scale-125.png">
+      <PackagePath>flag_australia.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_australia.scale-100.png">
+      <PackagePath>flag_australia.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favourite.scale-400.png">
+      <PackagePath>favourite.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favourite.scale-200.png">
+      <PackagePath>favourite.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favourite.scale-150.png">
+      <PackagePath>favourite.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favourite.scale-125.png">
+      <PackagePath>favourite.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\favourite.scale-100.png">
+      <PackagePath>favourite.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_time.scale-400.png">
+      <PackagePath>event_time.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_time.scale-200.png">
+      <PackagePath>event_time.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_time.scale-150.png">
+      <PackagePath>event_time.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_time.scale-125.png">
+      <PackagePath>event_time.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_time.scale-100.png">
+      <PackagePath>event_time.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_repeat.scale-400.png">
+      <PackagePath>event_repeat.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_repeat.scale-200.png">
+      <PackagePath>event_repeat.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_repeat.scale-150.png">
+      <PackagePath>event_repeat.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_repeat.scale-125.png">
+      <PackagePath>event_repeat.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_repeat.scale-100.png">
+      <PackagePath>event_repeat.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_attachment.scale-400.png">
+      <PackagePath>event_add_attachment.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_attachment.scale-200.png">
+      <PackagePath>event_add_attachment.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_attachment.scale-150.png">
+      <PackagePath>event_add_attachment.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_attachment.scale-125.png">
+      <PackagePath>event_add_attachment.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_attachment.scale-100.png">
+      <PackagePath>event_add_attachment.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_star.scale-400.png">
+      <PackagePath>email_star.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_star.scale-200.png">
+      <PackagePath>email_star.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_star.scale-150.png">
+      <PackagePath>email_star.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_star.scale-125.png">
+      <PackagePath>email_star.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_star.scale-100.png">
+      <PackagePath>email_star.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_more.scale-400.png">
+      <PackagePath>email_more.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_more.scale-200.png">
+      <PackagePath>email_more.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_more.scale-150.png">
+      <PackagePath>email_more.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_more.scale-125.png">
+      <PackagePath>email_more.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_more.scale-100.png">
+      <PackagePath>email_more.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_mail_white.scale-400.png">
+      <PackagePath>email_mail_white.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_mail_white.scale-200.png">
+      <PackagePath>email_mail_white.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_mail_white.scale-150.png">
+      <PackagePath>email_mail_white.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_mail_white.scale-125.png">
+      <PackagePath>email_mail_white.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_mail_white.scale-100.png">
+      <PackagePath>email_mail_white.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_apps.scale-400.png">
+      <PackagePath>drawer_apps.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_apps.scale-200.png">
+      <PackagePath>drawer_apps.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_apps.scale-150.png">
+      <PackagePath>drawer_apps.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_apps.scale-125.png">
+      <PackagePath>drawer_apps.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_apps.scale-100.png">
+      <PackagePath>drawer_apps.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_accounts.scale-400.png">
+      <PackagePath>drawer_accounts.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_accounts.scale-200.png">
+      <PackagePath>drawer_accounts.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_accounts.scale-150.png">
+      <PackagePath>drawer_accounts.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_accounts.scale-125.png">
+      <PackagePath>drawer_accounts.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_accounts.scale-100.png">
+      <PackagePath>drawer_accounts.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_refresh.scale-400.png">
+      <PackagePath>document_refresh.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_refresh.scale-200.png">
+      <PackagePath>document_refresh.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_refresh.scale-150.png">
+      <PackagePath>document_refresh.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_refresh.scale-125.png">
+      <PackagePath>document_refresh.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_refresh.scale-100.png">
+      <PackagePath>document_refresh.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_folder.scale-400.png">
+      <PackagePath>document_delete_folder.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_folder.scale-200.png">
+      <PackagePath>document_delete_folder.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_folder.scale-150.png">
+      <PackagePath>document_delete_folder.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_folder.scale-125.png">
+      <PackagePath>document_delete_folder.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_folder.scale-100.png">
+      <PackagePath>document_delete_folder.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_left_back.scale-400.png">
+      <PackagePath>arrow_left_back.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_left_back.scale-200.png">
+      <PackagePath>arrow_left_back.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_left_back.scale-150.png">
+      <PackagePath>arrow_left_back.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_left_back.scale-125.png">
+      <PackagePath>arrow_left_back.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\arrow_left_back.scale-100.png">
+      <PackagePath>arrow_left_back.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-400.png">
+      <PackagePath>dotnet_bot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-200.png">
+      <PackagePath>dotnet_bot.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-150.png">
+      <PackagePath>dotnet_bot.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-125.png">
+      <PackagePath>dotnet_bot.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dotnet_bot.scale-100.png">
+      <PackagePath>dotnet_bot.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_support_ticket.scale-400.png">
+      <PackagePath>dashboard_support_ticket.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_support_ticket.scale-200.png">
+      <PackagePath>dashboard_support_ticket.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_support_ticket.scale-150.png">
+      <PackagePath>dashboard_support_ticket.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_support_ticket.scale-125.png">
+      <PackagePath>dashboard_support_ticket.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_support_ticket.scale-100.png">
+      <PackagePath>dashboard_support_ticket.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_address.scale-400.png">
+      <PackagePath>contact_address.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_address.scale-200.png">
+      <PackagePath>contact_address.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_address.scale-150.png">
+      <PackagePath>contact_address.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_address.scale-125.png">
+      <PackagePath>contact_address.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_address.scale-100.png">
+      <PackagePath>contact_address.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_close.scale-400.png">
+      <PackagePath>drawer_close.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_close.scale-200.png">
+      <PackagePath>drawer_close.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_close.scale-150.png">
+      <PackagePath>drawer_close.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_close.scale-125.png">
+      <PackagePath>drawer_close.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_close.scale-100.png">
+      <PackagePath>drawer_close.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_calendar.scale-400.png">
+      <PackagePath>drawer_calendar.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_calendar.scale-200.png">
+      <PackagePath>drawer_calendar.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_calendar.scale-150.png">
+      <PackagePath>drawer_calendar.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_calendar.scale-125.png">
+      <PackagePath>drawer_calendar.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_calendar.scale-100.png">
+      <PackagePath>drawer_calendar.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload_overwrite_file.scale-400.png">
+      <PackagePath>document_upload_overwrite_file.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload_overwrite_file.scale-200.png">
+      <PackagePath>document_upload_overwrite_file.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload_overwrite_file.scale-150.png">
+      <PackagePath>document_upload_overwrite_file.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload_overwrite_file.scale-125.png">
+      <PackagePath>document_upload_overwrite_file.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload_overwrite_file.scale-100.png">
+      <PackagePath>document_upload_overwrite_file.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_language.scale-400.png">
+      <PackagePath>dashboard_language.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_language.scale-200.png">
+      <PackagePath>dashboard_language.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_language.scale-150.png">
+      <PackagePath>dashboard_language.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_language.scale-125.png">
+      <PackagePath>dashboard_language.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\dashboard_language.scale-100.png">
+      <PackagePath>dashboard_language.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_phone.scale-400.png">
+      <PackagePath>contact_phone.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_phone.scale-200.png">
+      <PackagePath>contact_phone.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_phone.scale-150.png">
+      <PackagePath>contact_phone.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_phone.scale-125.png">
+      <PackagePath>contact_phone.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\contact_phone.scale-100.png">
+      <PackagePath>contact_phone.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\triangle_straight.scale-400.png">
+      <PackagePath>triangle_straight.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\triangle_straight.scale-200.png">
+      <PackagePath>triangle_straight.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\triangle_straight.scale-150.png">
+      <PackagePath>triangle_straight.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\triangle_straight.scale-125.png">
+      <PackagePath>triangle_straight.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\triangle_straight.scale-100.png">
+      <PackagePath>triangle_straight.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_help.scale-400.png">
+      <PackagePath>drawer_help.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_help.scale-200.png">
+      <PackagePath>drawer_help.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_help.scale-150.png">
+      <PackagePath>drawer_help.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_help.scale-125.png">
+      <PackagePath>drawer_help.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_help.scale-100.png">
+      <PackagePath>drawer_help.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_draft_user.scale-400.png">
+      <PackagePath>email_draft_user.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_draft_user.scale-200.png">
+      <PackagePath>email_draft_user.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_draft_user.scale-150.png">
+      <PackagePath>email_draft_user.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_draft_user.scale-125.png">
+      <PackagePath>email_draft_user.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\email_draft_user.scale-100.png">
+      <PackagePath>email_draft_user.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_line.scale-400.png">
+      <PackagePath>edit_line.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_line.scale-200.png">
+      <PackagePath>edit_line.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_line.scale-150.png">
+      <PackagePath>edit_line.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_line.scale-125.png">
+      <PackagePath>edit_line.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\edit_line.scale-100.png">
+      <PackagePath>edit_line.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_correct.scale-400.png">
+      <PackagePath>ticket_correct.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_correct.scale-200.png">
+      <PackagePath>ticket_correct.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_correct.scale-150.png">
+      <PackagePath>ticket_correct.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_correct.scale-125.png">
+      <PackagePath>ticket_correct.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_correct.scale-100.png">
+      <PackagePath>ticket_correct.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_close.scale-400.png">
+      <PackagePath>ticket_close.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_close.scale-200.png">
+      <PackagePath>ticket_close.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_close.scale-150.png">
+      <PackagePath>ticket_close.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_close.scale-125.png">
+      <PackagePath>ticket_close.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_close.scale-100.png">
+      <PackagePath>ticket_close.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_bullet.scale-400.png">
+      <PackagePath>ticket_bullet.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_bullet.scale-200.png">
+      <PackagePath>ticket_bullet.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_bullet.scale-150.png">
+      <PackagePath>ticket_bullet.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_bullet.scale-125.png">
+      <PackagePath>ticket_bullet.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_bullet.scale-100.png">
+      <PackagePath>ticket_bullet.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_attachment.scale-400.png">
+      <PackagePath>ticket_attachment.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_attachment.scale-200.png">
+      <PackagePath>ticket_attachment.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_attachment.scale-150.png">
+      <PackagePath>ticket_attachment.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_attachment.scale-125.png">
+      <PackagePath>ticket_attachment.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\ticket_attachment.scale-100.png">
+      <PackagePath>ticket_attachment.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_add_icon.scale-400.png">
+      <PackagePath>notes_add_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_add_icon.scale-200.png">
+      <PackagePath>notes_add_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_add_icon.scale-150.png">
+      <PackagePath>notes_add_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_add_icon.scale-125.png">
+      <PackagePath>notes_add_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\notes_add_icon.scale-100.png">
+      <PackagePath>notes_add_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mail.scale-400.png">
+      <PackagePath>mail.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mail.scale-200.png">
+      <PackagePath>mail.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mail.scale-150.png">
+      <PackagePath>mail.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mail.scale-125.png">
+      <PackagePath>mail.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\mail.scale-100.png">
+      <PackagePath>mail.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-400.png">
+      <PackagePath>logo.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-200.png">
+      <PackagePath>logo.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-150.png">
+      <PackagePath>logo.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-125.png">
+      <PackagePath>logo.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\logo.scale-100.png">
+      <PackagePath>logo.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\login_btn.scale-400.png">
+      <PackagePath>login_btn.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\login_btn.scale-200.png">
+      <PackagePath>login_btn.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\login_btn.scale-150.png">
+      <PackagePath>login_btn.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\login_btn.scale-125.png">
+      <PackagePath>login_btn.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\login_btn.scale-100.png">
+      <PackagePath>login_btn.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\lock.scale-400.png">
+      <PackagePath>lock.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\lock.scale-200.png">
+      <PackagePath>lock.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\lock.scale-150.png">
+      <PackagePath>lock.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\lock.scale-125.png">
+      <PackagePath>lock.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\lock.scale-100.png">
+      <PackagePath>lock.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_three_dot.scale-400.png">
+      <PackagePath>icon_three_dot.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_three_dot.scale-200.png">
+      <PackagePath>icon_three_dot.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_three_dot.scale-150.png">
+      <PackagePath>icon_three_dot.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_three_dot.scale-125.png">
+      <PackagePath>icon_three_dot.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_three_dot.scale-100.png">
+      <PackagePath>icon_three_dot.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_search.scale-400.png">
+      <PackagePath>icon_search.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_search.scale-200.png">
+      <PackagePath>icon_search.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_search.scale-150.png">
+      <PackagePath>icon_search.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_search.scale-125.png">
+      <PackagePath>icon_search.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\icon_search.scale-100.png">
+      <PackagePath>icon_search.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_usa.scale-400.png">
+      <PackagePath>flag_usa.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_usa.scale-200.png">
+      <PackagePath>flag_usa.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_usa.scale-150.png">
+      <PackagePath>flag_usa.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_usa.scale-125.png">
+      <PackagePath>flag_usa.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\flag_usa.scale-100.png">
+      <PackagePath>flag_usa.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_notification.scale-400.png">
+      <PackagePath>event_notification.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_notification.scale-200.png">
+      <PackagePath>event_notification.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_notification.scale-150.png">
+      <PackagePath>event_notification.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_notification.scale-125.png">
+      <PackagePath>event_notification.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_notification.scale-100.png">
+      <PackagePath>event_notification.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_global_time.scale-400.png">
+      <PackagePath>event_global_time.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_global_time.scale-200.png">
+      <PackagePath>event_global_time.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_global_time.scale-150.png">
+      <PackagePath>event_global_time.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_global_time.scale-125.png">
+      <PackagePath>event_global_time.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_global_time.scale-100.png">
+      <PackagePath>event_global_time.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_people.scale-400.png">
+      <PackagePath>event_add_people.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_people.scale-200.png">
+      <PackagePath>event_add_people.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_people.scale-150.png">
+      <PackagePath>event_add_people.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_people.scale-125.png">
+      <PackagePath>event_add_people.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_people.scale-100.png">
+      <PackagePath>event_add_people.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_description.scale-400.png">
+      <PackagePath>event_add_description.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_description.scale-200.png">
+      <PackagePath>event_add_description.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_description.scale-150.png">
+      <PackagePath>event_add_description.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_description.scale-125.png">
+      <PackagePath>event_add_description.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\event_add_description.scale-100.png">
+      <PackagePath>event_add_description.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cloud_straight.scale-400.png">
+      <PackagePath>cloud_straight.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cloud_straight.scale-200.png">
+      <PackagePath>cloud_straight.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cloud_straight.scale-150.png">
+      <PackagePath>cloud_straight.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cloud_straight.scale-125.png">
+      <PackagePath>cloud_straight.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\cloud_straight.scale-100.png">
+      <PackagePath>cloud_straight.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_settings.scale-400.png">
+      <PackagePath>drawer_settings.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_settings.scale-200.png">
+      <PackagePath>drawer_settings.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_settings.scale-150.png">
+      <PackagePath>drawer_settings.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_settings.scale-125.png">
+      <PackagePath>drawer_settings.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_settings.scale-100.png">
+      <PackagePath>drawer_settings.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload.scale-400.png">
+      <PackagePath>document_upload.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload.scale-200.png">
+      <PackagePath>document_upload.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload.scale-150.png">
+      <PackagePath>document_upload.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload.scale-125.png">
+      <PackagePath>document_upload.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_upload.scale-100.png">
+      <PackagePath>document_upload.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_event.scale-400.png">
+      <PackagePath>calendar_add_event.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_event.scale-200.png">
+      <PackagePath>calendar_add_event.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_event.scale-150.png">
+      <PackagePath>calendar_add_event.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_event.scale-125.png">
+      <PackagePath>calendar_add_event.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_event.scale-100.png">
+      <PackagePath>calendar_add_event.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_transactions.scale-400.png">
+      <PackagePath>drawer_transactions.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_transactions.scale-200.png">
+      <PackagePath>drawer_transactions.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_transactions.scale-150.png">
+      <PackagePath>drawer_transactions.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_transactions.scale-125.png">
+      <PackagePath>drawer_transactions.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_transactions.scale-100.png">
+      <PackagePath>drawer_transactions.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_group_icon.scale-400.png">
+      <PackagePath>drawer_group_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_group_icon.scale-200.png">
+      <PackagePath>drawer_group_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_group_icon.scale-150.png">
+      <PackagePath>drawer_group_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_group_icon.scale-125.png">
+      <PackagePath>drawer_group_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_group_icon.scale-100.png">
+      <PackagePath>drawer_group_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_icon.scale-400.png">
+      <PackagePath>document_delete_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_icon.scale-200.png">
+      <PackagePath>document_delete_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_icon.scale-150.png">
+      <PackagePath>document_delete_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_icon.scale-125.png">
+      <PackagePath>document_delete_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\document_delete_icon.scale-100.png">
+      <PackagePath>document_delete_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_task.scale-400.png">
+      <PackagePath>calendar_add_task.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_task.scale-200.png">
+      <PackagePath>calendar_add_task.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_task.scale-150.png">
+      <PackagePath>calendar_add_task.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_task.scale-125.png">
+      <PackagePath>calendar_add_task.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\calendar_add_task.scale-100.png">
+      <PackagePath>calendar_add_task.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_support.scale-400.png">
+      <PackagePath>drawer_support.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_support.scale-200.png">
+      <PackagePath>drawer_support.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_support.scale-150.png">
+      <PackagePath>drawer_support.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_support.scale-125.png">
+      <PackagePath>drawer_support.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_support.scale-100.png">
+      <PackagePath>drawer_support.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_logout.scale-400.png">
+      <PackagePath>drawer_logout.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_logout.scale-200.png">
+      <PackagePath>drawer_logout.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_logout.scale-150.png">
+      <PackagePath>drawer_logout.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_logout.scale-125.png">
+      <PackagePath>drawer_logout.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\drawer_logout.scale-100.png">
+      <PackagePath>drawer_logout.scale-100.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\big_plus_icon.scale-400.png">
+      <PackagePath>big_plus_icon.scale-400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\big_plus_icon.scale-200.png">
+      <PackagePath>big_plus_icon.scale-200.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\big_plus_icon.scale-150.png">
+      <PackagePath>big_plus_icon.scale-150.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\big_plus_icon.scale-125.png">
+      <PackagePath>big_plus_icon.scale-125.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\resizetizer\r\big_plus_icon.scale-100.png">
+      <PackagePath>big_plus_icon.scale-100.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\Novera\Novera\bin\Debug\net8.0-windows10.0.19041.0\win10-x64\Novera.deps.json">
       <PackagePath>Novera.deps.json</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\de-li\Novera.resources.dll">
       <PackagePath>de-li\Novera.resources.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\af-ZA\Novera.resources.dll">
+      <PackagePath>af-ZA\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ar-AE\Novera.resources.dll">
+      <PackagePath>ar-AE\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\bg-BG\Novera.resources.dll">
+      <PackagePath>bg-BG\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\cs-CZ\Novera.resources.dll">
       <PackagePath>cs-CZ\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\da-DK\Novera.resources.dll">
+      <PackagePath>da-DK\Novera.resources.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\de-DE\Novera.resources.dll">
       <PackagePath>de-DE\Novera.resources.dll</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\en-GB\Novera.resources.dll">
+      <PackagePath>en-GB\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\en-US\Novera.resources.dll">
+      <PackagePath>en-US\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\es-AR\Novera.resources.dll">
+      <PackagePath>es-AR\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\es-ES\Novera.resources.dll">
+      <PackagePath>es-ES\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\es-PA\Novera.resources.dll">
+      <PackagePath>es-PA\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\et-EE\Novera.resources.dll">
+      <PackagePath>et-EE\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\fr-FR\Novera.resources.dll">
+      <PackagePath>fr-FR\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\hi-IN\Novera.resources.dll">
       <PackagePath>hi-IN\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\hu-HU\Novera.resources.dll">
+      <PackagePath>hu-HU\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\it-IT\Novera.resources.dll">
+      <PackagePath>it-IT\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ja-JP\Novera.resources.dll">
+      <PackagePath>ja-JP\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\lt-LT\Novera.resources.dll">
+      <PackagePath>lt-LT\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\lv-LV\Novera.resources.dll">
+      <PackagePath>lv-LV\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\pl-PL\Novera.resources.dll">
+      <PackagePath>pl-PL\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\pt-BR\Novera.resources.dll">
+      <PackagePath>pt-BR\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\pt-PT\Novera.resources.dll">
+      <PackagePath>pt-PT\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\ru-RU\Novera.resources.dll">
+      <PackagePath>ru-RU\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\sk-SK\Novera.resources.dll">
+      <PackagePath>sk-SK\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\sv-SE\Novera.resources.dll">
+      <PackagePath>sv-SE\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-CN\Novera.resources.dll">
+      <PackagePath>zh-CN\Novera.resources.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="D:\work\Novera\Novera\obj\Debug\net8.0-windows10.0.19041.0\win10-x64\zh-HK\Novera.resources.dll">
+      <PackagePath>zh-HK\Novera.resources.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Grace\.nuget\packages\microsoft.windows.sdk.net.ref\10.0.19041.31\lib\net6.0\Microsoft.Windows.SDK.NET.dll">
       <PackagePath>Microsoft.Windows.SDK.NET.dll</PackagePath>
