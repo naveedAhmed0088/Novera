@@ -1,5 +1,6 @@
 using System.Text;
 using System.Text.Json;
+using Novera.Source.Pages.Common.ContactDetail;
 using Novera.Source.Pages.Common.Login;
 using Novera.Source.Pages.Common.LoginOptionDialog;
 
@@ -113,5 +114,9 @@ public partial class RegisterPage : ContentPage
     private void OnLoginTapped(object sender, EventArgs e)
     {
         Shell.Current.Navigation.PopAsync();
+    }
+    private void OnContactTapped(object sender, EventArgs e)
+    {
+        Shell.Current.GoToAsync(nameof(ContactDetailPage));
     }
 }

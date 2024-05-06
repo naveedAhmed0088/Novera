@@ -143,14 +143,14 @@
                 <Label.FormattedText>
                     <FormattedString>
                         <Span Text="Already have an account?  " TextColor="{StaticResource EntryText}" />
-                        <Span Text="Log-in" TextColor="{StaticResource LoginText}"/>
+                        <Span Text="{x:Static strings:language.e5807007}" TextColor="{StaticResource LoginText}"/>
                     </FormattedString>
                 </Label.FormattedText>
             </Label>
 
             <Label TextColor="{StaticResource LoginText}"
 		       FontSize="18"
-		       Text="Contact"
+		       Text="{x:Static strings:language.e5502006}"
 		       HorizontalOptions="CenterAndExpand"/>
         </VerticalStackLayout>
     </ScrollView>
