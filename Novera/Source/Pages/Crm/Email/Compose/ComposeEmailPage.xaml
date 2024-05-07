@@ -101,7 +101,18 @@
                         <Editor TextColor="White" FontSize="20" AutoSize="Disabled" x:Name="bodyEditor"></Editor>
                     </Frame>
                 </Grid>
-                <Grid Grid.Row="4"  ColumnDefinitions="*,*" BackgroundColor="{StaticResource SideDrawerColor}" Padding="10" VerticalOptions="End">
+
+        <ScrollView Grid.Row="4" Orientation="Horizontal" Margin="12,0,12,10">
+            <Frame BackgroundColor="Transparent" BorderColor="Transparent" CornerRadius="5"
+                   x:Name="frameImage" HeightRequest="100"
+                   >
+                <StackLayout x:Name="imageStackLayout" Orientation="Horizontal">
+                </StackLayout>
+            </Frame>
+
+        </ScrollView>
+
+        <Grid Grid.Row="5"  ColumnDefinitions="*,*" BackgroundColor="{StaticResource SideDrawerColor}" Padding="10" VerticalOptions="End">
                     <Button Text="Add file"
                             Style="{StaticResource ButtonwithWhiteBorder}"
                             BackgroundColor="Transparent"
@@ -117,12 +128,7 @@
                             Margin="5" />
                 </Grid>
 
-        <ScrollView Grid.Row="5" Orientation="Horizontal">
-            <StackLayout x:Name="imageStackLayout" Orientation="Horizontal">
-                <!-- Text labels will be added dynamically here -->
-            </StackLayout>
-        </ScrollView>
-
+      
 
     </Grid>
 </ContentPage>
