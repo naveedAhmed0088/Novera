@@ -94,6 +94,8 @@ public partial class ComposeEmailPage : ContentPage
         }
         else
         {
+            loader.IsRunning = true;
+            loader.IsVisible = true;
             bool allEmailsSentSuccessfully = true;
 
             foreach (City selectedItem in selectedItems)
@@ -119,18 +121,23 @@ public partial class ComposeEmailPage : ContentPage
 
             if (allEmailsSentSuccessfully)
             {
+                loader.IsRunning = false;
+                loader.IsVisible = false;
                 await Navigation.PushAsync(new EmailPage());
             }
             else
             {
                 await DisplayAlert("Error", "Some emails failed to send.", "OK");
                 Console.WriteLine("Some emails failed to send. Navigation aborted.");
+                loader.IsRunning = false;
+                loader.IsVisible = false;
             }
         }
     }
 
     private async Task<bool> SendEmail(string token, string sendTo, string cc, string subject, string body, int userId)
     {
+
         bool allEmailsSentSuccessfully = true;
         try
         {
