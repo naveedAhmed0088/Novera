@@ -10,18 +10,19 @@ namespace Novera.Source.Pages.Crm.Email.Compose;
 
 public partial class ComposeEmailPage : ContentPage
 {
-    ApiService<ComposeEmailResponse> apiService;
+    EmailApiService apiService;
+    FilePickerService filePickerService;
 #pragma warning disable CS8602
 #pragma warning disable CS8600
 #pragma warning disable CS8604
 
-
+    private List<string> pickedFiles;
     public ComposeEmailPage()
     {
         InitializeComponent();
         BindingContext = new ComposeEmailViewModel();
-        apiService = new ApiService<ComposeEmailResponse>();
-
+        apiService = new EmailApiService();
+        filePickerService= new FilePickerService();
         NavigationPage.SetHasNavigationBar(this, false);
 
         
@@ -124,21 +125,37 @@ public partial class ComposeEmailPage : ContentPage
         bool allEmailsSentSuccessfully = true;
         try
         {
-           
+      
 
-            var jsonBody = new
+
+            var content = new MultipartFormDataContent();
+            content.Add(new StringContent(sendTo), "SendTo");
+            content.Add(new StringContent(cc), "Cc");
+            content.Add(new StringContent(""), "Bcc");
+            content.Add(new StringContent(subject), "Subject");
+            content.Add(new StringContent(body), "BodyText");
+            content.Add(new StringContent(body), "BodyHtml");
+            content.Add(new StringContent(userId.ToString()), "UserId");
+            content.Add(new StringContent("0"), "FolderId");
+            
+
+            foreach (var fileEntry in pickedFiles)
             {
-                sendTo,
-                cc,
-                bcc = "", // Assuming bcc is not provided as a parameter
-                subject,
-                bodyText = body,
-                bodyHtml = body, // Assuming bodyHtml is not provided as a parameter
-                userId,
-                folderId = 0 // Assuming folderId is not provided as a parameter
-            };
 
-            var response = await apiService.getAsync(ApiUrls.ComposeEmail, this,token,HttpMethod.Post,JsonSerializer.Serialize(jsonBody));
+                var fileName = Path.GetFileName(fileEntry);
+                var fileStreamContent = new StreamContent(File.OpenRead(fileEntry));
+               
+                //Add the file
+                content.Add(fileStreamContent, name: "files", fileName: fileName);
+
+
+            }
+
+
+
+
+
+            var response = await apiService.composeEmail(ApiUrls.ComposeEmail, this,token,HttpMethod.Post,content);
 
             if (response is ComposeEmailResponse successResponse)
             {
@@ -174,8 +191,19 @@ public partial class ComposeEmailPage : ContentPage
         return allEmailsSentSuccessfully;
     }
 
+    private async void AddFile(object sender, EventArgs e)
+    {
+       
 
+// Define the PickOptions
+var options = new PickOptions
+{
+    PickerTitle = "Please select a file"
+};
 
+// Call the PickAndShow method asynchronously
+       pickedFiles = await filePickerService.PickAndShowMultiple(options);
 
+    }
 }
 

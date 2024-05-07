@@ -106,7 +106,9 @@
                             Style="{StaticResource ButtonwithWhiteBorder}"
                             BackgroundColor="Transparent"
                             Grid.Column="0"
-                            Margin="5" />
+                            Margin="5"
+                           Clicked="AddFile"
+                            />
             <Button Text="{x:Static strings:language.e4206027}"
                             Style="{StaticResource ButtonwithWhiteBorder}"
                             Grid.Column="1"
