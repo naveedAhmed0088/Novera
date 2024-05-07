@@ -153,24 +153,25 @@ public partial class ComposeEmailPage : ContentPage
             content.Add(new StringContent(body), "BodyHtml");
             content.Add(new StringContent(userId.ToString()), "UserId");
             content.Add(new StringContent("0"), "FolderId");
-            
 
-            foreach (var filePath in pickedFiles)
+            if (pickedFiles != null)
             {
+                foreach (var filePath in pickedFiles)
+                {
 
-                var fileName = Path.GetFileName(filePath);
-                 var fileExtension = Path.GetExtension(filePath);
-                fileExtension = fileExtension.TrimStart('.');
+                    var fileName = Path.GetFileName(filePath);
+                    var fileExtension = Path.GetExtension(filePath);
+                    fileExtension = fileExtension.TrimStart('.');
 
-                var fileStreamContent = new StreamContent(File.OpenRead(filePath));
-                fileStreamContent.Headers.ContentType = new MediaTypeHeaderValue($"image/{fileExtension}");
+                    var fileStreamContent = new StreamContent(File.OpenRead(filePath));
+                    fileStreamContent.Headers.ContentType = new MediaTypeHeaderValue($"image/{fileExtension}");
 
-                //Add the file
-                content.Add(fileStreamContent, name: "files", fileName: fileName);
+                    //Add the file
+                    content.Add(fileStreamContent, name: "files", fileName: fileName);
 
 
+                }
             }
-
 
 
 
