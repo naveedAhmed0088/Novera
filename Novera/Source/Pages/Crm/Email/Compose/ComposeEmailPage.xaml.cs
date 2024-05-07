@@ -1,28 +1,28 @@
 
-using System.Collections.ObjectModel;
-using System.Net.Http.Headers;
-using System.Text;
 using System.Text.Json;
 using Novera.Source.ApiServices;
-using Novera.Source.Pages.Crm.Email.EmailDetail;
 using Novera.Source.Response;
 using Novera.Source.Utility;
 using Novera.Source.ViewModel.Emails;
-using Telerik.Maui.Controls;
 using static Novera.Source.ViewModel.Emails.ComposeEmailViewModel;
 
 namespace Novera.Source.Pages.Crm.Email.Compose;
 
 public partial class ComposeEmailPage : ContentPage
 {
-    ApiService<ComposeEmailResponse> apiService;
+    EmailApiService apiService;
+    FilePickerService filePickerService;
+#pragma warning disable CS8602
+#pragma warning disable CS8600
+#pragma warning disable CS8604
 
+    private List<string> pickedFiles;
     public ComposeEmailPage()
     {
         InitializeComponent();
         BindingContext = new ComposeEmailViewModel();
-        apiService = new ApiService<ComposeEmailResponse>();
-
+        apiService = new EmailApiService();
+        filePickerService= new FilePickerService();
         NavigationPage.SetHasNavigationBar(this, false);
 
         
@@ -69,19 +69,19 @@ public partial class ComposeEmailPage : ContentPage
         {
             // Display an error message or handle the empty email case accordingly
             // For example:
-            DisplayAlert("Error", "Please enter your email.", "OK");
+            await DisplayAlert("Error", "Please enter your email.", "OK");
         }
         else if (selectedItems.Count <= 0)
         {
-            DisplayAlert("Error", "Please select at least one email.", "OK");
+            await DisplayAlert("Error", "Please select at least one email.", "OK");
         }
         else if (string.IsNullOrWhiteSpace(sbj))
         {
-            DisplayAlert("Error", "Please enter subject.", "OK");
+            await DisplayAlert("Error", "Please enter subject.", "OK");
         }
         else if (string.IsNullOrWhiteSpace(body))
         {
-            DisplayAlert("Error", "Please enter body.", "OK");
+            await DisplayAlert("Error", "Please enter body.", "OK");
         }
         else
         {
@@ -92,55 +92,82 @@ public partial class ComposeEmailPage : ContentPage
                 string cityName = selectedItem.Name;
                 try
                 {
-                    await SendEmail(oauthToken, cityName, from, sbj, body, id);
+                    // Use the SendEmail method and check its return value
+                    bool emailSentSuccessfully = await SendEmail(oauthToken, cityName, from, sbj, body, id);
+
+                    if (!emailSentSuccessfully)
+                    {
+                        allEmailsSentSuccessfully = false; // Update flag to indicate failure
+                        break;
+                    }
                 }
                 catch (Exception ex)
                 {
                     allEmailsSentSuccessfully = false; // Update flag to indicate failure
+                    Console.WriteLine(ex.Message);
                 }
             }
 
             if (allEmailsSentSuccessfully)
             {
-                // All emails sent successfully, navigate to another screen
                 await Navigation.PushAsync(new EmailPage());
             }
             else
             {
-                DisplayAlert("Error", "Some emails failed to send.", "ok");
+                await DisplayAlert("Error", "Some emails failed to send.", "OK");
                 Console.WriteLine("Some emails failed to send. Navigation aborted.");
             }
         }
     }
 
-    private async Task SendEmail(string token, string sendTo, string cc, string subject, string body, int userId)
+    private async Task<bool> SendEmail(string token, string sendTo, string cc, string subject, string body, int userId)
     {
-
+        bool allEmailsSentSuccessfully = true;
         try
         {
-            var jsonBody = new
-            {
-                sendTo,
-                cc,
-                bcc = "", // Assuming bcc is not provided as a parameter
-                subject,
-                bodyText = body,
-                bodyHtml = body, // Assuming bodyHtml is not provided as a parameter
-                userId,
-                folderId = 0 // Assuming folderId is not provided as a parameter
-            };
+      
 
-            var response = await apiService.getAsync(ApiUrls.ComposeEmail, this,token,HttpMethod.Post,JsonSerializer.Serialize(jsonBody));
+
+            var content = new MultipartFormDataContent();
+            content.Add(new StringContent(sendTo), "SendTo");
+            content.Add(new StringContent(cc), "Cc");
+            content.Add(new StringContent(""), "Bcc");
+            content.Add(new StringContent(subject), "Subject");
+            content.Add(new StringContent(body), "BodyText");
+            content.Add(new StringContent(body), "BodyHtml");
+            content.Add(new StringContent(userId.ToString()), "UserId");
+            content.Add(new StringContent("0"), "FolderId");
+            
+
+            foreach (var fileEntry in pickedFiles)
+            {
+
+                var fileName = Path.GetFileName(fileEntry);
+                var fileStreamContent = new StreamContent(File.OpenRead(fileEntry));
+               
+                //Add the file
+                content.Add(fileStreamContent, name: "files", fileName: fileName);
+
+
+            }
+
+
+
+
+
+            var response = await apiService.composeEmail(ApiUrls.ComposeEmail, this,token,HttpMethod.Post,content);
 
             if (response is ComposeEmailResponse successResponse)
             {
                
                 if(successResponse.success==true)
                 {
+                   allEmailsSentSuccessfully = true;
 
                 }
                 else
                 {
+                    allEmailsSentSuccessfully = false;
 
                 }
 
@@ -157,12 +184,26 @@ public partial class ComposeEmailPage : ContentPage
         catch (Exception ex)
         {
             Console.WriteLine($"Error: {ex.Message}");
-            DisplayAlert("Error", ex.Message, "ok");
+            await DisplayAlert("Error", ex.Message, "ok");
+            allEmailsSentSuccessfully = false;
+
         }
+        return allEmailsSentSuccessfully;
     }
 
+    private async void AddFile(object sender, EventArgs e)
+    {
+       
 
+// Define the PickOptions
+var options = new PickOptions
+{
+    PickerTitle = "Please select a file"
+};
 
+// Call the PickAndShow method asynchronously
+       pickedFiles = await filePickerService.PickAndShowMultiple(options);
 
+    }
 }
 

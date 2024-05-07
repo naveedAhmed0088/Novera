@@ -39,7 +39,7 @@
                 </Grid>
             </Frame>
             <CollectionView  ItemsSource="{Binding languageList}" 
-                >
+               >
             <CollectionView.ItemsLayout>
                 <GridItemsLayout Orientation="Vertical" Span="3" />
             </CollectionView.ItemsLayout>
@@ -54,7 +54,9 @@
                                 </VerticalStackLayout.GestureRecognizers>
 
                                 <!-- Image -->
-                                <Image Source="{Binding Icon}" />
+                                <Image Source="{Binding Icon}" >
+                                   
+                                </Image>
                                 <Label Text="{Binding Name}" 
                    Style="{StaticResource Font12LabelAppleGothic}"
                    TextColor="{StaticResource LabelColor}"

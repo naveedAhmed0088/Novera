@@ -1,21 +1,28 @@
 ﻿using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Novera.Source.ApiServices;
 using Novera.Source.Response.CRMPages;
 using Novera.Source.Utility;
 
 namespace Novera.Source.ViewModel.Emails
 {
-    public class InboxViewModel
+#pragma warning disable CS8602
+#pragma warning disable CS8600
+#pragma warning disable CS8604
+
+    public partial class InboxViewModel:ObservableObject
     {
+        [ObservableProperty]
+        private bool _IsBusy;
         public ObservableCollection<Datum> InboxEmails { get; }
-        inboxPageApiService apiService;
+        EmailApiService apiService;
         public InboxViewModel()
         {
             // This default constructor is added to satisfy XAML requirements
             // You can leave it empty or initialize properties if needed
             InboxEmails = new ObservableCollection<Datum>();
-            apiService = new inboxPageApiService();
-            LoadInboxEmailsAsync();
+            apiService = new EmailApiService();
+            _ = LoadInboxEmailsAsync();
 
         }
 
@@ -24,7 +31,7 @@ namespace Novera.Source.ViewModel.Emails
         {
             // Clear existing emails and reload
             InboxEmails.Clear();
-            apiService = new inboxPageApiService();
+            apiService = new EmailApiService();
 
             await LoadInboxEmailsAsync();
         }
@@ -44,6 +51,7 @@ namespace Novera.Source.ViewModel.Emails
 
             try
             {
+                IsBusy = true;
                 string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
                 var userEmail = await SecureStorage.Default.GetAsync("user_email");
 
@@ -83,7 +91,7 @@ namespace Novera.Source.ViewModel.Emails
                 // Hide loader
                 //loader.IsRunning = false;
                 //loader.IsVisible = false;
-
+                IsBusy=false;
             }
 
         }

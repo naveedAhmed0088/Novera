@@ -3,59 +3,31 @@ using Novera.Source.Pages.Common.ForgotPassword;
 using Novera.Source.Pages.Common.LanguageSelection;
 using Novera.Source.Pages.Common.LoginOptionDialog;
 using Novera.Source.Pages.Common.Register;
-using Novera.Source.Pages.Crm.Settings.Team;
-using Novera.Source.Pages.Crm.Calendar.ScheduleCalendar;
-using Novera.Source.Pages.Crm.Dashboard;
 using Novera.Source.Pages.Crm.Email;
-using Novera.Source.Pages.Crm.SideDrawer;
-using Novera.Source.Pages.Crm.Settings.Detail;
-using Novera.Source.Model;
 using System.Text.Json;
-using System.Text;
-using System.Net.Http.Headers;
-using Novera.Source.Services;
 using Novera.Source.Utility;
-using Novera.Source.Response.CommpnPages.Success;
-using Novera.Source.Response.CommpnPages.Failure;
-using static System.Runtime.InteropServices.JavaScript.JSType;
-using Novera.Resources.Strings;
-using System.Globalization;
-using Novera.Resources;
+using Novera.Source.ApiServices;
 
 
 namespace Novera.Source.Pages.Common.Login;
 
 public partial class LoginPage : ContentPage
 {
-    LoginApiService apiService;
+    ApiService<LoginResponse> apiService;
     public LoginPage()
     {
 
-        //Translator translator = Translator.Instance;
-
-        // Change the language to French (France)
-        //translator.CultureInfo = new CultureInfo("hi-in");
-
+        
         InitializeComponent();
        
      
 
-        apiService = new LoginApiService();
+        apiService = new ApiService<LoginResponse>();
        
 
 
     }
-    //private void Button_Clicked1(object sender, EventArgs e)
-    //{
-    //    language.Culture = new System.Globalization.CultureInfo("en-US");
-    //    (App.Current as App).MainPage = new AppShell();
-    //}
-    //private void Button_Clicked(object sender, EventArgs e)
-    //{
-    //    language.Culture = new System.Globalization.CultureInfo("de-DE");
-    //    (App.Current as App).MainPage = new AppShell();
-    //}
-
+    
     private void OnLanguageClicked(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync(nameof(LanguageSelectionPage));
@@ -72,13 +44,11 @@ public partial class LoginPage : ContentPage
         // Check if the email is empty or null
         if (string.IsNullOrWhiteSpace(username))
         {
-            // Display an error message or handle the empty email case accordingly
-            // For example:
-            await DisplayAlert("Error", "Please enter your email.", "OK");
+           await DisplayAlert("Alert", "Please enter your email.", "OK");
         }
         else if (string.IsNullOrWhiteSpace(password))
         {
-            await DisplayAlert("Error", "Please enter your password.", "OK");
+            await DisplayAlert("Alert", "Please enter your password.", "OK");
 
         }
         else
@@ -91,25 +61,29 @@ public partial class LoginPage : ContentPage
 
             try
             {
-                var response = await apiService.PostAsync(ApiUrls.LoginEndpoint, JsonSerializer.Serialize(requestData), this);
+                var response = await apiService.PostAsync(ApiUrls.loginEndpoint, JsonSerializer.Serialize(requestData), this);
 
-                if (response is LoginSuccessResponse successResponse)
+                if (response is LoginResponse loginResponse)
                 {
-                    //save data in async
-                    await SecureStorage.Default.SetAsync("oauth_token", successResponse.data.sessionToken);
-                    await SecureStorage.Default.SetAsync("userid", successResponse.data.userDetails.userID.ToString());
-                    await SecureStorage.Default.SetAsync("user_email", successResponse.data.userDetails.userEmail.ToString());
+                    if (loginResponse.success == true)
+                    {
 
-                    await Shell.Current.GoToAsync($"//{nameof(EmailPage)}");
+                        //save data in async storage
+                           await SecureStorage.Default.SetAsync("oauth_token", loginResponse.data.sessionToken);
+                            await SecureStorage.Default.SetAsync("userid", loginResponse.data.userDetails.userID.ToString());
+                            await SecureStorage.Default.SetAsync("user_email", loginResponse.data.userDetails.userEmail.ToString());
+
+                            await Shell.Current.GoToAsync($"//{nameof(EmailPage)}");
+                        
 
 
-
+                    }
+                    else
+                    { 
+                    await DisplayAlert("Alert", loginResponse?.message?.ToString(), "ok");
+                    }
                 }
-                else if (response is LoginFailureResponse failureResponse)
-                {
-                    await DisplayAlert("Error", failureResponse.message.ToString(), "ok");
-
-                }
+                
 
 
             }
@@ -117,7 +91,6 @@ public partial class LoginPage : ContentPage
             {
                 // Handle exception
                 Console.WriteLine($"Exception: {ex.Message}");
-                await DisplayAlert("Error", ex.Message, "OK");
 
             }
             finally

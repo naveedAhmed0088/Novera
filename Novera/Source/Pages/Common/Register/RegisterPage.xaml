@@ -129,10 +129,13 @@
                 <Button Text="{x:Static strings:language.e1302031}"
 			        Style="{StaticResource ButtonwithWhiteBorder}"
 			        Grid.Column="0"
+                         Clicked="OnLanguageClicked"
+                        
 			        Margin="5"/>
                 <Button Text="Login with"
 			        Style="{StaticResource ButtonwithWhiteBorder}"
 			        Grid.Column="1"
+                        Clicked="OnLoginWithClicked"
 			        Margin="5"/>
             </Grid>
 

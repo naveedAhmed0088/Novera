@@ -10,12 +10,14 @@ namespace Novera.Source.Pages.Crm.Email.Sent;
 
 public partial class SentMailView : ContentView
 {
-    inboxPageApiService apiService;
+    EmailApiService apiService;
     private readonly SentMailViewModel _viewModel;
+    #pragma warning disable CS8602
+#pragma warning disable CS8600
 
     public SentMailView()
 	{
-        apiService = new inboxPageApiService();
+        apiService = new EmailApiService();
         InitializeComponent();
         Resources.Add("FirstCharacterConverter", new FirstCharacterConverter());
         _viewModel = new SentMailViewModel();
@@ -63,7 +65,7 @@ public partial class SentMailView : ContentView
 
                     if (response is InboxPageMarkResponse successResponse)
                     {
-                        App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
+                        await App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
 
                         await _viewModel.RefreshData();
 
@@ -78,7 +80,7 @@ public partial class SentMailView : ContentView
                 {
                     // Handle exception
                     Console.WriteLine($"Exception: {ex.Message}");
-                    App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
+                    await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
 
                 }
@@ -116,7 +118,7 @@ public partial class SentMailView : ContentView
                     }
 
                     string url = $"{ApiUrls.BaseUrl}Emails/{data.mailId}";
-                    App.Current.MainPage.DisplayAlert("Confirm Deletion", "Are you sure you want to delete this email?", "Yes", "No")
+                    await App.Current.MainPage.DisplayAlert("Confirm Deletion", "Are you sure you want to delete this email?", "Yes", "No")
                         .ContinueWith(async (result) =>
                         {
 
@@ -139,7 +141,7 @@ public partial class SentMailView : ContentView
                 {
                     // Handle exception
                     Console.WriteLine($"Exception: {ex.Message}");
-                    App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
+                    await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
                 }
                 finally
                 {

@@ -117,6 +117,7 @@
                         Style="{StaticResource ButtonwithWhiteBorder}"
                         Grid.Column="0"
                         Clicked="OnLanguageClicked"
+
                         Margin="5" />
                 <Button Text="Login with"
                         Style="{StaticResource ButtonwithWhiteBorder}"

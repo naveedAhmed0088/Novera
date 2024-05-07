@@ -16,13 +16,16 @@ public partial class InboxPage : ContentView
 
     public ObservableCollection<Datum> SelectedItems { get; set; } = new ObservableCollection<Datum>();
     private readonly HttpClient _client = new HttpClient();
-    inboxPageApiService apiService;
+    EmailApiService apiService;
     private readonly InboxViewModel _viewModel;
+#pragma warning disable CS8602
+#pragma warning disable CS8600
+
     public InboxPage()
     {
         
 
-        apiService = new inboxPageApiService();
+        apiService = new EmailApiService();
         InitializeComponent();
         Resources.Add("FirstCharacterConverter", new FirstCharacterConverter());
         _viewModel = new InboxViewModel();
@@ -69,7 +72,7 @@ public partial class InboxPage : ContentView
 
                     if (response is InboxPageMarkResponse successResponse)
                     {
-                        App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
+                        await App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
 
                         await _viewModel.RefreshData();
 
@@ -84,7 +87,7 @@ public partial class InboxPage : ContentView
                 {
                     // Handle exception
                     Console.WriteLine($"Exception: {ex.Message}");
-                    App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
+                    await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
 
                 }
@@ -122,7 +125,7 @@ public partial class InboxPage : ContentView
                     }
 
                     string url = $"{ApiUrls.BaseUrl}Emails/{data.mailId}";
-                    App.Current.MainPage.DisplayAlert("Confirm Deletion", "Are you sure you want to delete this email?", "Yes", "No")
+                    await App.Current.MainPage.DisplayAlert("Confirm Deletion", "Are you sure you want to delete this email?", "Yes", "No")
                         .ContinueWith(async (result) =>
                         {
 
@@ -145,7 +148,7 @@ public partial class InboxPage : ContentView
                 {
                     // Handle exception
                     Console.WriteLine($"Exception: {ex.Message}");
-                    App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
+                    await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
                 }
                 finally {
                     loader.IsRunning = false;

@@ -33,6 +33,9 @@ IsRunning="False" IsVisible="False" Color="white"
                    VerticalOptions="Center" HorizontalOptions="Center"
                    />
 
+
+                    <ActivityIndicator IsRunning="true" IsVisible="{Binding IsBusy}" Color="white" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+
                     <CollectionView ItemsSource="{Binding InboxEmails}" BackgroundColor="Transparent" VerticalScrollBarVisibility="Always"
                                     SelectionMode="Multiple"
                 SelectionChanged="OnCollectionViewSelectionChanged"
@@ -53,6 +56,10 @@ IsRunning="False" IsVisible="False" Color="white"
                                             <Frame BackgroundColor="Orange" Margin="5, 0, 0 ,0" Grid.Column= "0" WidthRequest="34" HeightRequest="34" CornerRadius="17" Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                                             <Label Text="{Binding sender, Converter={StaticResource FirstCharacterConverter}}"  TextColor="White" HorizontalOptions="CenterAndExpand"/>
                                         </Frame>
+                                        
+                                        
+                                        
+                                        
 
                                             <StackLayout Margin="5, 0, 0 ,0" Grid.Column= "1" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="2">
                                                 <Label Text="{Binding sender}" TextColor="#D69E5A" HorizontalOptions="Start" />
