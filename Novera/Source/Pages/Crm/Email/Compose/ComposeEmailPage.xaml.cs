@@ -1,4 +1,5 @@
 
+using System.Net.Http.Headers;
 using System.Text.Json;
 using Novera.Source.ApiServices;
 using Novera.Source.Response;
@@ -15,6 +16,7 @@ public partial class ComposeEmailPage : ContentPage
 #pragma warning disable CS8602
 #pragma warning disable CS8600
 #pragma warning disable CS8604
+#pragma warning disable CS8601
 
     private List<string> pickedFiles;
     public ComposeEmailPage()
@@ -22,10 +24,11 @@ public partial class ComposeEmailPage : ContentPage
         InitializeComponent();
         BindingContext = new ComposeEmailViewModel();
         apiService = new EmailApiService();
-        filePickerService= new FilePickerService();
         NavigationPage.SetHasNavigationBar(this, false);
+       
 
-        
+
+
     }
 
     private void RemoveToEmailTapped(object sender, System.EventArgs e)
@@ -50,6 +53,12 @@ public partial class ComposeEmailPage : ContentPage
         Navigation.PopAsync();
 
     }
+
+
+
+    
+
+
 
     private async void DetailBtnClicked(object sender, EventArgs e)
     {
@@ -139,12 +148,16 @@ public partial class ComposeEmailPage : ContentPage
             content.Add(new StringContent("0"), "FolderId");
             
 
-            foreach (var fileEntry in pickedFiles)
+            foreach (var filePath in pickedFiles)
             {
 
-                var fileName = Path.GetFileName(fileEntry);
-                var fileStreamContent = new StreamContent(File.OpenRead(fileEntry));
-               
+                var fileName = Path.GetFileName(filePath);
+                 var fileExtension = Path.GetExtension(filePath);
+                fileExtension = fileExtension.TrimStart('.');
+
+                var fileStreamContent = new StreamContent(File.OpenRead(filePath));
+                fileStreamContent.Headers.ContentType = new MediaTypeHeaderValue($"image/{fileExtension}");
+
                 //Add the file
                 content.Add(fileStreamContent, name: "files", fileName: fileName);
 
@@ -200,10 +213,26 @@ var options = new PickOptions
 {
     PickerTitle = "Please select a file"
 };
+        filePickerService = new FilePickerService();
+        imageStackLayout.Children.Clear();
 
-// Call the PickAndShow method asynchronously
-       pickedFiles = await filePickerService.PickAndShowMultiple(options);
+        // Call the PickAndShow method asynchronously
+        pickedFiles = await filePickerService.PickAndShowMultiple(options);
 
+        foreach (var filePath in pickedFiles)
+        {
+
+            var image = new Image
+            {
+                Source = filePath,
+                WidthRequest = 100,
+                HeightRequest = 100,
+                Margin = new Thickness(2)
+            };
+
+
+            imageStackLayout.Children.Add(image);
+        }
     }
 }
 

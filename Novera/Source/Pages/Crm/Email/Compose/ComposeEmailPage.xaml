@@ -9,7 +9,7 @@
              xmlns:strings="clr-namespace:Novera.Resources.Strings"
              BackgroundImageSource="top_cloud_straight"
              Shell.FlyoutBehavior="Disabled">
-            <Grid RowDefinitions= "Auto,Auto,Auto,*,Auto">
+            <Grid RowDefinitions= "Auto,Auto,Auto,*,Auto,Auto">
                 <Grid Grid.Row="0" Padding="16" VerticalOptions="Start">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition Width="Auto" />
@@ -116,6 +116,13 @@
                             Clicked="DetailBtnClicked"
                             Margin="5" />
                 </Grid>
-                
-        </Grid>
+
+        <ScrollView Grid.Row="5" Orientation="Horizontal">
+            <StackLayout x:Name="imageStackLayout" Orientation="Horizontal">
+                <!-- Text labels will be added dynamically here -->
+            </StackLayout>
+        </ScrollView>
+
+
+    </Grid>
 </ContentPage>
