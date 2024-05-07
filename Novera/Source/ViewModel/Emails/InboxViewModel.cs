@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Novera.Source.ApiServices;
 using Novera.Source.Response.CRMPages;
 using Novera.Source.Utility;
@@ -9,8 +10,10 @@ namespace Novera.Source.ViewModel.Emails
 #pragma warning disable CS8600
 #pragma warning disable CS8604
 
-    public class InboxViewModel
+    public partial class InboxViewModel:ObservableObject
     {
+        [ObservableProperty]
+        private bool _IsBusy;
         public ObservableCollection<Datum> InboxEmails { get; }
         EmailApiService apiService;
         public InboxViewModel()
@@ -48,6 +51,7 @@ namespace Novera.Source.ViewModel.Emails
 
             try
             {
+                IsBusy = true;
                 string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
                 var userEmail = await SecureStorage.Default.GetAsync("user_email");
 
@@ -87,7 +91,7 @@ namespace Novera.Source.ViewModel.Emails
                 // Hide loader
                 //loader.IsRunning = false;
                 //loader.IsVisible = false;
-
+                IsBusy=false;
             }
 
         }

@@ -28,6 +28,9 @@ IsRunning="False" IsVisible="False" Color="white"
                    VerticalOptions="Center" HorizontalOptions="Center"
                    />
 
+                    <ActivityIndicator IsRunning="true" IsVisible="{Binding IsBusy}" Color="white" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
+
+
                     <CollectionView ItemsSource="{Binding DraftList}" BackgroundColor="Transparent" VerticalScrollBarVisibility="Always">
                         <CollectionView.ItemsLayout>
                                     <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10" />

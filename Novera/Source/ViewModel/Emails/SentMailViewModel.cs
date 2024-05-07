@@ -1,13 +1,17 @@
 ﻿
 using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Novera.Source.ApiServices;
 using Novera.Source.Model.Emails;
 using Novera.Source.Response.CRMPages;
 using Novera.Source.Utility;
 
 namespace Novera.Source.ViewModel.Emails;
-public class SentMailViewModel
+public  partial class SentMailViewModel : ObservableObject
 {
+    [ObservableProperty]
+    private bool _IsBusy;
+
     public ObservableCollection<Datum> SentEmailList { get; }
 
     EmailApiService apiService;
@@ -18,6 +22,7 @@ public class SentMailViewModel
 
     public SentMailViewModel()
     {
+
         SentEmailList = new ObservableCollection<Datum>();
         apiService = new EmailApiService();
         _ = LoadInboxEmailsAsync();
@@ -49,6 +54,7 @@ public class SentMailViewModel
 
         try
         {
+            IsBusy = true;
             string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
             var userEmail = await SecureStorage.Default.GetAsync("user_email");
 
@@ -90,8 +96,7 @@ public class SentMailViewModel
         finally
         {
             // Hide loader
-            //loader.IsRunning = false;
-            //loader.IsVisible = false;
+            IsBusy = false;
 
         }
 

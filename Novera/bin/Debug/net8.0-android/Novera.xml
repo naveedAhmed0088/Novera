@@ -32116,6 +32116,30 @@
         <member name="P:Novera.Source.ViewModel.Document.DocumentViewModel.DocumentRowClickCommand">
             <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand`1"/> instance wrapping <see cref="M:Novera.Source.ViewModel.Document.DocumentViewModel.DocumentRowClick(Novera.Source.Model.Document.DocumentModel)"/>.</summary>
         </member>
+        <member name="T:Novera.Source.ViewModel.Emails.DraftViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Novera.Source.ViewModel.Emails.DraftViewModel.IsBusy">
+            <inheritdoc cref="F:Novera.Source.ViewModel.Emails.DraftViewModel._IsBusy"/>
+        </member>
+        <member name="T:Novera.Source.ViewModel.Emails.InboxViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Novera.Source.ViewModel.Emails.InboxViewModel.IsBusy">
+            <inheritdoc cref="F:Novera.Source.ViewModel.Emails.InboxViewModel._IsBusy"/>
+        </member>
+        <member name="T:Novera.Source.ViewModel.Emails.SentMailViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Novera.Source.ViewModel.Emails.SentMailViewModel.IsBusy">
+            <inheritdoc cref="F:Novera.Source.ViewModel.Emails.SentMailViewModel._IsBusy"/>
+        </member>
+        <member name="T:Novera.Source.ViewModel.Emails.TrashViewModel">
+            <inheritdoc/>
+        </member>
+        <member name="P:Novera.Source.ViewModel.Emails.TrashViewModel.IsBusy">
+            <inheritdoc cref="F:Novera.Source.ViewModel.Emails.TrashViewModel._IsBusy"/>
+        </member>
         <member name="M:Microsoft.Maui.Controls.ColorAnimationExtensions_Button.TextColorTo(Microsoft.Maui.Controls.Button,Microsoft.Maui.Graphics.Color,System.UInt32,System.UInt32,Microsoft.Maui.Easing,System.Threading.CancellationToken)">
             <summary>
             Animates the TextColor of an <see cref = "T:Microsoft.Maui.ITextStyle"/> to the given color
@@ -32235,6 +32259,24 @@
             <param name = "easing">The easing function to be used in the animation</param>
             <param name = "token"><see cref = "T:System.Threading.CancellationToken"/></param>
             <returns>Value indicating if the animation completed successfully or not</returns>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangingArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangingEventArgs"/> instance for all "IsBusy" generated properties.</summary>
+        </member>
+        <member name="T:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs">
+            <summary>
+            A helper type providing cached, reusable <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instances
+            for all properties generated with <see cref="T:CommunityToolkit.Mvvm.ComponentModel.ObservablePropertyAttribute"/>.
+            </summary>
+        </member>
+        <member name="F:CommunityToolkit.Mvvm.ComponentModel.__Internals.__KnownINotifyPropertyChangedArgs.IsBusy">
+            <summary>The cached <see cref="T:System.ComponentModel.PropertyChangedEventArgs"/> instance for all "IsBusy" generated properties.</summary>
         </member>
     </members>
 </doc>

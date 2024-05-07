@@ -1,4 +1,5 @@
 ﻿using System.Collections.ObjectModel;
+using CommunityToolkit.Mvvm.ComponentModel;
 using Novera.Source.ApiServices;
 using Novera.Source.Model.Emails;
 using Novera.Source.Pages.Crm.Email;
@@ -7,11 +8,13 @@ using Novera.Source.Utility;
 
 namespace Novera.Source.ViewModel.Emails;
 
-public class TrashViewModel
+public partial class TrashViewModel : ObservableObject
 {
 #pragma warning disable CS8602
 #pragma warning disable CS8600
 #pragma warning disable CS8604
+    [ObservableProperty]
+    private bool _IsBusy;
 
     public ObservableCollection<Datum> TrashMailList { get; }
     EmailApiService apiService;
@@ -50,6 +53,7 @@ public class TrashViewModel
 
         try
         {
+            IsBusy = true;
             string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
             var userEmail = await SecureStorage.Default.GetAsync("user_email");
 
@@ -90,9 +94,7 @@ public class TrashViewModel
         finally
         {
             // Hide loader
-            //loader.IsRunning = false;
-            //loader.IsVisible = false;
-
+            IsBusy = false;
         }
 
     }
