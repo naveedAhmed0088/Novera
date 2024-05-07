@@ -227,9 +227,10 @@ var options = new PickOptions
                 Source = filePath,
                 WidthRequest = 100,
                 HeightRequest = 100,
-                Margin = new Thickness(2)
+                Margin = new Thickness(-10)
             };
-
+            frameImage.BackgroundColor = Color.FromHex("#13294B");
+            frameImage.BorderColor=Color.FromHex("#D69E5A");
 
             imageStackLayout.Children.Add(image);
         }
