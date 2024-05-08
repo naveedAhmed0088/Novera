@@ -6,9 +6,7 @@ using Novera.Source.Response;
 using Novera.Source.Utility;
 using Novera.Source.ViewModel.Emails;
 using static Novera.Source.ViewModel.Emails.ComposeEmailViewModel;
-
 namespace Novera.Source.Pages.Crm.Email.Compose;
-
 public partial class ComposeEmailPage : ContentPage
 {
     EmailApiService apiService;
@@ -19,16 +17,122 @@ public partial class ComposeEmailPage : ContentPage
 #pragma warning disable CS8601
 
     private List<string> pickedFiles;
+    private bool changesMade;
     public ComposeEmailPage()
     {
         InitializeComponent();
         BindingContext = new ComposeEmailViewModel();
         apiService = new EmailApiService();
+        filePickerService = new FilePickerService();
         NavigationPage.SetHasNavigationBar(this, false);
-       
 
+        // Attach event handlers for text changed events
+        FromEntry.TextChanged += TextChanged;
+        SubjectEntry.TextChanged += TextChanged;
+        bodyEditor.TextChanged += TextChanged;
+    }
 
+    // This method is called when the back button is pressed
+    protected override bool OnBackButtonPressed()
+    {
+        // Check if changes are made
+        if (changesMade)
+        {
+            // Display an alert asking the user if they want to save changes as draft or cancel
+            _ = Device.InvokeOnMainThreadAsync(async () =>
+            {
+                var result = await DisplayAlert("Draft Changes", "Do you want to save changes as draft?", "Draft", "Cancel");
+                if (result)
+                {
+                    // User chose to save changes as draft
+                    await SaveAsDraft();
+                }
+                else
+                {
+                    // User chose to cancel, navigate back
+                    await Navigation.PopAsync();
+                }
+            });
 
+            return true; // Do not execute default back button behavior
+        }
+        else
+        {
+            return base.OnBackButtonPressed(); // Execute default back button behavior
+        }
+    }
+    private async Task SaveAsDraft()
+    {
+        string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
+        int id = int.Parse(await SecureStorage.Default.GetAsync("userid"));
+
+        string from = FromEntry.Text;
+        string sbj = SubjectEntry.Text;
+        var selectedItems = comboBox.SelectedItems;
+        string body = bodyEditor.Text;
+
+        if (string.IsNullOrWhiteSpace(from))
+        {
+            await DisplayAlert("Error", "Please enter your email.", "OK");
+        }
+        else if (selectedItems.Count <= 0)
+        {
+            await DisplayAlert("Error", "Please select at least one email.", "OK");
+        }
+        else if (string.IsNullOrWhiteSpace(sbj))
+        {
+            await DisplayAlert("Error", "Please enter subject.", "OK");
+        }
+        else if (string.IsNullOrWhiteSpace(body))
+        {
+            await DisplayAlert("Error", "Please enter body.", "OK");
+        }
+        else
+        {
+            loader.IsRunning = true;
+            loader.IsVisible = true;
+            bool allEmailsDraftedSuccessfully = true;
+
+            foreach (City selectedItem in selectedItems)
+            {
+                string cityName = selectedItem.Name;
+                try
+                {
+                    bool emailDraftedSuccessfully = await SendEmail(oauthToken, cityName, from, sbj, body, id, true);
+
+                    if (!emailDraftedSuccessfully)
+                    {
+                        allEmailsDraftedSuccessfully = false;
+                        break;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    allEmailsDraftedSuccessfully = false;
+                    Console.WriteLine(ex.Message);
+                }
+            }
+
+            if (allEmailsDraftedSuccessfully)
+            {
+                loader.IsRunning = false;
+                loader.IsVisible = false;
+                await Navigation.PushAsync(new EmailPage());
+            }
+            else
+            {
+                await DisplayAlert("Error", "Some emails failed to save as draft.", "OK");
+                Console.WriteLine("Some emails failed to save as draft. Navigation aborted.");
+                loader.IsRunning = false;
+                loader.IsVisible = false;
+            }
+        }
+    }
+
+    // Event handler for text changed event in any entry or editor
+    private void TextChanged(object sender, EventArgs e)
+    {
+        changesMade = true; // Set changesMade flag to true
     }
 
     private void RemoveToEmailTapped(object sender, System.EventArgs e)
@@ -43,7 +147,6 @@ public partial class ComposeEmailPage : ContentPage
             }
         }
     }
-
     private void BackBtnClicked(object sender, EventArgs e)
     {
         Navigation.PopAsync();
@@ -53,22 +156,11 @@ public partial class ComposeEmailPage : ContentPage
         Navigation.PopAsync();
 
     }
-
-
-
-    
-
-
-
     private async void DetailBtnClicked(object sender, EventArgs e)
     {
         string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
         int id = int.Parse(await SecureStorage.Default.GetAsync("userid"));
         
-
-
-
-
         string from = FromEntry.Text;
         string sbj = SubjectEntry.Text;
         var selectedItems = comboBox.SelectedItems;
@@ -104,7 +196,7 @@ public partial class ComposeEmailPage : ContentPage
                 try
                 {
                     // Use the SendEmail method and check its return value
-                    bool emailSentSuccessfully = await SendEmail(oauthToken, cityName, from, sbj, body, id);
+                    bool emailSentSuccessfully = await SendEmail(oauthToken, cityName, from, sbj, body, id, false);
 
                     if (!emailSentSuccessfully)
                     {
@@ -135,15 +227,12 @@ public partial class ComposeEmailPage : ContentPage
         }
     }
 
-    private async Task<bool> SendEmail(string token, string sendTo, string cc, string subject, string body, int userId)
+    private async Task<bool> SendEmail(string token, string sendTo, string cc, string subject, string body, int userId, bool isDraft)
     {
 
         bool allEmailsSentSuccessfully = true;
         try
         {
-      
-
-
             var content = new MultipartFormDataContent();
             content.Add(new StringContent(sendTo), "SendTo");
             content.Add(new StringContent(cc), "Cc");
@@ -153,6 +242,7 @@ public partial class ComposeEmailPage : ContentPage
             content.Add(new StringContent(body), "BodyHtml");
             content.Add(new StringContent(userId.ToString()), "UserId");
             content.Add(new StringContent("0"), "FolderId");
+            content.Add(new StringContent(isDraft.ToString()), "IsDraft");
 
             if (pickedFiles != null)
             {
@@ -168,14 +258,8 @@ public partial class ComposeEmailPage : ContentPage
 
                     //Add the file
                     content.Add(fileStreamContent, name: "files", fileName: fileName);
-
-
                 }
             }
-
-
-
-
             var response = await apiService.composeEmail(ApiUrls.ComposeEmail, this,token,HttpMethod.Post,content);
 
             if (response is ComposeEmailResponse successResponse)
@@ -191,16 +275,8 @@ public partial class ComposeEmailPage : ContentPage
                     allEmailsSentSuccessfully = false;
 
                 }
-
-
             }
             
-
-
-
-
-
-
         }
         catch (Exception ex)
         {
