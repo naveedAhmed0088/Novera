@@ -48,7 +48,7 @@ public partial class EmailDetailPage : ContentPage
 
             if (response is EmailDetailResponse successResponse)
             {
-                this.emailDetail.Text = $"Subject: {successResponse.data.subject}\nbody: {successResponse.data.body_Text}";
+                this.emailDetail.Text = $"Subject: {successResponse.data.emailDetails.subject}\nbody: {successResponse.data.emailDetails.body_Text}";
 
 
 
