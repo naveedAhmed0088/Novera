@@ -7335,3 +7335,9 @@ D:\work\Novera\Novera\obj\Debug\net8.0-android\stamp\_ConvertResourcesCases.stam
 D:\work\Novera\Novera\obj\Debug\net8.0-android\stamp\_GenerateJavaStubs.stamp
 D:\work\Novera\Novera\obj\Debug\net8.0-android\stamp\_GeneratePackageManagerJava.stamp
 D:\work\Novera\Novera\obj\Debug\net8.0-android\stamp\_ResolveLibraryProjectImports.stamp
+D:\work\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-hdpi\flag_slovak.png
+D:\work\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-mdpi\flag_slovak.png
+D:\work\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-xhdpi\flag_slovak.png
+D:\work\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-xxhdpi\flag_slovak.png
+D:\work\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable-xxxhdpi\flag_slovak.png
+D:\work\Novera\Novera\obj\Debug\net8.0-android\resizetizer\r\drawable\flag_cheque.svg.png
