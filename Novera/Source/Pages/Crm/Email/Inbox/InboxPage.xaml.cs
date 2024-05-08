@@ -1,4 +1,4 @@
-using System.Collections.ObjectModel;
+﻿using System.Collections.ObjectModel;
 using System.Text.Json;
 using Novera.Source.ApiServices;
 using Novera.Source.Model.Emails;
@@ -11,13 +11,13 @@ using Novera.Source.ViewModel.Emails;
 namespace Novera.Source.Pages.Crm.Email.Inbox;
 
 public partial class InboxPage : ContentView
-
 {
 
     public ObservableCollection<Datum> SelectedItems { get; set; } = new ObservableCollection<Datum>();
     private readonly HttpClient _client = new HttpClient();
     EmailApiService apiService;
     private readonly InboxViewModel _viewModel;
+    HashSet<string> addedMailIds;
 #pragma warning disable CS8602
 #pragma warning disable CS8600
 
@@ -30,6 +30,7 @@ public partial class InboxPage : ContentView
         Resources.Add("FirstCharacterConverter", new FirstCharacterConverter());
         _viewModel = new InboxViewModel();
         BindingContext = _viewModel;
+        addedMailIds = new HashSet<string>();
 
     }
 
@@ -171,6 +172,28 @@ public partial class InboxPage : ContentView
         string email_id = emailItem.mailId.ToString();
         await SecureStorage.Default.SetAsync("email_id", email_id);
         await Navigation.PushAsync(new EmailDetailPage());
+
+    }
+
+    private async void MultiSelectionTap(object sender, TappedEventArgs e)
+    {
+        var frame = (Frame)sender;
+        var item = (Datum)frame.BindingContext;
+
+        String mailId = item.mailId.ToString();
+        if (addedMailIds.Contains(mailId))
+        {
+            addedMailIds.Remove(mailId);
+
+            var label = (Label)frame.Content;
+            label.Text = item.sender.Substring(0, 1);
+        }
+        else
+        {
+            addedMailIds.Add(mailId);
+            var label = (Label)frame.Content;
+            label.Text = "\u221A";
+        }
 
     }
 }
