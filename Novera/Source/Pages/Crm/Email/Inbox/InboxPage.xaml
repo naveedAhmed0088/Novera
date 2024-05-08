@@ -59,9 +59,6 @@ IsRunning="False" IsVisible="False" Color="white"
                             </CollectionView.ItemsLayout>
                             <CollectionView.ItemTemplate>
                                 <DataTemplate>
-                                    
-
-                                    
                                     <Frame BorderColor="{StaticResource Transparent}" Margin="5, 0, 5 ,0" CornerRadius="10" Padding="5" BackgroundColor="{StaticResource EditorBackgroundBlue}">
                                     <Frame.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="EmailItemTapped" />
@@ -74,11 +71,6 @@ IsRunning="False" IsVisible="False" Color="white"
                                             </Frame.GestureRecognizers>
 
                                         </Frame>
-                                        
-                                        
-                                        
-                                        
-
                                             <StackLayout Margin="5, 0, 0 ,0" Grid.Column= "1" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="2">
                                                 <Label Text="{Binding sender}" TextColor="#D69E5A" HorizontalOptions="Start" />
                                                 <Label Text="{Binding subject}" LineBreakMode="NoWrap" TextColor="White" HorizontalOptions="Start"/>
@@ -112,8 +104,6 @@ IsRunning="False" IsVisible="False" Color="white"
                                 </DataTemplate>
                             </CollectionView.ItemTemplate>
                         </CollectionView>
-                   
-
                 </VerticalStackLayout>
             </ScrollView>
         </Grid>

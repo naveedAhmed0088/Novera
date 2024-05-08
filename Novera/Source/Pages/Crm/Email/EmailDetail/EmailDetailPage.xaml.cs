@@ -17,17 +17,11 @@ public partial class EmailDetailPage : ContentPage
         
         this.emailDetail.IsEnabled = false;
         getData();
-
-
     }
-
-
-
     private void BackBtnClicked(object sender, EventArgs e)
     {
         Navigation.PopAsync();
     }
-
     private void DeleteBtnClicked(object sender, EventArgs e)
     {
         Navigation.PopAsync();

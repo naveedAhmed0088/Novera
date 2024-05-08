@@ -25,8 +25,6 @@
                         Style="{StaticResource Font18Label}"
                         Placeholder="Your email" 
                         VerticalOptions="Center" />
-
-
             <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End" />
                 </Grid>
                 <Grid Grid.Row="1" Padding="16" VerticalOptions="Start">
@@ -105,7 +103,6 @@
             <ActivityIndicator x:Name="loader" IsRunning="False" IsVisible="False" Color="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
                   
                    />
-
         </Grid>
 
         <ScrollView Grid.Row="4" Orientation="Horizontal" Margin="12,0,12,10">
@@ -115,9 +112,7 @@
                 <StackLayout x:Name="imageStackLayout" Orientation="Horizontal">
                 </StackLayout>
             </Frame>
-
         </ScrollView>
-
         <Grid Grid.Row="5"  ColumnDefinitions="*,*" BackgroundColor="{StaticResource SideDrawerColor}" Padding="10" VerticalOptions="End">
                     <Button Text="Add file"
                             Style="{StaticResource ButtonwithWhiteBorder}"
@@ -133,10 +128,5 @@
                             Clicked="DetailBtnClicked"
                             Margin="5" />
                 </Grid>
-
-        
-
-
-
     </Grid>
 </ContentPage>

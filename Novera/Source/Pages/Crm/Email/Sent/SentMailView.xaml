@@ -8,7 +8,6 @@
         <viewmodel:SentMailViewModel></viewmodel:SentMailViewModel>
     </ContentView.BindingContext>
     <Grid>
-
         <Grid RowDefinitions = "Auto, *">
             <Frame Margin="15, 0, 15, 0" Grid.Row="0" 
                 BackgroundColor="Transparent" 
@@ -27,19 +26,13 @@
 IsRunning="False" IsVisible="False" Color="white"
                    VerticalOptions="Center" HorizontalOptions="Center"
                    />
-
                     <ActivityIndicator IsRunning="true" IsVisible="{Binding IsBusy}" Color="white" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" />
-
-
                     <CollectionView ItemsSource="{Binding SentEmailList}" BackgroundColor="Transparent" VerticalScrollBarVisibility="Always">
                         <CollectionView.ItemsLayout>
                             <GridItemsLayout Orientation="Vertical" VerticalItemSpacing="10" />
                         </CollectionView.ItemsLayout>
                         <CollectionView.ItemTemplate>
                             <DataTemplate>
-
-
-
                                 <Frame BorderColor="{StaticResource Transparent}" Margin="5, 0, 5 ,0" CornerRadius="10" Padding="5" BackgroundColor="{StaticResource EditorBackgroundBlue}">
                                     <Frame.GestureRecognizers>
                                         <TapGestureRecognizer Tapped="EmailItemTapped" />
@@ -70,8 +63,8 @@ IsRunning="False" IsVisible="False" Color="white"
                                                     </ImageButton.Triggers>
                                                 </ImageButton>
                                                 <ImageButton Source="document_delete_folder" WidthRequest="16" HeightRequest="16" HorizontalOptions="End" Clicked="deleteButtonClicked"
-        BindingContext="{Binding .}" 
-         >
+                                                    BindingContext="{Binding .}" 
+                                                     >
                                                 </ImageButton>
                                             </StackLayout>
                                         </StackLayout>
@@ -82,12 +75,9 @@ IsRunning="False" IsVisible="False" Color="white"
                             </DataTemplate>
                         </CollectionView.ItemTemplate>
                     </CollectionView>
-
-
                 </VerticalStackLayout>
             </ScrollView>
         </Grid>
         <ImageButton WidthRequest="75" HeightRequest="75"  Source="notes_add_icon" HorizontalOptions="End" VerticalOptions="EndAndExpand" Margin="0,0,10,50" Clicked="AddClicked"/>
-
     </Grid>
 </ContentView>

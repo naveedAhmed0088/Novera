@@ -17,10 +17,10 @@ namespace Novera.Source.ViewModel.Language
             this.languageList = new ObservableCollection<LanguageModel>()
             {
                 new LanguageModel() { Name = "English", Icon="flag_usa",  languageCode="en-US"},
-                new LanguageModel() { Name = "Slovak", Icon="flag_australia", languageCode="sk-SK"},
-                new LanguageModel() { Name = "Cheque", Icon="flag_canada", languageCode="cs-CZ"},
-                new LanguageModel() { Name = "Russia", Icon="flag_china", languageCode="ru-RU"},
-                new LanguageModel() { Name = "Hungarian", Icon="flag_bangladesh", languageCode = "hu-HU"},
+                new LanguageModel() { Name = "Slovak", Icon="flag_slovak", languageCode="sk-SK"},
+                new LanguageModel() { Name = "Cheque", Icon="flag_cheque", languageCode="cs-CZ"},
+                new LanguageModel() { Name = "Russia", Icon="flag_russia", languageCode="ru-RU"},
+                new LanguageModel() { Name = "Hungarian", Icon="flag_hungary", languageCode = "hu-HU"},
                 new LanguageModel() { Name = "Germany", Icon="flag_germany", languageCode = "de-DE"},
                 // new LanguageModel() { Name = "India", Icon="flag_china"},
                 // new LanguageModel() { Name = "Malaysia", Icon="flag_china"},

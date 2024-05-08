@@ -49,16 +49,12 @@ public partial class LoginPage : ContentPage
         else if (string.IsNullOrWhiteSpace(password))
         {
             await DisplayAlert("Alert", "Please enter your password.", "OK");
-
         }
         else
         {
             loader.IsRunning = true;
             loader.IsVisible = true;
             var requestData = new { username, password };
-
-
-
             try
             {
                 var response = await apiService.PostAsync(ApiUrls.loginEndpoint, JsonSerializer.Serialize(requestData), this);
@@ -74,18 +70,12 @@ public partial class LoginPage : ContentPage
                             await SecureStorage.Default.SetAsync("user_email", loginResponse.data.userDetails.userEmail.ToString());
 
                             await Shell.Current.GoToAsync($"//{nameof(EmailPage)}");
-                        
-
-
                     }
                     else
                     { 
                     await DisplayAlert("Alert", loginResponse?.message?.ToString(), "ok");
                     }
                 }
-                
-
-
             }
             catch (Exception ex)
             {
@@ -113,8 +103,6 @@ public partial class LoginPage : ContentPage
     private void OnSignupTapped(object sender, EventArgs e)
     {
         Shell.Current.GoToAsync(nameof(RegisterPage));
-
-
     }
 
     private void OnContactTapped(object sender, EventArgs e)

@@ -29,11 +29,7 @@
                 <Image Source="register_novera_logo" HorizontalOptions="Center" VerticalOptions="Center" Grid.Column="1" />
             </Grid>
 
-            <!--<Label Text="{extension:Translate Key=e5807007}"
-                   Style="{StaticResource Headline}"
-                   HorizontalOptions="Center"
-                   TextColor="{StaticResource LoginText}"
-                   Margin="0,140,0,0" />-->
+        
 
             <Label Text="{x:Static strings:language.e5807007}"
        Style="{StaticResource Headline}"
@@ -44,8 +40,7 @@
             IsRunning="False" IsVisible="False" Color="white"
                                VerticalOptions="Center" HorizontalOptions="Center"
                                />
-            <!--<Button Text="arabic" Clicked="Button_Clicked"></Button>
-            <Button Text="english" Clicked="Button_Clicked1"></Button>-->
+           
 
             <!-- Email -->
             <Grid Margin="20,40,20,0" ColumnDefinitions="*,Auto">
