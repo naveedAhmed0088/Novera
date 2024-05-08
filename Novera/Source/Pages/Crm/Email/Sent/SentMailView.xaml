@@ -11,15 +11,33 @@
         
         <Grid RowDefinitions = "Auto, *">
             <Frame Margin="15, 0, 15, 0" Grid.Row="0" 
-                BackgroundColor="Transparent" 
-                BorderColor="{StaticResource LoginText}" 
-                CornerRadius="5" Padding="2">
+         BackgroundColor="Transparent" 
+         BorderColor="{StaticResource LoginText}" 
+         CornerRadius="5" Padding="2">
                 <Grid ColumnDefinitions="*,Auto">
                     <Entry Placeholder="Search in mail" PlaceholderColor="{StaticResource LoginText}"
-                           Style="{StaticResource Font14LabelAppleGothic}" TextColor="{StaticResource EntryTextColorWhite}" />
-                    <Image Grid.Column="1" Source="email_search" HeightRequest="25" WidthRequest="25" Aspect="AspectFill" Margin="10,0,10,0"/>
+                    Style="{StaticResource Font14LabelAppleGothic}" TextColor="{StaticResource EntryTextColorWhite}" x:Name="Search" />
+
+                    <Label Text=""
+Style="{StaticResource Font14LabelAppleGothic}" TextColor="{StaticResource EntryTextColorWhite}" x:Name="emailsCount" IsVisible="false" FontSize="20" Margin="10,0,0,0"  />
+
+
+
+                    <Image Grid.Column="1" Source="email_search" HeightRequest="25" WidthRequest="25" Aspect="AspectFill" Margin="10,0,10,0"
+                    x:Name="image"
+                    >
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="image_search_clicked" />
+                        </Image.GestureRecognizers>
+
+
+                    </Image>
                 </Grid>
+
+
             </Frame>
+
+
             <ScrollView Grid.Row="1">
                 <VerticalStackLayout Margin="10,15,10,15">
 
@@ -47,6 +65,9 @@ IsRunning="False" IsVisible="False" Color="white"
                                     <Grid ColumnDefinitions="Auto,*, Auto" >
                                         <Frame BackgroundColor="Orange" Margin="5, 0, 0 ,0" Grid.Column= "0" WidthRequest="34" HeightRequest="34" CornerRadius="17" Padding="5" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
                                             <Label Text="{Binding sender, Converter={StaticResource FirstCharacterConverter}}"  TextColor="White" HorizontalOptions="CenterAndExpand"/>
+                                            <Frame.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="MultiSelectionTap" />
+                                            </Frame.GestureRecognizers>
                                         </Frame>
 
                                         <StackLayout Margin="5, 0, 0 ,0" Grid.Column= "1" HorizontalOptions="FillAndExpand" Orientation="Vertical" Spacing="2">

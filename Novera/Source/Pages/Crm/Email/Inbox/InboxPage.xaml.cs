@@ -138,6 +138,8 @@ public partial class InboxPage : ContentView
 
                                 if (response is InboxPageMarkResponse successResponse)
                                 {
+                                    loader.IsRunning = false;
+                                    loader.IsVisible = false;
                                     await _viewModel.RefreshData();
                                 }
 
