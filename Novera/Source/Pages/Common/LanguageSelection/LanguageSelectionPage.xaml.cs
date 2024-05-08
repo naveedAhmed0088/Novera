@@ -47,5 +47,10 @@ namespace Novera.Source.Pages.Common.LanguageSelection
         {
             // This method might not be needed if you are handling selection with Frame tap
         }
+
+        private void OnFrameTapped(object sender, TappedEventArgs e)
+        {
+
+        }
     }
 }
