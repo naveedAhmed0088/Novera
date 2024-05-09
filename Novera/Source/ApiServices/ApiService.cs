@@ -8,14 +8,10 @@ namespace Novera.Source.ApiServices
     {
 
         private readonly HttpClient _client;
-
         public ApiService()
         {
             _client = new HttpClient();
         }
-
-
-
 
         public async Task<object?> PostAsync(string apiUrl, string requestData, Page page)
         {
@@ -27,7 +23,6 @@ namespace Novera.Source.ApiServices
 
                 var responseBody = await response.Content.ReadAsStringAsync();
 
-                // Check if the response indicates success
                 if (response.IsSuccessStatusCode)
                 {
                     var successRespnse = JsonSerializer.Deserialize <TResponse> (responseBody);
@@ -37,7 +32,6 @@ namespace Novera.Source.ApiServices
                 else
                 {
 
-                    // Deserialize the error response
                     var errorResponse = JsonSerializer.Deserialize <TResponse> (responseBody);
 
 
@@ -46,9 +40,9 @@ namespace Novera.Source.ApiServices
             }
             catch (Exception ex)
             {
-                // Handle exceptions here
                 Console.WriteLine($"Error: {ex.Message}");
 
+               #pragma warning disable CS8625 
                 return new RegisterResponse
                 {
                     success = false,
@@ -78,7 +72,6 @@ namespace Novera.Source.ApiServices
                 var response = await _client.SendAsync(request);
                 var responseBody = await response.Content.ReadAsStringAsync();
 
-                // Check if the response indicates success
                 if (response.IsSuccessStatusCode)
                 {
                     var successRespnse = JsonSerializer.Deserialize<TResponse>(responseBody);
@@ -88,7 +81,6 @@ namespace Novera.Source.ApiServices
                 else
                 {
 
-                    // Deserialize the error response
                     var errorResponse = JsonSerializer.Deserialize<TResponse>(responseBody);
 
 
@@ -97,7 +89,6 @@ namespace Novera.Source.ApiServices
             }
             catch (Exception ex)
             {
-                // Handle exceptions here
                 Console.WriteLine($"Error: {ex.Message}");
 
                 return new RegisterResponse
@@ -124,6 +115,7 @@ namespace Novera.Source.ApiServices
 
                     var formData = new MultipartFormDataContent();
 
+                    #pragma warning disable CS8602
                     foreach (var item in requestData)
                     {
                         if (item.Value is string stringValue)
@@ -132,6 +124,7 @@ namespace Novera.Source.ApiServices
                         }
                         else
                         {
+                           #pragma warning disable CS8604
                             formData.Add(new StringContent(item.Value.ToString()), item.Key);
                         }
 

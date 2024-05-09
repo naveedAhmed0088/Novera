@@ -14,8 +14,6 @@ public partial class TrashMailView : ContentView
     EmailApiService apiService;
     private readonly TrashViewModel _viewModel;
 
-#pragma warning disable CS8602
-#pragma warning disable CS8600
 
     public TrashMailView()
 	{
@@ -49,7 +47,7 @@ public partial class TrashMailView : ContentView
                     var requestData = new { important = importantValue };
 
 
-                 
+                    #pragma warning disable CS8600
                     string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
                     if (string.IsNullOrEmpty(oauthToken))
                     {
@@ -66,8 +64,9 @@ public partial class TrashMailView : ContentView
                     {
                         loader.IsRunning = false;
                         loader.IsVisible = false;
+                       
+                        #pragma warning disable CS8602
                         await App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
-
                         await _viewModel.RefreshData();
 
 
@@ -79,7 +78,7 @@ public partial class TrashMailView : ContentView
                 }
                 catch (Exception ex)
                 {
-                  
+        
                     Console.WriteLine($"Exception: {ex.Message}");
                     await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
@@ -138,7 +137,7 @@ public partial class TrashMailView : ContentView
                 }
                 catch (Exception ex)
                 {
-                    // Handle exception
+               
                     Console.WriteLine($"Exception: {ex.Message}");
                     await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
                 }

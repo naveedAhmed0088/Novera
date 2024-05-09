@@ -34,14 +34,10 @@ public partial class LoginPage : ContentPage
     }
     private async void OnLoginClicked(object sender, EventArgs e)
     {
-
-        //Shell.Current.GoToAsync($"//{nameof(EmailPage)}");
-
         string username = emailEntry.Text;
         string password = pwdEntry.Text;
 
 
-        // Check if the email is empty or null
         if (string.IsNullOrWhiteSpace(username))
         {
            await DisplayAlert("Alert", "Please enter your email.", "OK");
@@ -57,8 +53,6 @@ public partial class LoginPage : ContentPage
             loader.IsVisible = true;
             var requestData = new { username, password };
 
-
-
             try
             {
                 var response = await apiService.PostAsync(ApiUrls.loginEndpoint, JsonSerializer.Serialize(requestData), this);
@@ -68,14 +62,11 @@ public partial class LoginPage : ContentPage
                     if (loginResponse.success == true)
                     {
 
-                        //save data in async storage
                            await SecureStorage.Default.SetAsync("oauth_token", loginResponse.data.sessionToken);
                             await SecureStorage.Default.SetAsync("userid", loginResponse.data.userDetails.userID.ToString());
                             await SecureStorage.Default.SetAsync("user_email", loginResponse.data.userDetails.userEmail.ToString());
-
                             await Shell.Current.GoToAsync($"//{nameof(EmailPage)}");
-                        
-
+                       
 
                     }
                     else
@@ -84,18 +75,14 @@ public partial class LoginPage : ContentPage
                     }
                 }
                 
-
-
             }
             catch (Exception ex)
             {
-                // Handle exception
                 Console.WriteLine($"Exception: {ex.Message}");
 
             }
             finally
             {
-                // Hide loader
                 loader.IsRunning = false;
                 loader.IsVisible = false;
             }
@@ -108,7 +95,6 @@ public partial class LoginPage : ContentPage
         var myDialog = new LoginOptionDialogPage();
         Navigation.PushModalAsync(myDialog);
     }
-
 
     private void OnSignupTapped(object sender, EventArgs e)
     {

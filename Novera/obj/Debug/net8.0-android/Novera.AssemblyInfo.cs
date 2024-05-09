@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Novera")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+6f40bd7edd8bd95e772545cfd6132cc201c4af34")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+c879d1129316eefc31c1ed53985963324e86428d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Novera")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Novera")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

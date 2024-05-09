@@ -1,12 +1,7 @@
 ﻿using Novera.Source.Response;
 using Novera.Source.Response.CRMPages;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net.Http.Headers;
-using System.Text;
 using System.Text.Json;
-using System.Threading.Tasks;
 
 namespace Novera.Source.ApiServices
 {
@@ -35,18 +30,15 @@ namespace Novera.Source.ApiServices
                 request.Content = content;
                 var response = await _client.SendAsync(request);
                 var responseBody = await response.Content.ReadAsStringAsync();
-
-                // Check if the response indicates success
-                
+            
                     var successRespnse = JsonSerializer.Deserialize<InboxPageMarkResponse>(responseBody);
                 return successRespnse;
                 
             }
             catch (Exception ex)
             {
-                // Handle exceptions here
                 Console.WriteLine($"Error: {ex.Message}");
-
+                 #pragma warning disable CS8625
                 return new InboxPageMarkResponse
                 {
                     success = false,
@@ -71,15 +63,12 @@ namespace Novera.Source.ApiServices
                 var response = await _client.SendAsync(request);
                 var responseBody = await response.Content.ReadAsStringAsync();
 
-                // Check if the response indicates success
-
                 var successRespnse = JsonSerializer.Deserialize<InboxPageMarkResponse>(responseBody);
                 return successRespnse;
 
             }
             catch (Exception ex)
             {
-                // Handle exceptions here
                 Console.WriteLine($"Error: {ex.Message}");
 
                 return new InboxPageMarkResponse
@@ -107,15 +96,12 @@ namespace Novera.Source.ApiServices
                 var response = await _client.SendAsync(request);
                 var responseBody = await response.Content.ReadAsStringAsync();
 
-                // Check if the response indicates success
-
                 var successRespnse = JsonSerializer.Deserialize<InboxPageResponse>(responseBody);
                 return successRespnse;
 
             }
             catch (Exception ex)
             {
-                // Handle exceptions here
                 Console.WriteLine($"Error: {ex.Message}");
 
                 return new InboxPageMarkResponse
@@ -136,9 +122,6 @@ namespace Novera.Source.ApiServices
                 request.Content = content;
 
                
-
-                  
-                
 
                 var response = await _client.SendAsync(request);
 
@@ -175,9 +158,4 @@ namespace Novera.Source.ApiServices
         }
 
     }
-
-
-
-
-
 }

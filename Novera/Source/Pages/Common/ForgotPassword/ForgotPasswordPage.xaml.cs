@@ -42,14 +42,10 @@ public partial class ForgotPasswordPage : ContentPage
             await  DisplayAlert("Alert", "Passwords do not match", "OK");
         }
 
-
-
         else
         {
             loader.IsRunning = true;
             loader.IsVisible = true;
-
-
 
             try
             {
@@ -65,20 +61,15 @@ public partial class ForgotPasswordPage : ContentPage
 
                 }
 
-
-
-
             }
             catch (Exception ex)
             {
-                // Handle exception
                 Console.WriteLine($"Exception: {ex.Message}");
                 await DisplayAlert("Error", ex.Message, "OK");
 
             }
             finally
             {
-                // Hide loader
                 loader.IsRunning = false;
                 loader.IsVisible = false;
 
@@ -94,10 +85,8 @@ public partial class ForgotPasswordPage : ContentPage
 
     private async void OnContactTapped(object sender, EventArgs e)
     {
-        // Navigate to the ContactDetailPage
         await Navigation.PushAsync(new ContactDetailPage());
 
-        // Remove the ForgotPasswordPage from the navigation stack
         Navigation.RemovePage(this);
     }
 

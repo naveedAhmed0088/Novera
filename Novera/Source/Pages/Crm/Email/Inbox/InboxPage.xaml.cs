@@ -14,12 +14,9 @@ public partial class InboxPage : ContentView
 {
 
     public ObservableCollection<Datum> SelectedItems { get; set; } = new ObservableCollection<Datum>();
-    private readonly HttpClient _client = new HttpClient();
     EmailApiService apiService;
     private readonly InboxViewModel _viewModel;
     HashSet<string> addedMailIds;
-#pragma warning disable CS8602
-#pragma warning disable CS8600
 
     public InboxPage()
     {
@@ -46,7 +43,7 @@ public partial class InboxPage : ContentView
 
         if (sender is ImageButton button)
         {
-            // Retrieve the name from the BindingContext of the ImageButton
+     
             if (button.BindingContext is Datum data)
             {
                 try
@@ -58,7 +55,7 @@ public partial class InboxPage : ContentView
                     var requestData = new { important = importantValue };
 
 
-                    // Retrieve OAuth token from SecureStorage
+                    #pragma warning disable CS8600
                     string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
                     if (string.IsNullOrEmpty(oauthToken))
                     {
@@ -75,6 +72,8 @@ public partial class InboxPage : ContentView
                     {
                         loader.IsRunning = false;
                         loader.IsVisible = false;
+                       
+                        #pragma warning disable CS8602
                         await App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
 
                         await _viewModel.RefreshData();
@@ -88,7 +87,6 @@ public partial class InboxPage : ContentView
                 }
                 catch (Exception ex)
                 {
-                    // Handle exception
                     Console.WriteLine($"Exception: {ex.Message}");
 
                     await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
@@ -97,7 +95,7 @@ public partial class InboxPage : ContentView
                 }
                 finally
                 {
-                    // Hide loader
+                 
                     loader.IsRunning = false;
                     loader.IsVisible = false;
 
@@ -113,15 +111,14 @@ public partial class InboxPage : ContentView
     {
         if (sender is ImageButton button)
         {
-            // Retrieve the name from the BindingContext of the ImageButton
+           
             if (button.BindingContext is Datum data)
             {
                 try
                 {
                     loader.IsRunning = true;
                     loader.IsVisible = true;
-                    // Retrieve OAuth token from SecureStorage
-                    string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
+                      string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
                     if (string.IsNullOrEmpty(oauthToken))
                     {
                         Console.WriteLine("OAuth token not found.");
@@ -152,7 +149,7 @@ public partial class InboxPage : ContentView
                 }
                 catch (Exception ex)
                 {
-                    // Handle exception
+                 
                     Console.WriteLine($"Exception: {ex.Message}");
                     await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
                 }
@@ -229,7 +226,7 @@ public partial class InboxPage : ContentView
                     loader.IsRunning = true;
                     loader.IsVisible = true;
 
-                    // Retrieve OAuth token from SecureStorage
+                   
                     string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
                     if (string.IsNullOrEmpty(oauthToken))
                     {
@@ -251,7 +248,6 @@ public partial class InboxPage : ContentView
                         loader.IsRunning = false;
                         loader.IsVisible = false;
                         image.Source = "email_search";
-                        //await _viewModel.RefreshData();
 
                         await Navigation.PushAsync(new EmailPage());
 
@@ -259,7 +255,7 @@ public partial class InboxPage : ContentView
                 }
                 catch (Exception ex)
                 {
-                    // Handle exception
+                 
                     Console.WriteLine($"Exception: {ex.Message}");
                     await App.Current.MainPage.DisplayAlert("Error", ex.Message, "OK");
                 }
