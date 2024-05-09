@@ -15,8 +15,9 @@ public class ComposeEmailViewModel : BaseViewModel
         this.Items = new ObservableCollection<EmailReceiverResponse>
         {
             new EmailReceiverResponse { Name = "naveed2@test.com" },
-            new EmailReceiverResponse { Name = "deepak@sixwares.com"},
-            new EmailReceiverResponse { Name = "pankaj@sixwares.com" },
+            new EmailReceiverResponse { Name = "sahil@test.com" },
+            new EmailReceiverResponse { Name = "naveed1@test.com"},
+            new EmailReceiverResponse { Name = "client@test.com" },
             new EmailReceiverResponse { Name = "sonal@sixwares.com" },
             new EmailReceiverResponse { Name = "deepak1@sixwares.com" },
             new EmailReceiverResponse { Name = "deepak2@sixwares.com"},

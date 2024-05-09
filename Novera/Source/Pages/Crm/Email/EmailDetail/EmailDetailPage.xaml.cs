@@ -117,7 +117,7 @@ public partial class EmailDetailPage : ContentPage
         }
         catch (Exception ex)
         {
-            // Handle exception
+           
             Console.WriteLine($"Exception: {ex.Message}");
             await DisplayAlert("Error", ex.Message, "OK");
 
