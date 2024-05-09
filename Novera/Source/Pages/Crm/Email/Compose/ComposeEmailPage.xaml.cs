@@ -11,11 +11,9 @@ public partial class ComposeEmailPage : ContentPage
 {
     EmailApiService apiService;
     FilePickerService filePickerService;
-#pragma warning disable CS8602
-#pragma warning disable CS8600
-#pragma warning disable CS8604
 #pragma warning disable CS8601
-
+#pragma warning disable CS8622
+#pragma warning disable CS0809
     private List<string> pickedFiles;
     private bool changesMade;
     public ComposeEmailPage()
@@ -27,11 +25,15 @@ public partial class ComposeEmailPage : ContentPage
         NavigationPage.SetHasNavigationBar(this, false);
 
         // Attach event handlers for text changed events
+
         FromEntry.TextChanged += TextChanged;
         SubjectEntry.TextChanged += TextChanged;
         bodyEditor.TextChanged += TextChanged;
-    }
 
+        // Initialize pickedFiles with an empty list to avoid null reference warnings
+        pickedFiles = new List<string>();
+    }
+    [Obsolete]
     // This method is called when the back button is pressed
     protected override bool OnBackButtonPressed()
     {
@@ -63,8 +65,12 @@ public partial class ComposeEmailPage : ContentPage
     }
     private async Task SaveAsDraft()
     {
-        string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
-        int id = int.Parse(await SecureStorage.Default.GetAsync("userid"));
+        string oauthToken = (await SecureStorage.Default.GetAsync("oauth_token"))?.ToString() ?? string.Empty;
+        int id;
+        if (!int.TryParse(await SecureStorage.Default.GetAsync("userid"), out id))
+        {
+            id = 0; // or any other default value
+        }
 
         string from = FromEntry.Text;
         string sbj = SubjectEntry.Text;
@@ -158,9 +164,13 @@ public partial class ComposeEmailPage : ContentPage
     }
     private async void DetailBtnClicked(object sender, EventArgs e)
     {
-        string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
-        int id = int.Parse(await SecureStorage.Default.GetAsync("userid"));
-        
+        string oauthToken = (await SecureStorage.Default.GetAsync("oauth_token"))?.ToString() ?? string.Empty;
+        int id;
+        if (!int.TryParse(await SecureStorage.Default.GetAsync("userid"), out id))
+        {
+            id = 0;
+        }
+
         string from = FromEntry.Text;
         string sbj = SubjectEntry.Text;
         var selectedItems = comboBox.SelectedItems;
@@ -260,14 +270,14 @@ public partial class ComposeEmailPage : ContentPage
                     content.Add(fileStreamContent, name: "files", fileName: fileName);
                 }
             }
-            var response = await apiService.composeEmail(ApiUrls.ComposeEmail, this,token,HttpMethod.Post,content);
+            var response = await apiService.composeEmail(ApiUrls.ComposeEmail, this, token, HttpMethod.Post, content);
 
             if (response is ComposeEmailResponse successResponse)
             {
-               
-                if(successResponse.success==true)
+
+                if (successResponse.success == true)
                 {
-                   allEmailsSentSuccessfully = true;
+                    allEmailsSentSuccessfully = true;
 
                 }
                 else
@@ -276,7 +286,7 @@ public partial class ComposeEmailPage : ContentPage
 
                 }
             }
-            
+
         }
         catch (Exception ex)
         {
@@ -287,36 +297,52 @@ public partial class ComposeEmailPage : ContentPage
         }
         return allEmailsSentSuccessfully;
     }
-
+    [Obsolete]
     private async void AddFile(object sender, EventArgs e)
     {
-       
 
-// Define the PickOptions
-var options = new PickOptions
-{
-    PickerTitle = "Please select a file"
-};
+
+        // Define the PickOptions
+        var options = new PickOptions
+        {
+            PickerTitle = "Please select a file"
+        };
         filePickerService = new FilePickerService();
         imageStackLayout.Children.Clear();
 
-        // Call the PickAndShow method asynchronously
         pickedFiles = await filePickerService.PickAndShowMultiple(options);
 
-        foreach (var filePath in pickedFiles)
+        if (pickedFiles != null)
         {
-
-            var image = new Image
+            foreach (var fileName in pickedFiles)
             {
-                Source = filePath,
-                WidthRequest = 100,
-                HeightRequest = 100,
-                Margin = new Thickness(-10)
-            };
-            frameImage.BackgroundColor = Color.FromHex("#13294B");
-            frameImage.BorderColor=Color.FromHex("#D69E5A");
+                var label = new Label
+                {
+                    Text = fileName,
+                    TextColor = Color.FromRgb(255, 255, 255),
+                    VerticalOptions = LayoutOptions.Center,
+                    VerticalTextAlignment = TextAlignment.Center,
+                    HorizontalTextAlignment = TextAlignment.Center,
+                    Margin = new Thickness(0),
 
-            imageStackLayout.Children.Add(image);
+
+
+                };
+                var frame = new Frame
+                {
+                    BorderColor = Color.FromHex("#D69E5A"),
+                    BackgroundColor = Color.FromHex("#13294B"),
+                    CornerRadius = 5,
+                    Padding = 5,
+                    Content = label,
+                    WidthRequest = 100,
+                    HeightRequest = 100,
+                    Margin = 5,
+
+
+                };
+                imageStackLayout.Children.Add(frame);
+            }
         }
     }
 }

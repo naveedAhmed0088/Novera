@@ -109,13 +109,13 @@
         </Grid>
 
         <ScrollView Grid.Row="4" Orientation="Horizontal" Margin="12,0,12,10">
-            <Frame BackgroundColor="Transparent" BorderColor="Transparent" CornerRadius="5"
-                   x:Name="frameImage" HeightRequest="100"
-                   >
+            <Frame BackgroundColor="Transparent" BorderColor="Transparent" 
+        x:Name="frameImage"
+        >
                 <StackLayout x:Name="imageStackLayout" Orientation="Horizontal">
+
                 </StackLayout>
             </Frame>
-
         </ScrollView>
 
         <Grid Grid.Row="5"  ColumnDefinitions="*,*" BackgroundColor="{StaticResource SideDrawerColor}" Padding="10" VerticalOptions="End">
