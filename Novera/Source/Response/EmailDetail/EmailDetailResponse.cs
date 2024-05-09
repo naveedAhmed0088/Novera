@@ -9,7 +9,18 @@ namespace Novera.Source.Response.EmailDetail
     public class Data
     {
         public EmailDetails emailDetails { get; set; }
-        public List<object> documents { get; set; }
+        public List<Document> documents { get; set; }
+    }
+
+    public class Document
+    {
+        public int docId { get; set; }
+        public string documentName { get; set; }
+        public string docDetails { get; set; }
+        public string docMimeType { get; set; }
+        public int size { get; set; }
+        public string uid { get; set; }
+        public int attachmentNumber { get; set; }
     }
 
     public class EmailDetails
