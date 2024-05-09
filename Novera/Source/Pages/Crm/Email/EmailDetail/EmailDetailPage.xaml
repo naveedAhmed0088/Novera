@@ -9,9 +9,9 @@
              Shell.FlyoutBehavior="Disabled">
           
             
-            <Grid RowDefinitions= "Auto,*">
+            <Grid RowDefinitions= "Auto,*,Auto">
                 
-                <Grid Grid.Row="0" ColumnDefinitions="Auto,*,Auto,Auto" Padding="16" VerticalOptions="Start">
+                <Grid Grid.Row="0" ColumnDefinitions="Auto,*,Auto,Auto,Auto" Padding="16" VerticalOptions="Start">
                     <Frame BackgroundColor="Orange" Margin="0, 0, 0 ,0" Grid.Column= "0" WidthRequest="34" HeightRequest="34" CornerRadius="17" Padding="5" VerticalOptions="CenterAndExpand">
                         <Label Text="A" TextColor="White" HorizontalOptions="Center"  VerticalOptions="Center"/>
                     </Frame>
@@ -39,8 +39,21 @@
                 <Grid Grid.Row="1"  Margin ="10,10,10,20">
                      <Frame BackgroundColor="{StaticResource EditorBackgroundBlue}" BorderColor="{StaticResource LoginText}" CornerRadius="5"  Margin="0,0,0,5">
                         <Editor x:Name="emailDetail" TextColor="{StaticResource EntryTextColorWhite}" AutoSize="Disabled"   Style="{StaticResource Font16Label}"></Editor>
-                    </Frame>
-                </Grid>
+              
+            </Frame>
+          
+        </Grid>
+                <ScrollView Grid.Row="2" Orientation="Horizontal" Margin="12,0,12,10">
+    <Frame BackgroundColor="Transparent" BorderColor="Transparent" 
+           x:Name="frameImage" HeightRequest="100"
+           >
+        <StackLayout x:Name="imageStackLayout" Orientation="Horizontal">
+                  
+                </StackLayout>
+    </Frame>
+
+</ScrollView>
+
             
                 
         </Grid>
