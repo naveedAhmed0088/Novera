@@ -43,6 +43,9 @@ public partial class EmailDetailPage : ContentPage
     public async void getData() {
         try
         {
+            loader.IsRunning = true;
+            loader.IsVisible = true;
+
             string oauthToken = (await SecureStorage.Default.GetAsync("oauth_token")) ?? "";
             string email_id = (await SecureStorage.Default.GetAsync("email_id")) ?? "";
             string url = $"{ApiUrls.EmailDetail}{email_id}";
@@ -121,7 +124,10 @@ public partial class EmailDetailPage : ContentPage
         }
         finally
         {
- 
+            loader.IsRunning = false;
+            loader.IsVisible = false;
+
+
 
         }
     }
