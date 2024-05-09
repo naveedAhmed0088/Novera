@@ -23,3 +23,5 @@ TestResults.xml
 /.vs
 bin
 obj
+/bin
+/obj

@@ -1,8 +1,6 @@
 ﻿using System.Collections.ObjectModel;
 using Novera.Source.Model.Emails;
-
 namespace Novera.Source.ViewModel.Emails;
-
 public class IncomingViewModel
 {
     public IncomingViewModel()
@@ -17,6 +15,5 @@ public class IncomingViewModel
                 new Person() { FirstLetter = "R",Name = "Ryan Raynolads", Information = "New recommendations in Graphic Design and Interaction", Color = Color.FromArgb("#8660C5"), Date = "17 June", IsContrastStarIcon = true},
              };
     }
-
     public ObservableCollection<Person> People { get; set; }
 }

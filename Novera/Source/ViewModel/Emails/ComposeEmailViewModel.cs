@@ -46,7 +46,7 @@ public class ComposeEmailViewModel : BaseViewModel
 
     public class City
     {
-        public string Name { get; set; }
+        public required string Name { get; set; }
         public int Population { get; set; }
     }
 }

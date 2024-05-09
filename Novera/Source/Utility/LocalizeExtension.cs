@@ -10,14 +10,8 @@ namespace Novera.Source.Utility
 
         public string Key { get; set; } = string.Empty;
 
-        /// <summary>
-        /// Extra string added to the localized value
-        /// </summary>
         public string StringFormat { get; set; } = "{0}";
 
-        /// <summary>
-        /// Changes the case of the whole localized value
-        /// </summary>
         public StringSettingsEnum StringSettings { get; set; } = StringSettingsEnum.Default;
 
         [Obsolete]
@@ -25,12 +19,8 @@ namespace Novera.Source.Utility
         {
             _localizer = ServiceHelper.GetService<IStringLocalizer<ResourceStrings>>();
         }
-
-        /// <summary>
-        /// Returns the localized value with all formating & settings provided
-        /// </summary>
+     
         /// <param name="serviceProvider">Localize service</param>
-        /// <returns>The correctly formated translated string</returns>
         public object ProvideValue(IServiceProvider serviceProvider)
         {
             string localizedText = _localizer != null ? _localizer[Key] : string.Empty;

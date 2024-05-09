@@ -10,7 +10,7 @@ namespace Novera.Source.ViewModel.Emails
 #pragma warning disable CS8600
 #pragma warning disable CS8604
 
-    public partial class InboxViewModel:ObservableObject
+    public partial class InboxViewModel : ObservableObject
     {
         [ObservableProperty]
         private bool _IsBusy;
@@ -25,8 +25,6 @@ namespace Novera.Source.ViewModel.Emails
             _ = LoadInboxEmailsAsync();
 
         }
-
-
         public async Task RefreshData()
         {
             // Clear existing emails and reload
@@ -35,20 +33,8 @@ namespace Novera.Source.ViewModel.Emails
 
             await LoadInboxEmailsAsync();
         }
-
-
-
-
-
-
-
-
-
-
-
         private async Task LoadInboxEmailsAsync()
         {
-
             try
             {
                 IsBusy = true;
@@ -75,8 +61,6 @@ namespace Novera.Source.ViewModel.Emails
                 }
 
 
-
-
             }
             catch (Exception ex)
             {
@@ -84,14 +68,11 @@ namespace Novera.Source.ViewModel.Emails
                 Console.WriteLine($"Exception: {ex.Message}");
                 //App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
-
             }
             finally
             {
                 // Hide loader
-                //loader.IsRunning = false;
-                //loader.IsVisible = false;
-                IsBusy=false;
+                IsBusy = false;
             }
 
         }
