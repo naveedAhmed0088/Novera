@@ -9,35 +9,35 @@
              xmlns:strings="clr-namespace:Novera.Resources.Strings"
              BackgroundImageSource="top_cloud_straight"
              Shell.FlyoutBehavior="Disabled">
-            <Grid RowDefinitions= "Auto,Auto,Auto,*,Auto,Auto">
+    <Grid RowDefinitions= "Auto,Auto,Auto,*,Auto,Auto">
 
         <Grid Grid.Row="0" Padding="16" VerticalOptions="Start">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
             <Label Text="{x:Static strings:language.e3105008}" VerticalOptions="Center" 
                         TextColor="{StaticResource LabelColor}"
                         Style="{StaticResource Font16Label}" />
-                    <Entry x:Name="FromEntry" Grid.Column="1" 
+            <Entry x:Name="FromEntry" Grid.Column="1" 
                         TextColor="{StaticResource EntryTextColorWhite}"
                         Style="{StaticResource Font18Label}"
                         Placeholder="Your email" 
                         VerticalOptions="Center" />
             <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End" />
-                </Grid>
-                <Grid Grid.Row="1" Padding="16" VerticalOptions="Start">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
+        </Grid>
+        <Grid Grid.Row="1" Padding="16" VerticalOptions="Start">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
             <Label Text="{x:Static strings:language.e2203017}" VerticalOptions="Center" 
                         TextColor="{StaticResource LabelColor}"
                         Style="{StaticResource Font16Label}" />
-                    
-                    <telerik:RadComboBox x:Name="comboBox"
+
+            <telerik:RadComboBox x:Name="comboBox"
                         AutomationId="comboBox"
                         ItemsSource="{Binding Items}"
                         Grid.Column="1"
@@ -50,56 +50,56 @@
                         BorderThickness="0"
                         Margin="0, 0, 0, 0" >
 
-                        <telerik:RadComboBox.TokenTemplate>
-                            <DataTemplate>
-                                <telerik:RadBorder BackgroundColor="{StaticResource EntryTextColorWhite}"
+                <telerik:RadComboBox.TokenTemplate>
+                    <DataTemplate>
+                        <telerik:RadBorder BackgroundColor="{StaticResource EntryTextColorWhite}"
                                                 CornerRadius="10"
                                                 Margin="2">
-                                    <HorizontalStackLayout Margin="3">
-                                        <Label Text="{Binding Name}"
+                            <HorizontalStackLayout Margin="3">
+                                <Label Text="{Binding Name}"
                                             TextColor="Black"
                                             VerticalTextAlignment="Center"
-                                            Margin="2" />  
-                                        <Image Source="drawer_close">
-                                            <Image.GestureRecognizers>
-                                                <TapGestureRecognizer Tapped="RemoveToEmailTapped"/>
-                                            </Image.GestureRecognizers>
-                                        </Image>                                       
-                                    </HorizontalStackLayout>
-                                </telerik:RadBorder>
-                            </DataTemplate>
-                        </telerik:RadComboBox.TokenTemplate>
-                    <telerik:RadComboBox.ShowMoreTemplate>
-                        <DataTemplate>
-                            <Label Text="{Binding Path=., StringFormat='+{0} more items'}"
+                                            Margin="2" />
+                                <Image Source="drawer_close">
+                                    <Image.GestureRecognizers>
+                                        <TapGestureRecognizer Tapped="RemoveToEmailTapped"/>
+                                    </Image.GestureRecognizers>
+                                </Image>
+                            </HorizontalStackLayout>
+                        </telerik:RadBorder>
+                    </DataTemplate>
+                </telerik:RadComboBox.TokenTemplate>
+                <telerik:RadComboBox.ShowMoreTemplate>
+                    <DataTemplate>
+                        <Label Text="{Binding Path=., StringFormat='+{0} more items'}"
                                 VerticalTextAlignment="Center"/>
-                            
-                        </DataTemplate>
-                    </telerik:RadComboBox.ShowMoreTemplate>
-                    </telerik:RadComboBox>
-                    <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End" />
-                </Grid>
-                <Grid Grid.Row="2" Padding="16" VerticalOptions="Start">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto" />
-                        <ColumnDefinition Width="*" />
-                    </Grid.ColumnDefinitions>
+
+                    </DataTemplate>
+                </telerik:RadComboBox.ShowMoreTemplate>
+            </telerik:RadComboBox>
+            <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End" />
+        </Grid>
+        <Grid Grid.Row="2" Padding="16" VerticalOptions="Start">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
             <Label Text="{x:Static strings:language.e3105017}" VerticalOptions="Center" 
                         TextColor="{StaticResource LabelColor}"
                         Style="{StaticResource Font16Label}" />
-                    <Entry x:Name="SubjectEntry" Grid.Column="1" 
+            <Entry x:Name="SubjectEntry" Grid.Column="1" 
                         TextColor="{StaticResource EntryTextColorWhite}"
                         Style="{StaticResource Font18Label}"
                         Placeholder="Enter Subject" 
                         VerticalOptions="Center" />
-            
-                    <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End" />
-                </Grid>
-                <Grid Grid.Row="3" Padding="16" VerticalOptions="FillAndExpand">
-                    <Frame BackgroundColor="{StaticResource EditorBackgroundBlue}" BorderColor="{StaticResource LoginText}" CornerRadius="5"  Margin="0,0,0,5">
-                        <Editor TextColor="White" FontSize="20" AutoSize="Disabled" x:Name="bodyEditor"></Editor>
-                    </Frame>
+
+            <BoxView Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" HeightRequest="1" Color="White" VerticalOptions="End" />
+        </Grid>
+        <Grid Grid.Row="3" Padding="16" VerticalOptions="FillAndExpand">
+            <Frame BackgroundColor="{StaticResource EditorBackgroundBlue}" BorderColor="{StaticResource LoginText}" CornerRadius="5"  Margin="0,0,0,5">
+                <Editor TextColor="White" FontSize="20" AutoSize="Disabled" x:Name="bodyEditor"></Editor>
+            </Frame>
             <ActivityIndicator x:Name="loader" IsRunning="False" IsVisible="False" Color="White" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" 
                   
                    />
@@ -114,7 +114,7 @@
             </Frame>
         </ScrollView>
         <Grid Grid.Row="5"  ColumnDefinitions="*,*" BackgroundColor="{StaticResource SideDrawerColor}" Padding="10" VerticalOptions="End">
-                    <Button Text="Add file"
+            <Button Text="Add file"
                             Style="{StaticResource ButtonwithWhiteBorder}"
                             BackgroundColor="Transparent"
                             Grid.Column="0"
@@ -127,6 +127,6 @@
                             BackgroundColor="Transparent"
                             Clicked="DetailBtnClicked"
                             Margin="5" />
-                </Grid>
+        </Grid>
     </Grid>
 </ContentPage>

@@ -13,13 +13,12 @@ public partial class DraftPage : ContentView
     private readonly HttpClient _client = new HttpClient();
     EmailApiService apiService;
     private readonly DraftViewModel _viewModel;
-   
 
-#pragma warning disable CS8602
-#pragma warning disable CS8600
+
+
 
     public DraftPage()
-	{
+    {
         apiService = new EmailApiService();
         InitializeComponent();
         Resources.Add("FirstCharacterConverter", new FirstCharacterConverter());
@@ -50,32 +49,24 @@ public partial class DraftPage : ContentView
                     string importantValue = (data.important == "Y") ? "N" : "Y";
                     var requestData = new { important = importantValue };
 
-
-                    // Retrieve OAuth token from SecureStorage
-                    string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
+                    string oauthToken = (await SecureStorage.Default.GetAsync("oauth_token")) ?? string.Empty;
                     if (string.IsNullOrEmpty(oauthToken))
                     {
                         Console.WriteLine("OAuth token not found.");
                         return;
                     }
 
+
                     string url = $"{ApiUrls.BaseUrl}Emails/{data.mailId}/important";
 
-
+                    #pragma warning disable CS8602
                     var response = await apiService.markEmail(url, JsonSerializer.Serialize(requestData), oauthToken);
 
                     if (response is InboxPageMarkResponse successResponse)
                     {
                         await App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
-
                         await _viewModel.RefreshData();
-
-
                     }
-
-
-
-
                 }
                 catch (Exception ex)
                 {
@@ -90,11 +81,7 @@ public partial class DraftPage : ContentView
                     // Hide loader
                     loader.IsRunning = false;
                     loader.IsVisible = false;
-
                 }
-
-
-
             }
         }
     }
@@ -111,7 +98,7 @@ public partial class DraftPage : ContentView
                     loader.IsRunning = true;
                     loader.IsVisible = true;
                     // Retrieve OAuth token from SecureStorage
-                    string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
+                    string oauthToken = (await SecureStorage.Default.GetAsync("oauth_token"))?.ToString() ?? string.Empty;
                     if (string.IsNullOrEmpty(oauthToken))
                     {
                         Console.WriteLine("OAuth token not found.");
@@ -154,7 +141,7 @@ public partial class DraftPage : ContentView
     }
 
 
-    
+
 
     private async void EmailItemTapped(object sender, TappedEventArgs e)
     {
