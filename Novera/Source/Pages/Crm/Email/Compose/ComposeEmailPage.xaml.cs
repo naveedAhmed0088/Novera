@@ -11,9 +11,6 @@ public partial class ComposeEmailPage : ContentPage
 {
     EmailApiService apiService;
     FilePickerService filePickerService;
-#pragma warning disable CS8601
-#pragma warning disable CS8622
-#pragma warning disable CS0809
     private List<string> pickedFiles;
     private bool changesMade;
     public ComposeEmailPage()
@@ -24,23 +21,20 @@ public partial class ComposeEmailPage : ContentPage
         filePickerService = new FilePickerService();
         NavigationPage.SetHasNavigationBar(this, false);
 
-        // Attach event handlers for text changed events
-
+        #pragma warning disable CS8622
         FromEntry.TextChanged += TextChanged;
         SubjectEntry.TextChanged += TextChanged;
         bodyEditor.TextChanged += TextChanged;
 
-        // Initialize pickedFiles with an empty list to avoid null reference warnings
         pickedFiles = new List<string>();
     }
     [Obsolete]
-    // This method is called when the back button is pressed
+    #pragma warning disable CS0809
+
     protected override bool OnBackButtonPressed()
     {
-        // Check if changes are made
         if (changesMade)
         {
-            // Display an alert asking the user if they want to save changes as draft or cancel
             _ = Device.InvokeOnMainThreadAsync(async () =>
             {
                 var result = await DisplayAlert("Draft Changes", "Do you want to save changes as draft?", "Draft", "Cancel");
@@ -135,10 +129,9 @@ public partial class ComposeEmailPage : ContentPage
         }
     }
 
-    // Event handler for text changed event in any entry or editor
     private void TextChanged(object sender, EventArgs e)
     {
-        changesMade = true; // Set changesMade flag to true
+        changesMade = true;
     }
 
     private void RemoveToEmailTapped(object sender, System.EventArgs e)
@@ -178,8 +171,6 @@ public partial class ComposeEmailPage : ContentPage
 
         if (string.IsNullOrWhiteSpace(from))
         {
-            // Display an error message or handle the empty email case accordingly
-            // For example:
             await DisplayAlert("Error", "Please enter your email.", "OK");
         }
         else if (selectedItems.Count <= 0)
@@ -205,18 +196,17 @@ public partial class ComposeEmailPage : ContentPage
                 string cityName = selectedItem.Name;
                 try
                 {
-                    // Use the SendEmail method and check its return value
                     bool emailSentSuccessfully = await SendEmail(oauthToken, cityName, from, sbj, body, id, false);
 
                     if (!emailSentSuccessfully)
                     {
-                        allEmailsSentSuccessfully = false; // Update flag to indicate failure
+                        allEmailsSentSuccessfully = false; 
                         break;
                     }
                 }
                 catch (Exception ex)
                 {
-                    allEmailsSentSuccessfully = false; // Update flag to indicate failure
+                    allEmailsSentSuccessfully = false; 
                     Console.WriteLine(ex.Message);
                 }
             }
@@ -266,7 +256,6 @@ public partial class ComposeEmailPage : ContentPage
                     var fileStreamContent = new StreamContent(File.OpenRead(filePath));
                     fileStreamContent.Headers.ContentType = new MediaTypeHeaderValue($"image/{fileExtension}");
 
-                    //Add the file
                     content.Add(fileStreamContent, name: "files", fileName: fileName);
                 }
             }
@@ -302,14 +291,13 @@ public partial class ComposeEmailPage : ContentPage
     {
 
 
-        // Define the PickOptions
         var options = new PickOptions
         {
             PickerTitle = "Please select a file"
         };
         filePickerService = new FilePickerService();
         imageStackLayout.Children.Clear();
-
+         #pragma warning disable CS8601
         pickedFiles = await filePickerService.PickAndShowMultiple(options);
 
         if (pickedFiles != null)

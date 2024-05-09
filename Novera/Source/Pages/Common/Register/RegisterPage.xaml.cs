@@ -1,4 +1,3 @@
-using System.Text;
 using System.Text.Json;
 using Novera.Source.ApiServices;
 using Novera.Source.Pages.Common.LanguageSelection;
@@ -46,9 +45,8 @@ public partial class RegisterPage : ContentPage
             loader.IsRunning = true;
             loader.IsVisible = true;
             var password = pwd;
-
             var requestData = new { email, password };
-           
+          
             try
             {
 
@@ -64,12 +62,12 @@ public partial class RegisterPage : ContentPage
             }
             catch (Exception ex)
             {
-                // Handle exception
+             
                 Console.WriteLine($"Exception: {ex.Message}");
             }
             finally
             {
-                // Hide loader
+            
                 loader.IsRunning = false;
                 loader.IsVisible = false;
             }

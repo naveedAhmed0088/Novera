@@ -38,7 +38,6 @@ public partial class TrashMailView : ContentView
 
         if (sender is ImageButton button)
         {
-            // Retrieve the name from the BindingContext of the ImageButton
             if (button.BindingContext is Datum data)
             {
                 try
@@ -50,7 +49,7 @@ public partial class TrashMailView : ContentView
                     var requestData = new { important = importantValue };
 
 
-                    // Retrieve OAuth token from SecureStorage
+                 
                     string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
                     if (string.IsNullOrEmpty(oauthToken))
                     {
@@ -65,6 +64,8 @@ public partial class TrashMailView : ContentView
 
                     if (response is InboxPageMarkResponse successResponse)
                     {
+                        loader.IsRunning = false;
+                        loader.IsVisible = false;
                         await App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
 
                         await _viewModel.RefreshData();
@@ -78,7 +79,7 @@ public partial class TrashMailView : ContentView
                 }
                 catch (Exception ex)
                 {
-                    // Handle exception
+                  
                     Console.WriteLine($"Exception: {ex.Message}");
                     await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
@@ -86,7 +87,7 @@ public partial class TrashMailView : ContentView
                 }
                 finally
                 {
-                    // Hide loader
+              
                     loader.IsRunning = false;
                     loader.IsVisible = false;
 
@@ -100,14 +101,12 @@ public partial class TrashMailView : ContentView
     {
         if (sender is ImageButton button)
         {
-            // Retrieve the name from the BindingContext of the ImageButton
             if (button.BindingContext is Datum data)
             {
                 try
                 {
                     loader.IsRunning = true;
                     loader.IsVisible = true;
-                    // Retrieve OAuth token from SecureStorage
                     string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
                     if (string.IsNullOrEmpty(oauthToken))
                     {
@@ -128,6 +127,8 @@ public partial class TrashMailView : ContentView
 
                                 if (response is InboxPageMarkResponse successResponse)
                                 {
+                                    loader.IsRunning = false;
+                                    loader.IsVisible = false;
                                     await _viewModel.RefreshData();
                                 }
 

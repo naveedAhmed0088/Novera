@@ -73,6 +73,8 @@ public partial class InboxPage : ContentView
 
                     if (response is InboxPageMarkResponse successResponse)
                     {
+                        loader.IsRunning = false;
+                        loader.IsVisible = false;
                         await App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
 
                         await _viewModel.RefreshData();
@@ -88,6 +90,7 @@ public partial class InboxPage : ContentView
                 {
                     // Handle exception
                     Console.WriteLine($"Exception: {ex.Message}");
+
                     await App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
 
 

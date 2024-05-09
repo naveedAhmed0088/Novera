@@ -66,6 +66,8 @@ public partial class DraftPage : ContentView
 
                     if (response is InboxPageMarkResponse successResponse)
                     {
+                        loader.IsRunning = false;
+                        loader.IsVisible = false;
                         await App.Current.MainPage.DisplayAlert("Info", successResponse.message, "ok");
 
                         await _viewModel.RefreshData();
@@ -131,6 +133,8 @@ public partial class DraftPage : ContentView
 
                                 if (response is InboxPageMarkResponse successResponse)
                                 {
+                                    loader.IsRunning = false;
+                                    loader.IsVisible = false;
                                     await _viewModel.RefreshData();
                                 }
 

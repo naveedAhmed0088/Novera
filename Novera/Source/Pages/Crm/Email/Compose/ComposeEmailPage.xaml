@@ -108,7 +108,7 @@
 
         </Grid>
 
-        <ScrollView Grid.Row="4" Orientation="Horizontal" Margin="12,0,12,10">
+        <ScrollView Grid.Row="4" Orientation="Horizontal" Margin="-12,0,12,10">
             <Frame BackgroundColor="Transparent" BorderColor="Transparent" 
         x:Name="frameImage"
         >
