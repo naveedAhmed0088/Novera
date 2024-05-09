@@ -15,6 +15,7 @@ public partial class ComposeEmailPage : ContentPage
     private bool changesMade;
     public ComposeEmailPage()
     {
+
         InitializeComponent();
         BindingContext = new ComposeEmailViewModel();
         apiService = new EmailApiService();
@@ -40,21 +41,21 @@ public partial class ComposeEmailPage : ContentPage
                 var result = await DisplayAlert("Draft Changes", "Do you want to save changes as draft?", "Draft", "Cancel");
                 if (result)
                 {
-                    // User chose to save changes as draft
+
                     await SaveAsDraft();
                 }
                 else
                 {
-                    // User chose to cancel, navigate back
+
                     await Navigation.PopAsync();
                 }
             });
 
-            return true; // Do not execute default back button behavior
+            return true;
         }
         else
         {
-            return base.OnBackButtonPressed(); // Execute default back button behavior
+            return base.OnBackButtonPressed();
         }
     }
     private async Task SaveAsDraft()
@@ -63,7 +64,7 @@ public partial class ComposeEmailPage : ContentPage
         int id;
         if (!int.TryParse(await SecureStorage.Default.GetAsync("userid"), out id))
         {
-            id = 0; // or any other default value
+            id = 0; 
         }
 
         string from = FromEntry.Text;
@@ -93,7 +94,7 @@ public partial class ComposeEmailPage : ContentPage
             loader.IsVisible = true;
             bool allEmailsDraftedSuccessfully = true;
 
-            foreach (City selectedItem in selectedItems)
+            foreach (EmailReceiverResponse selectedItem in selectedItems)
             {
                 string cityName = selectedItem.Name;
                 try
@@ -139,7 +140,7 @@ public partial class ComposeEmailPage : ContentPage
         var closeLabel = sender as Image;
         if (closeLabel != null)
         {
-            var item = closeLabel.BindingContext as City;
+            var item = closeLabel.BindingContext as EmailReceiverResponse;
             if (item != null)
             {
                 this.comboBox.SelectedItems.Remove(item);
@@ -191,12 +192,12 @@ public partial class ComposeEmailPage : ContentPage
             loader.IsVisible = true;
             bool allEmailsSentSuccessfully = true;
 
-            foreach (City selectedItem in selectedItems)
+            foreach (EmailReceiverResponse selectedItem in selectedItems)
             {
-                string cityName = selectedItem.Name;
+                string email_id = selectedItem.Name;
                 try
                 {
-                    bool emailSentSuccessfully = await SendEmail(oauthToken, cityName, from, sbj, body, id, false);
+                    bool emailSentSuccessfully = await SendEmail(oauthToken, email_id, from, sbj, body, id, false);
 
                     if (!emailSentSuccessfully)
                     {
