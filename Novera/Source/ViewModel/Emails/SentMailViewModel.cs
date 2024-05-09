@@ -30,13 +30,13 @@ public  partial class SentMailViewModel : ObservableObject
     }
 
 
-    public async Task RefreshData()
+    public async Task RefreshData(string text = "")
     {
         // Clear existing emails and reload
         SentEmailList.Clear();
         apiService = new EmailApiService();
 
-        await LoadInboxEmailsAsync();
+        await LoadInboxEmailsAsync(text);
     }
 
 
@@ -49,7 +49,7 @@ public  partial class SentMailViewModel : ObservableObject
 
 
 
-    private async Task LoadInboxEmailsAsync()
+    private async Task LoadInboxEmailsAsync(string text = "")
     {
 
         try
@@ -64,8 +64,21 @@ public  partial class SentMailViewModel : ObservableObject
 
 
 
-            string url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&PageSize=10&PageNumber=0&EmailType=3";
+            string url;
+            int type = (int)EmailType.Sent;
 
+
+
+            if (text.Equals(""))
+            {
+
+                url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&PageSize=10&PageNumber=0&EmailType={type}";
+            }
+            else
+            {
+                url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&Subject={text}&PageSize=10&PageNumber=0&EmailType={type}";
+
+            }
 
 
             var response = await apiService.showEmails(url, oauthToken);

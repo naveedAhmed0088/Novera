@@ -11,7 +11,6 @@ namespace Novera.Source.Pages.Crm.Email.Trash;
 public partial class TrashMailView : ContentView
 {
 
-    private readonly HttpClient _client = new HttpClient();
     EmailApiService apiService;
     private readonly TrashViewModel _viewModel;
 
@@ -157,5 +156,15 @@ public partial class TrashMailView : ContentView
         string email_id = emailItem.mailId.ToString();
         await SecureStorage.Default.SetAsync("email_id", email_id);
         await Navigation.PushAsync(new EmailDetailPage());
+    }
+
+
+    private async void SearchClicked(object sender, EventArgs e)
+    {
+        string searchText = Search.Text;
+
+
+
+        await _viewModel.RefreshData(searchText);
     }
 }

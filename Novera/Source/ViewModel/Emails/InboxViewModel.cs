@@ -18,8 +18,6 @@ namespace Novera.Source.ViewModel.Emails
         EmailApiService apiService;
         public InboxViewModel()
         {
-            // This default constructor is added to satisfy XAML requirements
-            // You can leave it empty or initialize properties if needed
             InboxEmails = new ObservableCollection<Datum>();
             apiService = new EmailApiService();
             _ = LoadInboxEmailsAsync();
@@ -27,13 +25,14 @@ namespace Novera.Source.ViewModel.Emails
         }
 
 
-        public async Task RefreshData()
+        public async Task RefreshData(string text="")
         {
             // Clear existing emails and reload
             InboxEmails.Clear();
             apiService = new EmailApiService();
 
-            await LoadInboxEmailsAsync();
+            await LoadInboxEmailsAsync(text);
+            
         }
 
 
@@ -46,7 +45,7 @@ namespace Novera.Source.ViewModel.Emails
 
 
 
-        private async Task LoadInboxEmailsAsync()
+        private async Task LoadInboxEmailsAsync(string text="")
         {
 
             try
@@ -55,12 +54,20 @@ namespace Novera.Source.ViewModel.Emails
                 string oauthToken = await SecureStorage.Default.GetAsync("oauth_token");
                 var userEmail = await SecureStorage.Default.GetAsync("user_email");
 
+                string url;
 
-                // Retrieve OAuth token from SecureStorage
+                int type = (int)EmailType.Inbox;
 
+                if (text.Equals(""))
+                {
 
-                string url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&PageSize=10&PageNumber=0&EmailType=1";
+                     url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&PageSize=10&PageNumber=0&EmailType={type}";
+                }
+                else
+                {
+                    url = $"{ApiUrls.BaseUrl}Emails/GetEmails?Email={userEmail}&Subject={text}&PageSize=10&PageNumber=0&EmailType={type}";
 
+                }
 
                 var response = await apiService.showEmails(url, oauthToken);
 
@@ -80,17 +87,12 @@ namespace Novera.Source.ViewModel.Emails
             }
             catch (Exception ex)
             {
-                // Handle exception
                 Console.WriteLine($"Exception: {ex.Message}");
-                //App.Current.MainPage.DisplayAlert("Error", ex.Message, "ok");
-
+                
 
             }
             finally
             {
-                // Hide loader
-                //loader.IsRunning = false;
-                //loader.IsVisible = false;
                 IsBusy=false;
             }
 

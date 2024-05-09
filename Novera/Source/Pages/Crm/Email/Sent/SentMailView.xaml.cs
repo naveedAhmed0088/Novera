@@ -162,9 +162,16 @@ public partial class SentMailView : ContentView
 
     }
 
+    private async void SearchClicked(object sender, EventArgs e)
+    {
+        string searchText = Search.Text;
 
 
-   
 
-    
+        await _viewModel.RefreshData(searchText);
+    }
+
+
+
+
 }

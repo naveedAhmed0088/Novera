@@ -241,16 +241,17 @@ public partial class InboxPage : ContentView
 
                     if (response is InboxPageMarkResponse successResponse)
                     {
-                        await App.Current.MainPage.DisplayAlert("Info", successResponse.message, "OK");
-
+                       
                         addedMailIds.Clear();
                         Search.IsVisible = true;
                         emailsCount.IsVisible = false;
                         loader.IsRunning = false;
                         loader.IsVisible = false;
                         image.Source = "email_search";
+                        //await _viewModel.RefreshData();
 
-                        await _viewModel.RefreshData();
+                        await Navigation.PushAsync(new EmailPage());
+
                     }
                 }
                 catch (Exception ex)
@@ -266,15 +267,16 @@ public partial class InboxPage : ContentView
                 }
             }
         }
-        else
-        {
-            // No emails selected, handle accordingly
-        }
+        
     }
 
+    private async void SearchClicked(object sender, EventArgs e)
+    {
+        string searchText = Search.Text;
+      
 
 
-
-
+        await _viewModel.RefreshData(searchText);
+    }
 }
 
