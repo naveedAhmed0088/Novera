@@ -67,8 +67,6 @@ public partial class EmailDetailPage : ContentPage
 
 
                         };
-                        frameImage.BackgroundColor = Color.FromHex("#13294B");
-                        frameImage.BorderColor = Color.FromHex("#D69E5A");
                         var frame = new Frame
                         {
                             BorderColor = Color.FromHex("#D69E5A"),
