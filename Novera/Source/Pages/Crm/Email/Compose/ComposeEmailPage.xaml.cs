@@ -314,8 +314,10 @@ public partial class ComposeEmailPage : ContentPage
 
         if (pickedFiles != null)
         {
-            foreach (var fileName in pickedFiles)
+            foreach (var filePath in pickedFiles)
             {
+                var fileName = Path.GetFileName(filePath);
+
                 var label = new Label
                 {
                     Text = fileName,

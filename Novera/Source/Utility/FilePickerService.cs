@@ -25,7 +25,7 @@ namespace Novera.Source.Utility
                     foreach (var file in result)
                     {
                         using var stream = await file.OpenReadAsync();
-                        pickedFiles.Add(file.FileName); 
+                        pickedFiles.Add(file.FullPath); 
                     }
                     return pickedFiles;
                 }
